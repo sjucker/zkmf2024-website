@@ -17,6 +17,7 @@ logs
 .DS_Store
 .fleet
 .idea
+!.idea/prettier.xml
 
 # Local env files
 .env
