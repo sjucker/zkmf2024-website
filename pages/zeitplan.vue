@@ -16,30 +16,32 @@
       </div>
       <div v-for="day in data.days">
         <h3>{{ day }}</h3>
-        <div class="relative overflow-x-auto" v-for="location in locations(day)" v-if="filterRows(entries(day, location.id)).length > 0">
-          <h4>
-            📌
-            <a :href="location.googleMapsAddress" target="_blank">{{ location.name }}</a>
-          </h4>
-          <table class="table-auto w-full text-sm text-left">
-            <thead>
-              <tr>
-                <th class="w-4/12 md:w-2/12">Zeit</th>
-                <th class="w-8/12 md:w-5/12">Verein</th>
-                <th class="hidden md:table-cell md:w-5/12">Modul</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(entry, index) in filterRows(entries(day, location.id))" class="border-b" :class="{ 'bg-gray-50': index % 2 === 0 }">
-                <td>{{ entry.time }}</td>
-                <td>
-                  <NuxtLink :to="`/verein/${entry.vereinId}`">{{ entry.vereinsname }}</NuxtLink>
-                </td>
-                <td class="hidden md:table-cell">{{ entry.competition }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <template v-for="location in locations(day)">
+          <div class="relative overflow-x-auto" v-if="filterRows(entries(day, location.id)).length > 0">
+            <h4>
+              📌
+              <a :href="location.googleMapsAddress" target="_blank">{{ location.name }}</a>
+            </h4>
+            <table class="table-auto w-full text-sm text-left">
+              <thead>
+                <tr>
+                  <th class="w-4/12 md:w-2/12">Zeit</th>
+                  <th class="w-8/12 md:w-5/12">Verein</th>
+                  <th class="hidden md:table-cell md:w-5/12">Modul</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(entry, index) in filterRows(entries(day, location.id))" class="border-b" :class="{ 'bg-gray-50': index % 2 === 0 }">
+                  <td>{{ entry.time }}</td>
+                  <td>
+                    <NuxtLink :to="`/verein/${entry.vereinId}`">{{ entry.vereinsname }}</NuxtLink>
+                  </td>
+                  <td class="hidden md:table-cell">{{ entry.competition }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </template>
       </div>
     </div>
   </div>
