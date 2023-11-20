@@ -48,6 +48,7 @@ const expanded = ref([] as VereinTeilnahmeDTO[])
 
 const { data, pending } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase}/public/verein/overview`, {
   lazy: true,
+  server: false,
 })
 
 function getImgSrc(id: number): String {

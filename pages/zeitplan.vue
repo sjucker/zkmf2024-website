@@ -72,6 +72,7 @@ const search = ref('')
 
 const { data, pending } = await useFetch(`${apiBase}/public/timetable`, {
   lazy: true,
+  server: false,
   transform: (values: TimetableDayOverviewDTO[]) => {
     const days = values.map(v => v.day)
 

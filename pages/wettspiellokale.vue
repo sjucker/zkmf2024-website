@@ -44,5 +44,6 @@ const {
 
 const { data, pending } = await useFetch<LocationDTO[]>(`${apiBase}/public/location/wettspiel`, {
   lazy: true,
+  server: false,
 })
 </script>
