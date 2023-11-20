@@ -28,7 +28,9 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<VereinPresentationDTO>(`${apiBase}/public/verein/${route.params.id}`)
+const { data, pending, error } = await useFetch<VereinPresentationDTO>(`${apiBase}/public/verein/${route.params.id}`, {
+  server: false,
+})
 
 function getImgSrc(id: number): String {
   return `${apiBase}/public/image/${id}`

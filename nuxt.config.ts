@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+      // https://answers.netlify.com/t/javascript-heap-out-of-memory-when-trying-to-build-a-nuxt-app/93138/14
+      cssnano: process.env.NODE_ENV === 'production' ? { preset: ['default', { discardComments: { removeAll: true } }] } : false,
     },
   },
 
@@ -26,12 +28,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase:
-        process.env.NODE_ENV === 'production'
-          ? 'https://zkmf2024-server.herokuapp.com'
-          : process.env.NODE_ENV === 'staging'
-            ? 'https://zkmf2024-server-staging.herokuapp.com'
-            : 'http://localhost:8080',
+      // do not use process.env.NODE_ENV as it is overwritten (always production) when running 'generate'
+      apiBase: process.env.API_BASE ?? 'http://localhost:8080',
     },
   },
 
