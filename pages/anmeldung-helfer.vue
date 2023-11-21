@@ -132,7 +132,7 @@
           </div>
           <div v-for="aufgabe in aufgaben">
             <label class="inline-flex items-center">
-              <input type="checkbox" id="day1" :value="aufgabe" v-model="formData.aufgaben" />
+              <input type="checkbox" :value="aufgabe" v-model="formData.aufgaben" />
               <span class="ml-2 text-gray-700 text-sm">{{ getAufgabeDescription(aufgabe) }}</span>
             </label>
           </div>
