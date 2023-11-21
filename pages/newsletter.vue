@@ -62,7 +62,7 @@
     </div>
 
     <div v-if="sent">
-      <div>Vielen Dank für deine Anmeldung für unseren Newsletter!</div>
+      <div>📬 Vielen Dank für deine Anmeldung für unseren Newsletter!</div>
     </div>
   </div>
 </template>
