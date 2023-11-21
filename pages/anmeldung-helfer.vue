@@ -280,7 +280,7 @@
     </div>
 
     <div v-if="sent">
-      <h4>Vielen Dank für deine Anmeldung!</h4>
+      <h4>🎉 Vielen Dank für deine Anmeldung!</h4>
       <p>Du wirst frühzeitig wieder von uns hören und mit weiteren Informationen versorgt werden.</p>
     </div>
   </div>
