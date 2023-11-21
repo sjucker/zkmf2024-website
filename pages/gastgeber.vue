@@ -94,7 +94,6 @@
       <span>Doris Epprecht / Sponsoring</span>
       <span>Dominik Dubs / Sponsoring</span>
       <span>Markus Otto / Sponsoring</span>
-      <span>Adil Ataman / Verpflegung</span>
       <span>Jürg Abplanalp / Verpflegung</span>
     </div>
   </div>
