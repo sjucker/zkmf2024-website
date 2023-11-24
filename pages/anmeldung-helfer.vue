@@ -293,10 +293,10 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const aufgaben = Object.values(Aufgaben) as Aufgaben[]
-const einsatzzeiten = Object.values(Einsatzzeit) as Einsatzzeit[]
+const aufgaben: Aufgaben[] = Object.values(Aufgaben)
+const einsatzzeiten: Einsatzzeit[] = Object.values(Einsatzzeit)
 const vereinszugehoerigkeitSelection = ref('')
-const formData = reactive({
+const formData: RegisterHelperRequestDTO = reactive({
   email: '',
   name: '',
   vorname: '',
@@ -316,7 +316,7 @@ const formData = reactive({
   einsatzDienstag: [],
   groesseShirt: '',
   comment: '',
-} as RegisterHelperRequestDTO)
+})
 const submitted = ref(false)
 const loading = ref(false)
 const sent = ref(false)

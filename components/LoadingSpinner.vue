@@ -15,6 +15,6 @@
 </template>
 <script setup lang="ts">
 defineProps<{
-  loading: Boolean
+  loading: boolean
 }>()
 </script>

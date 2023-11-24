@@ -1,9 +1,10 @@
 <template>
   <div class="prose max-w-none">
     <h2 class="text-blau">Wettspiellokale</h2>
-    <LoadingSpinner v-bind:loading="pending"></LoadingSpinner>
+    <LoadingSpinner :loading="pending"></LoadingSpinner>
+    <div v-if="!pending && error">😵 Es ist ein Fehler aufgetreten...</div>
     <div v-if="!pending && data">
-      <div v-for="location in data">
+      <div v-for="location in data" :key="location.id">
         <h4>{{ location.name }}</h4>
         <ul>
           <li>
@@ -42,7 +43,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending } = await useFetch<LocationDTO[]>(`${apiBase}/public/location/wettspiel`, {
+const { data, pending, error } = await useFetch<LocationDTO[]>(`${apiBase}/public/location/wettspiel`, {
   lazy: true,
   server: false,
 })

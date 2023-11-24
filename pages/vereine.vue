@@ -1,10 +1,11 @@
 <template>
   <div class="prose prose-img:rounded-lg prose-a:text-blau">
     <h2 class="text-blau">Angemeldete Vereine</h2>
-    <p class="prose-sm">Auf den Vereinsnamen klicken, um mehr Informationen über den Verein zu erhalten.</p>
-    <LoadingSpinner v-bind:loading="pending"></LoadingSpinner>
+    <LoadingSpinner :loading="pending"></LoadingSpinner>
+    <div v-if="!pending && error">😵 Es ist ein Fehler aufgetreten...</div>
     <div v-if="!pending && data">
-      <div v-for="verein in data">
+      <p class="prose-sm">Auf den Vereinsnamen klicken, um mehr Informationen über den Verein zu erhalten.</p>
+      <div v-for="verein in data" :key="verein.id">
         <h4
           @click="expand(verein)"
           :class="{
@@ -44,9 +45,9 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const expanded = ref([] as VereinTeilnahmeDTO[])
+const expanded: VereinTeilnahmeDTO[] = reactive([])
 
-const { data, pending } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase}/public/verein/overview`, {
+const { data, pending, error } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase}/public/verein/overview`, {
   lazy: true,
   server: false,
 })
@@ -56,10 +57,10 @@ function getImgSrc(id: number): String {
 }
 
 function expand(verein: VereinTeilnahmeDTO): void {
-  expanded.value = [...expanded.value, verein]
+  expanded.push(verein)
 }
 
 function isExpanded(verein: VereinTeilnahmeDTO): boolean {
-  return expanded.value.includes(verein)
+  return expanded.includes(verein)
 }
 </script>

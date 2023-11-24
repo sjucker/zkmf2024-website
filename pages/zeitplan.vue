@@ -1,7 +1,8 @@
 <template>
   <div class="prose max-w-none">
     <h2 class="text-blau">Zeitplan</h2>
-    <LoadingSpinner v-bind:loading="pending"></LoadingSpinner>
+    <LoadingSpinner :loading="pending"></LoadingSpinner>
+    <div v-if="!pending && error">😵 Es ist ein Fehler aufgetreten...</div>
     <div v-if="!pending && data">
       <div class="relative">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -14,9 +15,9 @@
           class="block w-full md:w-1/2 lg:w-1/3 p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blau focus:border-blau"
         />
       </div>
-      <div v-for="day in data.days">
+      <div v-for="day in data.days" :key="day">
         <h3>{{ day }}</h3>
-        <template v-for="location in locations(day)">
+        <template v-for="location in locations(day)" :key="location.id">
           <div class="relative overflow-x-auto" v-if="filterRows(entries(day, location.id)).length > 0">
             <h4>
               📌
@@ -70,7 +71,7 @@ const {
 } = useRuntimeConfig()
 const search = ref('')
 
-const { data, pending } = await useFetch(`${apiBase}/public/timetable`, {
+const { data, pending, error } = await useFetch(`${apiBase}/public/timetable`, {
   lazy: true,
   server: false,
   transform: (values: TimetableDayOverviewDTO[]) => {
