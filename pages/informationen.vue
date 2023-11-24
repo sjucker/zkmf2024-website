@@ -7,7 +7,7 @@
         <NuxtLink to="/karte">Karte Festareal</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/wettspiellokale">Wettspiellokalen</NuxtLink>
+        <NuxtLink to="/wettspiellokale">Wettspiellokale</NuxtLink>
       </li>
       <!--      <li>-->
       <!--        <NuxtLink to="/zeitplan">Zeitplan</NuxtLink>-->
