@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     useStylesheet: true,
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module'],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag'],
 
   runtimeConfig: {
     public: {
@@ -37,6 +37,10 @@ export default defineNuxtConfig({
     url: 'https://www.zkmf2024.ch',
     name: 'ZKMF2024',
     defaultLocale: 'de',
+  },
+
+  gtag: {
+    id: 'NUXT_PUBLIC_GTAG_ID',
   },
 
   image: {
