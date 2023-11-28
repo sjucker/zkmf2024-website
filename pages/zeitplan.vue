@@ -35,7 +35,7 @@
                 <tr v-for="(entry, index) in filterRows(entries(day, location.id))" class="border-b" :class="{ 'bg-gray-50': index % 2 === 0 }">
                   <td>{{ entry.time }}</td>
                   <td>
-                    <NuxtLink :to="`/verein/${entry.vereinId}`">{{ entry.vereinsname }}</NuxtLink>
+                    <NuxtLink :to="`/verein/${entry.vereinIdentifier}`">{{ entry.vereinsname }}</NuxtLink>
                   </td>
                   <td class="hidden md:table-cell">{{ entry.competition }}</td>
                 </tr>
