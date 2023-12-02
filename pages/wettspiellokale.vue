@@ -5,7 +5,9 @@
     <div v-if="!pending && error">😵 Es ist ein Fehler aufgetreten...</div>
     <div v-if="!pending && data">
       <div v-for="location in data" :key="location.id">
-        <h4>{{ location.name }}</h4>
+        <h4>
+          <NuxtLink :to="`/lokal/${location.identifier}`">{{ location.name }}</NuxtLink>
+        </h4>
         <ul>
           <li>
             <a :href="location.googleMapsAddress" target="_blank">{{ location.address }}</a>
