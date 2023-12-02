@@ -208,8 +208,8 @@ export interface VereinDTO {
     messages: VereinMessageDTO[];
     errata: VereinErrataDTO[];
     programmUpdated: boolean;
-    phase1Status: PhaseStatus;
     phase2Status: PhaseStatus;
+    phase1Status: PhaseStatus;
 }
 
 export interface VereinMessageDTO {
