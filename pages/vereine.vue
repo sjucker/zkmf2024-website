@@ -22,7 +22,7 @@
           <p class="whitespace-pre-line" v-if="verein.websiteText">
             {{ verein.websiteText }}
           </p>
-          <img v-if="verein.bildImgId" :src="getImgSrc(verein.bildImgId)" alt="Bild" />
+          <NuxtImg v-if="verein.bildImgId" provider="cloudflare" :src="getImgSrc(verein.bildImgId)" loading="lazy"></NuxtImg>
         </div>
       </div>
     </div>
@@ -52,8 +52,8 @@ const { data, pending, error } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase
   server: false,
 })
 
-function getImgSrc(id: number): String {
-  return `${apiBase}/public/image/${id}`
+function getImgSrc(id: string): String {
+  return `${id}/public`
 }
 
 function expand(verein: VereinTeilnahmeDTO): void {

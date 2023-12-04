@@ -83,6 +83,7 @@ export interface KontaktDTO extends IsValid {
 
 export interface LocationDTO {
     id: number;
+    identifier: string;
     name: string;
     address: string;
     latitude: number;
@@ -221,8 +222,8 @@ export interface VereinMessageDTO {
 export interface VereinPresentationDTO {
     id: number;
     name: string;
-    logoImgId?: number;
-    bildImgId?: number;
+    logoImgId?: string;
+    bildImgId?: string;
     homepage?: string;
     facebook?: string;
     instagram?: string;
@@ -274,8 +275,8 @@ export interface VereinTeilnahmeDTO {
     id: number;
     identifier: string;
     name: string;
-    logoImgId?: number;
-    bildImgId?: number;
+    logoImgId?: string;
+    bildImgId?: string;
     homepage?: string;
     facebook?: string;
     instagram?: string;
@@ -351,10 +352,23 @@ export interface ErrataDTO {
     text?: string;
 }
 
+export interface ErrataSendDTO {
+    modul: Modul;
+    klasse: Klasse;
+    besetzung: Besetzung;
+}
+
 export interface JudgeDTO {
     id: number;
     name: string;
     email: string;
+}
+
+export interface JudgeReportCreateDTO {
+    timetableEntryId: number;
+    judge1Id: number;
+    judge2Id: number;
+    judge3Id: number;
 }
 
 export interface JuryLoginCreateDTO {
@@ -398,9 +412,9 @@ export interface TimetableEntryDTO {
     start: DateAsString;
     end: DateAsString;
     type: TimetableEntryType;
-    judge1: string;
-    judge2: string;
-    judge3: string;
+    judge1?: string;
+    judge2?: string;
+    judge3?: string;
 }
 
 export interface UserCreateDTO {

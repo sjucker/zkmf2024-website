@@ -38,4 +38,10 @@ export default defineNuxtConfig({
     name: 'ZKMF2024',
     defaultLocale: 'de',
   },
+
+  image: {
+    cloudflare: {
+      baseURL: 'https://imagedelivery.net/b5PKQi-eHYmFXihh4Gjd5g/',
+    },
+  },
 })
