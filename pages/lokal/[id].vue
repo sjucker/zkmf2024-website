@@ -33,7 +33,7 @@
         </ul>
 
         <div v-if="data.kuulaId" class="clear-both">
-          <h2>360-Grad-Ansicht</h2>
+          <h2>360°-Ansicht</h2>
           <iframe
             width="100%"
             height="640"
