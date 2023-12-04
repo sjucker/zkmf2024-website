@@ -69,6 +69,6 @@ function getImgSrc(id: string): string {
 }
 
 function getKuulaSrc(id: string): string {
-  return `https://kuula.co/share/${id}?logo=1&info=1&fs=0&vr=0&zoom=1&sd=1&thumbs=1&inst=de`
+  return `https://kuula.co/share/${id}?logo=1&info=1&fs=0&vr=0&zoom=1&sd=1&thumbs=1&inst=de&gyro=0`
 }
 </script>
