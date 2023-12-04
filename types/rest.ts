@@ -94,6 +94,8 @@ export interface LocationDTO {
     capacity: string;
     modules: string;
     sortOrder: number;
+    cloudflareId?: string;
+    kuulaId?: string;
     einspiellokal?: LocationDTO;
     instrumentendepot?: LocationDTO;
     juryfeedback?: LocationDTO;
@@ -208,8 +210,8 @@ export interface VereinDTO {
     messages: VereinMessageDTO[];
     errata: VereinErrataDTO[];
     programmUpdated: boolean;
-    phase2Status: PhaseStatus;
     phase1Status: PhaseStatus;
+    phase2Status: PhaseStatus;
 }
 
 export interface VereinMessageDTO {
@@ -328,8 +330,10 @@ export interface VereinsanmeldungDTO extends IsValid {
 }
 
 export interface VereinsinfoDTO extends IsValid {
-    logoImgId?: string;
-    bildImgId?: string;
+    logoImgId?: number;
+    bildImgId?: number;
+    logoImgCloudflareId?: string;
+    bildImgCloudflareId?: string;
     websiteText?: string;
 }
 
