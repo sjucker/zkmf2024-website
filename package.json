@@ -16,6 +16,7 @@
     "@nuxtseo/module": "2.0.0-beta.45",
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/typography": "0.5.10",
+    "@heroicons/vue": "2.0.18",
     "autoprefixer": "10.4.16",
     "nuxt": "3.8.2",
     "nuxt-gtag": "1.1.1",
