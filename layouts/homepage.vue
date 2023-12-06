@@ -3,7 +3,7 @@
     <div class="w-full h-screen bg-blau" :class="mobileMenuVisible ? 'visible' : 'hidden'">
       <div class="container mx-auto p-3 pt-0 relative h-full">
         <button class="absolute top-5 right-5" v-on:click="mobileMenuVisible = !mobileMenuVisible">
-          <img src="/close.svg" alt="Schliessen" class="h-10 w-10 top-2 right-2" />
+          <XMarkIcon class="h-10 w-10 top-2 right-2 text-white" />
         </button>
         <div class="text-white font-medium text-xl flex flex-col pt-16 pl-8">
           <NuxtLink v-for="link in navigationLinks" :to="`/${link.pageId}`" :key="link.pageId" @click.native="mobileMenuVisible = false" class="mt-6">
@@ -48,7 +48,7 @@
         <Menu />
 
         <button class="xl:hidden absolute top-5 right-5" v-on:click="mobileMenuVisible = !mobileMenuVisible">
-          <img src="/menu.svg" alt="Menu öffnen" class="block h-10 w-10 top-2 right-2" />
+          <Bars3Icon class="block h-10 w-10 top-2 right-2 text-white" />
         </button>
       </div>
 
@@ -66,6 +66,7 @@
 </template>
 <script setup lang="ts">
 import { MENU_ITEMS } from '~/types/types'
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuVisible = ref(false)
 const navigationLinks = MENU_ITEMS

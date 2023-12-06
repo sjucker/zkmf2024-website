@@ -1,20 +1,7 @@
 <template>
   <footer>
-    <div class="w-full mt-32">
-      <div v-if="false" class="container mx-auto px-5">
-        <div class="text-blau font-medium">Unsere Partner</div>
-        <div class="flex flex-col lg:flex-row justify-start">
-          <img src="/partner1.png" alt="Partner 1" class="w-1/2 md:w-1/4 lg:w-1/6" />
-          <img src="/partner2.png" alt="Partner 2" class="w-1/2 md:w-1/4 lg:w-1/6 lg:ml-8" />
-          <img src="/partner3.png" alt="Partner 3" class="w-1/2 md:w-1/4 lg:w-1/6 lg:ml-8" />
-          <img src="/partner4.png" alt="Partner 4" class="w-1/2 md:w-1/4 lg:w-1/6 lg:ml-8" />
-          <img src="/partner5.png" alt="Partner 5" class="w-1/2 md:w-1/4 lg:w-1/6 lg:ml-8" />
-        </div>
-      </div>
-    </div>
-
     <div>
-      <div class="bg-silber w-full">
+      <div class="mt-32 bg-silber w-full">
         <div class="container mx-auto px-5 py-12 flex flex-col lg:flex-row">
           <div class="text-blau text-sm flex-none">
             <p class="font-bold">
