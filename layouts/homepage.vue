@@ -53,7 +53,7 @@
       </div>
 
       <div class="lg:hidden absolute bottom-0 p-5 w-full cursor-pointer" @click="scrollToContent" :class="mobileMenuVisible ? 'hidden' : 'visible'">
-        <img src="/arrow-down.svg" alt="weiter" class="mx-auto w-6" />
+        <ChevronDownIcon class="mx-auto w-10 h-10 text-white" />
       </div>
     </div>
 
@@ -66,7 +66,7 @@
 </template>
 <script setup lang="ts">
 import { MENU_ITEMS } from '~/types/types'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuVisible = ref(false)
 const navigationLinks = MENU_ITEMS
