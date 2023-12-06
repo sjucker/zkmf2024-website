@@ -6,7 +6,7 @@
     <div v-if="!pending && data">
       <div class="relative">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-          <img src="/search.svg" alt="Suchen=" class="w-4 h-4 text-gray-500" />
+          <MagnifyingGlassIcon class="w-5 h-5 text-blau" />
         </div>
         <input
           type="text"
@@ -20,8 +20,10 @@
         <template v-for="location in locations(day)" :key="location.id">
           <div class="relative overflow-x-auto" v-if="filterRows(entries(day, location.id)).length > 0">
             <h4>
-              📌
-              <a :href="location.googleMapsAddress" target="_blank">{{ location.name }}</a>
+              <a :href="location.googleMapsAddress" target="_blank" class="flex gap-0.5">
+                {{ location.name }}
+                <MapPinIcon class="h-6 w-6 text-blau" />
+              </a>
             </h4>
             <table class="table-auto w-full text-sm text-left">
               <thead>
@@ -49,6 +51,7 @@
 </template>
 <script setup lang="ts">
 import type { LocationDTO, TimetableDayOverviewDTO, TimetableOverviewEntryDTO } from '~/types/rest'
+import { MagnifyingGlassIcon, MapPinIcon } from '@heroicons/vue/24/outline'
 
 export interface TimetableDayOverviewData {
   days: string[]

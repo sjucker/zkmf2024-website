@@ -6,36 +6,33 @@
     <div v-if="!pending && data">
       <div v-for="location in data" :key="location.id">
         <h4>
-          <NuxtLink :to="`/lokal/${location.identifier}`">{{ location.name }}</NuxtLink>
+          <NuxtLink :to="`/lokal/${location.identifier}`" class="inline-flex gap-1">
+            {{ location.name }}
+            <PhotoIcon class="w-6 h-6 text-blau" v-if="location.cloudflareId" />
+          </NuxtLink>
         </h4>
         <ul>
           <li>
-            <a :href="location.googleMapsAddress" target="_blank">{{ location.address }}</a>
+            <a :href="location.googleMapsAddress" target="_blank" class="inline-flex gap-0.5">
+              {{ location.address }}
+              <MapPinIcon class="h-6 w-6 text-blau" />
+            </a>
           </li>
-          <li>Kapazität Bühne: {{ location.capacity }}</li>
           <li>Module: {{ location.modules }}</li>
-          <li v-if="location.einspiellokal">
-            Einspiellokal:
-            <a :href="location.einspiellokal.googleMapsAddress" target="_blank">{{ location.einspiellokal.name }}</a>
-          </li>
-          <li v-if="location.instrumentendepot">
-            Instrumentendepot:
-            <a :href="location.instrumentendepot.googleMapsAddress" target="_blank">{{ location.instrumentendepot.name }}</a>
-          </li>
-          <li v-if="location.juryfeedback">
-            Jury-Besprechnung:
-            <a :href="location.juryfeedback.googleMapsAddress" target="_blank">{{ location.juryfeedback.name }}</a>
-          </li>
         </ul>
       </div>
-      <p>
-        <NuxtLink to="/karte">Karte Festareal</NuxtLink>
+      <p class="mt-10">
+        <NuxtLink to="/karte" class="inline-flex gap-1">
+          Karte Festareal
+          <MapIcon class="w-6 h-6 text-blau" />
+        </NuxtLink>
       </p>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import type { LocationDTO } from '~/types/rest'
+import { MapIcon, MapPinIcon, PhotoIcon } from '@heroicons/vue/24/outline'
 
 useHead({
   title: 'Wettspiellokale',

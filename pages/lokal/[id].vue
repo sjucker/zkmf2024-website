@@ -14,21 +14,39 @@
         ></NuxtImg>
         <ul>
           <li>
-            <a :href="data.googleMapsAddress" target="_blank">{{ data.address }}</a>
+            <a :href="data.googleMapsAddress" target="_blank" class="inline-flex gap-0.5">
+              {{ data.address }}
+              <MapPinIcon class="h-6 w-6 text-blau" />
+            </a>
           </li>
           <li>Kapazität Bühne: {{ data.capacity }}</li>
           <li>Module: {{ data.modules }}</li>
           <li v-if="data.einspiellokal">
-            Einspiellokal:
-            <a :href="data.einspiellokal.googleMapsAddress" target="_blank">{{ data.einspiellokal.name }}</a>
+            <div class="flex-col sm:flex-row inline-flex sm:gap-1">
+              <span>Einspiellokal:</span>
+              <a :href="data.einspiellokal.googleMapsAddress" target="_blank" class="inline-flex gap-0.5">
+                {{ data.einspiellokal.name }}
+                <MapPinIcon class="h-6 w-6 text-blau" />
+              </a>
+            </div>
           </li>
           <li v-if="data.instrumentendepot">
-            Instrumentendepot:
-            <a :href="data.instrumentendepot.googleMapsAddress" target="_blank">{{ data.instrumentendepot.name }}</a>
+            <div class="flex-col sm:flex-row inline-flex sm:gap-1">
+              <span>Instrumentendepot:</span>
+              <a :href="data.instrumentendepot.googleMapsAddress" target="_blank" class="inline-flex gap-0.5">
+                {{ data.instrumentendepot.name }}
+                <MapPinIcon class="h-6 w-6 text-blau" />
+              </a>
+            </div>
           </li>
           <li v-if="data.juryfeedback">
-            Jury-Besprechnung:
-            <a :href="data.juryfeedback.googleMapsAddress" target="_blank">{{ data.juryfeedback.name }}</a>
+            <div class="flex-col sm:flex-row inline-flex sm:gap-1">
+              <span>Jury-Besprechnung:</span>
+              <a :href="data.juryfeedback.googleMapsAddress" target="_blank" class="flex gap-0.5">
+                {{ data.juryfeedback.name }}
+                <MapPinIcon class="h-6 w-6 text-blau" />
+              </a>
+            </div>
           </li>
         </ul>
 
@@ -50,6 +68,7 @@
 </template>
 <script setup lang="ts">
 import type { LocationDTO } from '~/types/rest'
+import { MapPinIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const {
