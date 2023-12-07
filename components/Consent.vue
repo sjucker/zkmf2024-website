@@ -19,13 +19,10 @@ import { computed } from 'vue'
 const { gtag, grantConsent, revokeConsent } = useGtag()
 
 const consent = useCookie('zkmf2024-consent-status')
-consent.value = consent.value || ''
+consent.value = consent.value || 'needed'
 
 const needsConsentDecision = computed(() => {
-  if (consent.value) {
-    return consent.value === ''
-  }
-  return false
+  return consent.value === 'needed'
 })
 
 function accept() {
