@@ -16,22 +16,28 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const { gtag, grantConsent, revokeConsent } = useGtag()
+const { grantConsent, revokeConsent } = useGtag()
 
-const consent = useCookie('zkmf2024-consent-status')
-consent.value = consent.value || 'needed'
+const consentCookie = useCookie('zkmf2024-consent-status')
+consentCookie.value = consentCookie.value ?? ''
+
+const displayConsentBanner = ref(false)
+// wait some time until the information from the cookie are available (otherwise there is a flicker)
+setTimeout(() => {
+  displayConsentBanner.value = true
+}, 1000)
 
 const needsConsentDecision = computed(() => {
-  return consent.value === 'needed'
+  return displayConsentBanner.value && consentCookie.value === ''
 })
 
 function accept() {
   grantConsent()
-  consent.value = 'granted'
+  consentCookie.value = 'granted'
 }
 
 function revoke() {
   revokeConsent()
-  consent.value = 'revoked'
+  consentCookie.value = 'revoked'
 }
 </script>
