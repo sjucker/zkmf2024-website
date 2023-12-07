@@ -1,4 +1,5 @@
 <template>
+  <Consent />
   <div class="min-h-screen min-w-full font-body">
     <div class="w-full h-screen bg-blau" :class="mobileMenuVisible ? 'visible' : 'hidden'">
       <div class="container mx-auto p-3 pt-0 relative h-full">
