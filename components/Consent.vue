@@ -18,9 +18,7 @@ import { computed } from 'vue'
 
 const { gtag, grantConsent, revokeConsent } = useGtag()
 
-const consent = useCookie('zkmf2024-consent-status', {
-  secure: true,
-})
+const consent = useCookie('zkmf2024-consent-status')
 consent.value = consent.value || ''
 
 const needsConsentDecision = computed(() => {
