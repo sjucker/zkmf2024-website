@@ -22,7 +22,10 @@ const consent = useCookie('zkmf2024-consent-status')
 consent.value = consent.value || ''
 
 const needsConsentDecision = computed(() => {
-  return consent.value === ''
+  if (consent.value) {
+    return consent.value === ''
+  }
+  return false
 })
 
 function accept() {
