@@ -24,12 +24,7 @@ export default defineNuxtConfig({
     useStylesheet: true,
   },
 
-  modules: [
-    '@nuxt/image',
-    '@nuxtjs/google-fonts',
-    '@nuxtseo/module',
-    // 'nuxt-gtag',
-  ],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag'],
 
   runtimeConfig: {
     public: {
@@ -44,9 +39,9 @@ export default defineNuxtConfig({
     defaultLocale: 'de',
   },
 
-  // gtag: {
-  //   id: 'NUXT_PUBLIC_GTAG_ID',
-  // },
+  gtag: {
+    id: 'NUXT_PUBLIC_GTAG_ID',
+  },
 
   image: {
     cloudflare: {

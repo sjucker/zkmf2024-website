@@ -16,6 +16,9 @@
               <li v-for="link in navigationLinks" :key="link.pageId">
                 <NuxtLink :to="`/${link.pageId}`">{{ link.title }}</NuxtLink>
               </li>
+              <li>
+                <NuxtLink to="/impressum">Impressum</NuxtLink>
+              </li>
             </ul>
           </div>
           <div class="pt-6 lg:pt-0 lg:pl-36">
