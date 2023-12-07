@@ -1,5 +1,5 @@
 <template>
-  <div v-if="needsConsentDecision" class="min-w-full fixed bottom-0 left-0 bg-blau p-4 z-999 border-t-4 border-t-rot flex flex-col md:flex-row gap-4 text-xs">
+  <div v-if="needsConsentDecision" class="min-w-full fixed bottom-0 left-0 bg-blau p-4 z-50 border-t-4 border-t-rot flex flex-col md:flex-row gap-4 text-xs">
     <div class="text-white">
       Wenn Sie auf «Akzeptieren» klicken, stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Navigation auf der Website zu verbessern, die
       Nutzung der Website zu analysieren und unsere Marketingaktivitäten zu unterstützen.<br />
