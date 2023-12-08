@@ -14,12 +14,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-
 const { grantConsent, revokeConsent } = useGtag()
 
 const consentCookie = useCookie('zkmf2024-consent-status')
 consentCookie.value = consentCookie.value ?? ''
+if (consentCookie.value === 'granted') {
+  grantConsent()
+}
 
 const displayConsentBanner = ref(false)
 // wait some time until the information from the cookie are available (otherwise there is a flicker)
