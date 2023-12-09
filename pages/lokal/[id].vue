@@ -8,7 +8,7 @@
         <NuxtImg
           v-if="data.cloudflareId"
           provider="cloudflare"
-          :src="getImgSrc(data.cloudflareId)"
+          :src="cloudflareUrl(data.cloudflareId)"
           loading="lazy"
           class="max-w-full lg:w-1/2 lg:ml-8"
         ></NuxtImg>
@@ -59,7 +59,7 @@
             allow="xr-spatial-tracking; gyroscope; accelerometer"
             allowfullscreen
             scrolling="no"
-            :src="getKuulaSrc(data.kuulaId)"
+            :src="kuulaUrl(data.kuulaId)"
           ></iframe>
         </div>
       </template>
@@ -82,12 +82,4 @@ const { data, pending, error } = await useFetch<LocationDTO>(`${apiBase}/public/
 useHead({
   title: data?.value?.name ?? 'Lokal',
 })
-
-function getImgSrc(id: string): string {
-  return `${id}/public`
-}
-
-function getKuulaSrc(id: string): string {
-  return `https://kuula.co/share/${id}?logo=1&info=1&fs=0&vr=0&zoom=1&sd=1&thumbs=1&inst=de&gyro=0`
-}
 </script>
