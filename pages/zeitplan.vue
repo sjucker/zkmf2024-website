@@ -2,7 +2,10 @@
   <div class="prose max-w-none">
     <h2 class="text-blau">Zeitplan</h2>
     <LoadingSpinner :loading="pending"></LoadingSpinner>
-    <div v-if="!pending && error">😵 Es ist ein Fehler aufgetreten...</div>
+    <div v-if="!pending && error" class="inline-flex gap-2 items-center">
+      <ExclamationTriangleIcon class="h-10 w-10 text-rot" />
+      Es ist ein Fehler aufgetreten...
+    </div>
     <div v-if="!pending && data">
       <div class="relative">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -51,7 +54,7 @@
 </template>
 <script setup lang="ts">
 import type { LocationDTO, TimetableDayOverviewDTO, TimetableOverviewEntryDTO } from '~/types/rest'
-import { MagnifyingGlassIcon, MapPinIcon } from '@heroicons/vue/24/outline'
+import { ExclamationTriangleIcon, MagnifyingGlassIcon, MapPinIcon } from '@heroicons/vue/24/outline'
 
 export interface TimetableDayOverviewData {
   days: string[]
