@@ -10,7 +10,13 @@
       <div v-if="data.premium">
         <h3>Premium-Partner</h3>
         <div class="not-prose grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
-          <a v-for="sponsor in data.premium" :key="sponsor.name" :href="sponsor.url" target="_blank" class="rounded-2xl border border-silber p-2">
+          <a
+            v-for="sponsor in data.premium"
+            :key="sponsor.name"
+            :href="sponsor.url"
+            target="_blank"
+            class="rounded-2xl border border-silber p-2 flex justify-center"
+          >
             <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
