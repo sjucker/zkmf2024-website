@@ -25,7 +25,13 @@
       <div v-if="data.delux">
         <h3>Deluxe-Partner</h3>
         <div class="not-prose grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
-          <a v-for="sponsor in data.delux" :key="sponsor.name" :href="sponsor.url" target="_blank" class="rounded-2xl border border-silber p-2">
+          <a
+            v-for="sponsor in data.delux"
+            :key="sponsor.name"
+            :href="sponsor.url"
+            target="_blank"
+            class="rounded-2xl border border-silber p-2 flex justify-center"
+          >
             <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
@@ -34,7 +40,13 @@
       <div v-if="data.sponsor">
         <h3>Sponsor</h3>
         <div class="not-prose grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2">
-          <a v-for="sponsor in data.sponsor" :key="sponsor.name" :href="sponsor.url" target="_blank" class="rounded-2xl border border-silber p-2">
+          <a
+            v-for="sponsor in data.sponsor"
+            :key="sponsor.name"
+            :href="sponsor.url"
+            target="_blank"
+            class="rounded-2xl border border-silber p-2 flex justify-center"
+          >
             <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
