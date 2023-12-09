@@ -18,7 +18,9 @@
 <script setup lang="ts">
 const { grantConsent, revokeConsent } = useGtag()
 
-const consentCookie = useCookie('zkmf2024-consent-status')
+const consentCookie = useCookie('zkmf2024-consent-status', {
+  maxAge: 34560000,
+})
 consentCookie.value = consentCookie.value ?? ''
 if (consentCookie.value === 'granted') {
   grantConsent()
