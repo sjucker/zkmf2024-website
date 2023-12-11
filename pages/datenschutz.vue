@@ -6,13 +6,12 @@
     <p>Verantwortliche Stelle im Sinne des Schweizer Datenschutzgesetzes (DSG) ist:</p>
     <p>
       <strong>Verein "zkmf2024"</strong><br />
-      Urs Dannenmann<br />
       Im Grüt 52<br />
       8902 Urdorf
     </p>
     <h4>Erhebung und Verarbeitung von personenbezogenen Daten</h4>
     <p>
-      Wir erheben und verarbeiten personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wenn Sie sich für als Helfer oder für unseren Newsletter
+      Wir erheben und verarbeiten personenbezogene Daten, die Sie uns freiwillig zur Verfügung stellen, wenn Sie sich als Helfer oder für unseren Newsletter
       anmelden. Die erhobenen Daten umfassen:
     </p>
     <ul>
@@ -60,8 +59,8 @@
     </p>
     <h4>Aktualisierung dieser Datenschutzerklärung</h4>
     <p>
-      Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, um Änderungen unserer Praktiken oder zur Einhaltung gesetzlicher Anforderungen zu
-      reflektieren. Eine aktuelle Version dieser Datenschutzerklärung ist immer auf unserer Website verfügbar.
+      Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, um Änderungen unserer Praktiken festzuhalten oder die Einhaltung gesetzlicher
+      Anforderungen zu reflektieren. Eine aktuelle Version dieser Datenschutzerklärung ist immer auf unserer Website verfügbar.
     </p>
   </div>
 </template>

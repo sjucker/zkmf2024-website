@@ -5,7 +5,6 @@
     <h2 class="text-blau">Impressum</h2>
     <p>
       <strong>Verein "zkmf2024"</strong><br />
-      Urs Dannenmann<br />
       Im Grüt 52<br />
       8902 Urdorf
     </p>
@@ -26,6 +25,6 @@
     <NuxtLink to="/datenschutz">hier</NuxtLink>
 
     <h3>Letzte Aktualisierung</h3>
-    <p>09.12.2023</p>
+    <p>11.12.2023</p>
   </div>
 </template>
