@@ -11,6 +11,9 @@
     <h3 class="text-blau">Newsletter</h3>
     <ul>
       <li>
+        <a href="/newsletter/14-dezember2023.pdf" target="_blank">Nr. 14 – Dezember 2023</a>
+      </li>
+      <li>
         <a href="/newsletter/13-oktober2023.pdf" target="_blank">Nr. 13 – Oktober 2023</a>
       </li>
       <li>
