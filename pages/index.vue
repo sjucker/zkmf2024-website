@@ -19,13 +19,26 @@
     </p>
     <p class="max-w-prose">Das Organisationskomitee freut sich auf eine grosse Teilnahme bei ausgelassener Feststimmung und heisst alle herzlich willkommen!</p>
     <p>
-      <NuxtLink to="/vereine">Angemeldete Vereine</NuxtLink>
+      <NuxtLink to="/vereine" class="inline-flex items-center gap-2">
+        <MusicalNoteIcon class="w-6 h-6 text-blau" />
+        Angemeldete Vereine
+      </NuxtLink>
+      <br />
+      <NuxtLink to="/zeitplan" class="inline-flex items-center gap-2">
+        <ClockIcon class="w-6 h-6 text-blau" />
+        Zeitplan
+      </NuxtLink>
+      <br />
+      <NuxtLink to="/karte" class="inline-flex items-center gap-2">
+        <MapIcon class="w-6 h-6 text-blau" />
+        Karte Festareal
+      </NuxtLink>
     </p>
     <span class="clear-both"></span>
   </div>
 </template>
 <script setup lang="ts">
-import { definePageMeta } from '#imports'
+import { ClockIcon, MapIcon, MusicalNoteIcon } from '@heroicons/vue/24/outline'
 
 definePageMeta({
   layout: 'homepage',
