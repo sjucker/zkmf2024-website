@@ -7,26 +7,8 @@
       Es ist ein Fehler aufgetreten...
     </div>
     <div v-if="!pending && data">
-      <p class="prose-sm">Auf den Vereinsnamen klicken, um mehr Informationen über den Verein zu erhalten.</p>
       <div v-for="verein in data" :key="verein.id">
-        <h4
-          @click="expand(verein)"
-          :class="{
-            underline: !isExpanded(verein),
-            'cursor-pointer': !isExpanded(verein),
-          }"
-        >
-          {{ verein.name }}
-        </h4>
-        <div v-if="isExpanded(verein)">
-          <p v-if="verein.homepage">
-            <a :href="verein.homepage" target="_blank">Website</a>
-          </p>
-          <p class="whitespace-pre-line" v-if="verein.websiteText">
-            {{ verein.websiteText }}
-          </p>
-          <NuxtImg v-if="verein.bildImgId" provider="cloudflare" :src="cloudflareUrl(verein.bildImgId)" loading="lazy"></NuxtImg>
-        </div>
+        <NuxtLink :to="`/verein/${verein.identifier}`">{{ verein.name }}</NuxtLink>
       </div>
     </div>
   </div>
@@ -49,18 +31,8 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const expanded: VereinTeilnahmeDTO[] = reactive([])
-
 const { data, pending, error } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase}/public/verein/overview`, {
   lazy: true,
   server: false,
 })
-
-function expand(verein: VereinTeilnahmeDTO): void {
-  expanded.push(verein)
-}
-
-function isExpanded(verein: VereinTeilnahmeDTO): boolean {
-  return expanded.includes(verein)
-}
 </script>
