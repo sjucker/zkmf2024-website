@@ -7,7 +7,7 @@
       Es ist ein Fehler aufgetreten...
     </div>
     <div v-if="!pending && data">
-      <div class="relative">
+      <div class="relative w-full md:w-1/2 lg:w-1/3">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <MagnifyingGlassIcon class="w-5 h-5 text-blau" />
         </div>
@@ -15,8 +15,11 @@
           type="text"
           v-model="search"
           placeholder="Suchen"
-          class="block w-full md:w-1/2 lg:w-1/3 p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blau focus:border-blau"
+          class="block w-full py-4 px-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blau focus:border-blau"
         />
+        <div @click="search = ''" class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+          <XMarkIcon class="w-5 h-5 text-blau" />
+        </div>
       </div>
       <div v-for="day in data.days" :key="day">
         <h3>{{ day }}</h3>
@@ -54,7 +57,8 @@
 </template>
 <script setup lang="ts">
 import type { LocationDTO, TimetableDayOverviewDTO, TimetableOverviewEntryDTO } from '~/types/rest'
-import { ExclamationTriangleIcon, MagnifyingGlassIcon, MapPinIcon } from '@heroicons/vue/24/outline'
+import { ExclamationTriangleIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { useLocalStorage } from '@vueuse/core'
 
 export interface TimetableDayOverviewData {
   days: string[]
@@ -75,7 +79,13 @@ useHead({
 const {
   public: { apiBase },
 } = useRuntimeConfig()
-const search = ref('')
+
+const storedSearchTerm = useLocalStorage('search-term', '')
+
+const search = ref(storedSearchTerm.value)
+watchEffect(() => {
+  storedSearchTerm.value = search.value
+})
 
 const { data, pending, error } = await useFetch(`${apiBase}/public/timetable`, {
   lazy: true,
