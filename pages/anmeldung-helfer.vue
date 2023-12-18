@@ -282,6 +282,7 @@
     <div v-if="sent">
       <h4>🎉 Vielen Dank für deine Anmeldung!</h4>
       <p>Du wirst frühzeitig wieder von uns hören und mit weiteren Informationen versorgt werden.</p>
+      <button @click="reload()" class="bg-blau text-white py-3 px-8 rounded">eine weitere Anmeldung vornehmen</button>
     </div>
   </div>
 </template>
@@ -468,5 +469,11 @@ async function submitForm(): Promise<void> {
       }
     }, 100)
   }
+}
+
+function reload(): void {
+  reloadNuxtApp({
+    force: true,
+  })
 }
 </script>
