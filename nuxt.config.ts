@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     useStylesheet: true,
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag'],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag', '@vueuse/nuxt'],
 
   runtimeConfig: {
     public: {
