@@ -13,6 +13,9 @@
           class="max-w-full lg:w-1/2 lg:ml-8"
         ></NuxtImg>
         <ul>
+          <li v-if="distanceToLocation">
+            {{ distanceToLocation }}
+          </li>
           <li>
             <a :href="data.googleMapsAddress" target="_blank" class="inline-flex gap-0.5">
               {{ data.address }}
@@ -81,5 +84,38 @@ const { data, pending, error } = await useFetch<LocationDTO>(`${apiBase}/public/
 
 useHead({
   title: data?.value?.name ?? 'Lokal',
+})
+
+const distanceToLocationInMeters = ref<number>(0)
+
+const { coords } = useGeolocation()
+watch(coords, value => {
+  if (data.value) {
+    distanceToLocationInMeters.value = calculateDistanceInMeters(
+      {
+        longitude: value.longitude,
+        latitude: value.latitude,
+      },
+      {
+        longitude: data.value.longitude,
+        latitude: data.value.latitude,
+      }
+    )
+  }
+})
+
+const distanceToLocation = computed(() => {
+  const distance = distanceToLocationInMeters.value
+  if (distance > 0) {
+    if (distance < 1000) {
+      return `ca. ${Math.round(distance / 100) * 100} Meter entfernt`
+    } else if (distance < 10000) {
+      return `ca. ${Math.round(distance / 1000)} Kilometer entfernt`
+    } else {
+      return 'mehr als 10 Kilometer entfernt'
+    }
+  } else {
+    return undefined
+  }
 })
 </script>
