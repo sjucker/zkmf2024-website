@@ -79,7 +79,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const storedSearchTerm = useLocalStorage('search-term', '')
+const storedSearchTerm = useSessionStorage('search-term', '')
 
 const search = ref(storedSearchTerm.value)
 watchEffect(() => {
