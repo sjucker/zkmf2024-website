@@ -1,5 +1,5 @@
 <template>
-  <div class="grid h-screen px-4 bg-blau place-content-center">
+  <div class="grid h-dvh px-4 bg-blau place-content-center">
     <div class="text-center">
       <p class="text-3xl font-bold tracking-tight text-gelb sm:text-4xl">😵 da ist was schiefgelaufen...</p>
 
