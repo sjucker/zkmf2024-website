@@ -107,7 +107,9 @@ watch(coords, value => {
 const distanceToLocation = computed(() => {
   const distance = distanceToLocationInMeters.value
   if (distance > 0) {
-    if (distance < 1000) {
+    if (distance < 100) {
+      return `weniger als 100 Meter entfernt`
+    } else if (distance < 1000) {
       return `ca. ${Math.round(distance / 100) * 100} Meter entfernt`
     } else if (distance < 10000) {
       return `ca. ${Math.round(distance / 1000)} Kilometer entfernt`
