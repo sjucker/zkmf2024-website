@@ -1,7 +1,7 @@
 <template>
   <Consent />
-  <div class="min-h-screen min-w-full font-body">
-    <div class="w-full h-screen bg-blau" :class="mobileMenuVisible ? 'visible' : 'hidden'">
+  <div class="min-h-dvh min-w-full font-body">
+    <div class="w-full h-dvh bg-blau" :class="mobileMenuVisible ? 'visible' : 'hidden'">
       <div class="container mx-auto p-3 pt-0 relative h-full">
         <button class="absolute top-5 right-5" v-on:click="mobileMenuVisible = !mobileMenuVisible">
           <XMarkIcon class="h-10 w-10 top-2 right-2 text-white" />
@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="w-full h-screen bg-blau lg:h-80 lg:mb-16" id="landingScreen">
+    <div class="w-full h-dvh bg-blau lg:h-80 lg:mb-16" id="landingScreen">
       <div class="container mx-auto p-3 pt-0 relative h-full">
         <NuxtLink to="/">
           <img :src="`/logo-muster-1.png`" alt="31. Zürcher Kantonalmusikfest" class="absolute top-0 left-0 px-5 max-w-full max-h-96" />
