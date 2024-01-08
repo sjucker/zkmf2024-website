@@ -66,6 +66,20 @@
           </a>
         </div>
       </div>
+
+      <div v-if="data.musikfan">
+        <h3>Musikfan</h3>
+        <div class="columns-1 md:columns-2 lg:columns-3">
+          <div v-for="musikfan in data.musikfan">{{ musikfan.name }}</div>
+        </div>
+      </div>
+
+      <div v-if="data.goenner">
+        <h3>Gönner</h3>
+        <div class="columns-1 md:columns-2 lg:columns-3">
+          <div v-for="goenner in data.goenner">{{ goenner.name }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

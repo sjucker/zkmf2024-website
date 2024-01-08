@@ -104,6 +104,7 @@ export interface LocationDTO {
   einspiellokal?: LocationDTO;
   instrumentendepot?: LocationDTO;
   juryfeedback?: LocationDTO;
+  coordinates?: CoordinatesDTO;
 }
 
 export interface LoginRequestDTO {
@@ -167,7 +168,7 @@ export interface ResetPasswordRequestDTO {
 
 export interface SponsorDTO {
   name: string;
-  cloudflareId: string;
+  cloudflareId?: string;
   url?: string;
 }
 
