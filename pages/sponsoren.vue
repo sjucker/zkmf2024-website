@@ -37,11 +37,11 @@
         </div>
       </div>
 
-      <div v-if="data.delux">
+      <div v-if="data.deluxe">
         <h3>Deluxe-Partner</h3>
         <div class="not-prose grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
           <a
-            v-for="sponsor in data.delux"
+            v-for="sponsor in data.deluxe"
             :key="sponsor.name"
             :href="sponsor.url"
             target="_blank"
