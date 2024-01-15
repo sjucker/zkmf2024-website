@@ -6,7 +6,10 @@
       <ExclamationTriangleIcon class="h-10 w-10 text-rot" />
       Es ist ein Fehler aufgetreten...
     </div>
-    <div v-if="!pending && data">
+    <div v-if="!pending && data" class="relative">
+      <a href="/sponsoring/sponsoring-flyer.pdf" target="_blank">
+        <button class="hidden md:inline-block absolute top-0 right-0 bg-blau text-white py-3 px-8 rounded-2xl">Sponsoring Flyer</button>
+      </a>
       <div v-if="data.hauptsponsor">
         <h3>Hauptsponsorin</h3>
         <div class="not-prose grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
@@ -88,6 +91,30 @@
           <div v-for="goenner in data.goenner">{{ goenner.name }}</div>
         </div>
       </div>
+    </div>
+
+    <hr />
+
+    <div class="prose">
+      <h2 class="text-blau">Sponsoring</h2>
+      <p>
+        Unseren Sponsoren bieten wir eine ideale Plattform, ihre Produkte und Dienstleistungen einem breiten Publikum in einer pulsierenden und aufstrebenden
+        Region zu präsentieren. Ihr Beitrag wird sich auszahlen, allen Besucherinnen und Besuchern in Erinnerung bleiben und dem Fest einen unverwechselbaren
+        Charakter verleihen. Gemeinsam profitieren alle!
+      </p>
+
+      <h3 class="text-blau">Flyer</h3>
+      <p>
+        Laden Sie hier unseren
+        <a href="/sponsoring/sponsoring-flyer.pdf" target="_blank">Sponsoring Flyer</a>
+        herunter.
+      </p>
+
+      <h3 class="text-blau">Kontakt</h3>
+      <p>
+        Bei Interesse melden Sie sich bitte
+        <a href="mailto:sponsoring@zkmf2024.ch">hier</a>.
+      </p>
     </div>
   </div>
 </template>
