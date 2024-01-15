@@ -69,8 +69,16 @@
 
       <div v-if="data.musikfan">
         <h3>Musikfan</h3>
-        <div class="columns-1 md:columns-2 lg:columns-3">
-          <div v-for="musikfan in data.musikfan">{{ musikfan.name }}</div>
+        <div class="not-prose grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2">
+          <a
+            v-for="sponsor in data.musikfan"
+            :key="sponsor.name"
+            :href="sponsor.url"
+            target="_blank"
+            class="rounded-2xl border border-silber p-2 flex justify-center"
+          >
+            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+          </a>
         </div>
       </div>
 
