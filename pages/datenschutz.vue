@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="prose prose-a:text-blau">
     <h2 class="text-blau">Datenschutzerklärung</h2>
@@ -64,3 +62,8 @@
     </p>
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Datenschutzerklärung',
+})
+</script>

@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right prose-a:text-blau">
     <h2 class="text-blau">Impressum</h2>
@@ -28,3 +26,8 @@
     <p>11.12.2023</p>
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Impressum',
+})
+</script>

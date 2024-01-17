@@ -431,4 +431,14 @@ function reload(): void {
     force: true,
   })
 }
+
+useHead({
+  title: 'Anmeldung Helfer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Willst du am 31. Zürcher Kantonalmusikfest Urdorf + Schlieren mithelfen, dann registriere hier dein Interesse.',
+    },
+  ],
+})
 </script>

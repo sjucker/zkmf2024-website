@@ -5,3 +5,8 @@
     Als PDF <a href="/info/karte.pdf" target="_blank">herunterladen</a>
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Karte Festareal',
+})
+</script>
