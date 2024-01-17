@@ -160,22 +160,6 @@
             </div>
           </div>
           <div class="max-w-4xl flex flex-row justify-between mb-4">
-            <div class="flex-1 text-xs">Mittwoch, 19.06.2024 (Aufbau Morgen + Nachmittag)</div>
-            <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
-              <label class="p-4">
-                <input type="checkbox" :value="einsatzzeit" v-model="formData.einsatzMittwoch" />
-              </label>
-            </div>
-          </div>
-          <div class="max-w-4xl flex flex-row justify-between mb-4">
-            <div class="flex-1 text-xs">Donnerstag, 20.06.2024 (Aufbau Morgen, Nachmittag, Abend)</div>
-            <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
-              <label class="p-4">
-                <input type="checkbox" :value="einsatzzeit" v-model="formData.einsatzDonnerstag" />
-              </label>
-            </div>
-          </div>
-          <div class="max-w-4xl flex flex-row justify-between mb-4">
             <div class="flex-1 text-xs">Freitag, 21.06.2024 (Aufbau Morgen + Nachmittag, Festbetrieb Abend + Nacht)</div>
             <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
               <label class="p-4">
@@ -196,22 +180,6 @@
             <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
               <label class="p-4">
                 <input type="checkbox" :value="einsatzzeit" v-model="formData.einsatzSonntag" />
-              </label>
-            </div>
-          </div>
-          <div class="max-w-4xl flex flex-row justify-between mb-4">
-            <div class="flex-1 text-xs">Montag, 24.06.2024 (Rückbau)</div>
-            <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
-              <label class="p-4">
-                <input type="checkbox" :value="einsatzzeit" v-model="formData.einsatzMontag" />
-              </label>
-            </div>
-          </div>
-          <div class="max-w-4xl flex flex-row justify-between mb-4">
-            <div class="flex-1 text-xs">Dienstag, 25.06.2024 (Rückbau)</div>
-            <div v-for="einsatzzeit in einsatzzeiten" class="flex-1 text-center">
-              <label class="p-4">
-                <input type="checkbox" :value="einsatzzeit" v-model="formData.einsatzDienstag" />
               </label>
             </div>
           </div>
@@ -308,13 +276,9 @@ const formData: RegisterHelperRequestDTO = reactive({
   vereinszugehoerigkeit: '',
   aufgaben: [],
   anzahlEinsaetze: '',
-  einsatzMittwoch: [],
-  einsatzDonnerstag: [],
   einsatzFreitag: [],
   einsatzSamstag: [],
   einsatzSonntag: [],
-  einsatzMontag: [],
-  einsatzDienstag: [],
   groesseShirt: '',
   comment: '',
 })
@@ -351,16 +315,7 @@ const validAufgaben = computed(() => {
   return !submitted.value || formData.aufgaben.length > 0
 })
 const validEinsatzzeiten = computed(() => {
-  return (
-    !submitted.value ||
-    formData.einsatzMontag.length > 0 ||
-    formData.einsatzDienstag.length > 0 ||
-    formData.einsatzMittwoch.length > 0 ||
-    formData.einsatzDonnerstag.length > 0 ||
-    formData.einsatzFreitag.length > 0 ||
-    formData.einsatzSamstag.length > 0 ||
-    formData.einsatzSonntag.length > 0
-  )
+  return !submitted.value || formData.einsatzFreitag.length > 0 || formData.einsatzSamstag.length > 0 || formData.einsatzSonntag.length > 0
 })
 const validGroesseShirt = computed(() => {
   return !submitted.value || formData.groesseShirt.length > 0
@@ -380,7 +335,7 @@ function getAufgabeDescription(aufgabe: Aufgaben): string {
     case Aufgaben.KOERPERLICH:
       return 'körperliche Arbeit möglich'
     case Aufgaben.MUSIKALISCH:
-      return 'Mithilfe beim musikalischen Wettbewerb (z.B. Betreuer, Roadie)'
+      return 'Mithilfe beim musikalischen Wettbewerb am Samstag und Sonntag (z.B. Betreuer Wettspiellokal und Einspiellokal, Türsteher, Roadie)'
     case Aufgaben.MODERATION:
       return 'Moderation der Wettspiele (für sprachgewandte Personen)'
     case Aufgaben.JURYSEKRETARIAT:
@@ -398,7 +353,7 @@ function getAufgabeDescription(aufgabe: Aufgaben): string {
     case Aufgaben.RAHMENPROGRAMM:
       return 'Rahmenprogramm (Auf-/Abbau für Bands)'
     case Aufgaben.AUFBAU:
-      return 'Aufbau bzw. Rückbau Zelte und Infrastruktur'
+      return 'Aufbau bzw. Rückbau kleinere Infrastruktur'
     case Aufgaben.AUFSICHT:
       return 'Aufsicht, Schicht-Chef'
   }
