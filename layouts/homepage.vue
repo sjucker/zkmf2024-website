@@ -1,8 +1,8 @@
 <template>
   <Consent />
   <div class="absolute top-0 left-0 overflow-hidden w-[250px] h-[250px] z-10" :class="mobileMenuVisible ? 'hidden' : 'visible'">
-    <div class="absolute transform -rotate-45 bg-rot text-center text-white text-3xl font-semibold py-2 -left-[175px] top-[25px] w-[500px]">
-      <NuxtLink to="/anmeldung-helfer">Helfer<br />gesucht!</NuxtLink>
+    <div class="absolute transform -rotate-45 bg-rot text-center text-white text-2xl font-semibold py-2 -left-[180px] top-[30px] w-[500px]">
+      <NuxtLink to="/anmeldung-helfer">HelferInnen<br />gesucht!</NuxtLink>
     </div>
   </div>
 
