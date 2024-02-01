@@ -23,7 +23,7 @@
           </div>
           <div class="pt-6 lg:pt-0 lg:pl-36">
             <NuxtLink to="/anmeldung-helfer">
-              <FilledButton text="Anmeldung Helfer" class="block mt-3 w-full lg:w-72"></FilledButton>
+              <FilledButton text="Anmeldung HelferInnen" class="block mt-3 w-full lg:w-72"></FilledButton>
             </NuxtLink>
             <NuxtLink to="/newsletter">
               <FilledButton text="Newsletter abonnieren" class="block mt-3 w-full lg:w-72"></FilledButton>

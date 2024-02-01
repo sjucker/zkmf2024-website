@@ -1,6 +1,6 @@
 <template>
   <div class="prose max-w-none">
-    <h2 class="text-blau">Anmeldung Helfer</h2>
+    <h2 class="text-blau">Anmeldung Helferinnen und Helfer</h2>
     <div v-if="!sent" ref="form">
       <p>
         Willst du am
@@ -433,7 +433,7 @@ function reload(): void {
 }
 
 useHead({
-  title: 'Anmeldung Helfer',
+  title: 'Anmeldung Helferinnen und Helfer',
   meta: [
     {
       name: 'description',
