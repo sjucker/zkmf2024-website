@@ -7,7 +7,7 @@
   </div>
 
   <div class="min-h-dvh min-w-full font-body">
-    <div class="w-full h-dvh bg-blau z-20" :class="mobileMenuVisible ? 'visible' : 'hidden'">
+    <div class="w-full h-dvh bg-blau" :class="mobileMenuVisible ? 'visible' : 'hidden'">
       <div class="container mx-auto p-3 pt-0 relative h-full">
         <button class="absolute top-5 right-5" v-on:click="mobileMenuVisible = !mobileMenuVisible">
           <XMarkIcon class="h-10 w-10 top-2 right-2 text-white" />
