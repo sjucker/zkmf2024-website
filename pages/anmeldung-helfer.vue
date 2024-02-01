@@ -5,7 +5,8 @@
       <p>
         Willst du am
         <strong>31. Zürcher Kantonalmusikfest Urdorf + Schlieren</strong>
-        mithelfen, dann registriere hier dein Interesse:
+        mithelfen, dann registriere hier dein Interesse.<br />
+        Weitere Informationen findest du im <a href="/helfer/helfersuche-flyer.pdf" target="_blank">Flyer Helfersuche</a>.
       </p>
 
       <form class="mt-10">
