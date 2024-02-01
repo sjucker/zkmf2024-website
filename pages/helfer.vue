@@ -26,7 +26,7 @@
     </p>
 
     <h3 class="text-blau">Flyer</h3>
-    Laden Sie hier unseren
+    Lade hier unseren
     <a href="/helfer/helfersuche-flyer.pdf" target="_blank">Flyer Helfersuche</a>
     herunter.
   </div>
