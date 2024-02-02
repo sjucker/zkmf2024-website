@@ -2,7 +2,8 @@
 
 ## Deployment
 
-The website is deployed using Netlify.
+The website is deployed using Netlify.  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1412c281-8ab0-4c9b-b342-9e07777dea07/deploy-status)](https://app.netlify.com/sites/zkmf2024/deploys)
 
 ### Build settings
 
