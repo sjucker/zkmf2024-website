@@ -13,7 +13,17 @@ The website is deployed using Netlify.
 ### Environment variables
 
 * "Add a single variable"
-* `API_BASE` with value pointing to server
+    * `API_BASE`
+    * `NUXT_PUBLIC_GTAG_ID`
+    * `MAPBOX_API_KEY`
+
+For local development add a `.env` file in root folder looking like this:
+
+```properties
+API_BASE=<EITHER LOCALHOST OR TESTSERVER URL>
+MAPBOX_API_KEY=<API_KEY>
+NUXT_PUBLIC_GTAG_ID=<GTAG_ID>
+```
 
 ## Prettier
 
