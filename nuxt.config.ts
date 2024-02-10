@@ -24,12 +24,12 @@ export default defineNuxtConfig({
     useStylesheet: true,
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag', '@vueuse/nuxt'],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtseo/module', 'nuxt-gtag', '@vueuse/nuxt', 'nuxt-mapbox'],
 
   runtimeConfig: {
     public: {
       // do not use process.env.NODE_ENV as it is overwritten (always production) when running 'generate'
-      apiBase: process.env.API_BASE ?? 'http://localhost:8080',
+      apiBase: process.env.API_BASE,
     },
   },
 
@@ -139,5 +139,8 @@ export default defineNuxtConfig({
         '/verein/brass-band-maur',
       ],
     },
+  },
+  mapbox: {
+    accessToken: process.env.MAPBOX_API_KEY,
   },
 })
