@@ -1,5 +1,12 @@
 /* eslint-disable */
 
+export interface AdhocOrchesterTeilnehmerDTO {
+  name?: string;
+  email?: string;
+  instrument?: string;
+  notEmpty: boolean;
+}
+
 export interface CoordinatesDTO {
   latitude: number;
   longitude: number;
@@ -16,12 +23,15 @@ export interface ForgotPasswordRequestDTO {
 
 export interface JudgeRankingEntryDTO {
   verein: string;
-  score: number;
+  score?: number;
 }
 
 export interface JudgeReportDTO {
   id: number;
-  modul: string;
+  modul: Modul;
+  modulDescription: string;
+  role: JudgeRole;
+  roleDescription: string;
   klasse?: string;
   besetzung?: string;
   location: string;
@@ -43,7 +53,10 @@ export interface JudgeReportOverviewDTO {
   verein: string;
   location: string;
   locationUrl: string;
-  modul: string;
+  modul: Modul;
+  modulDescription: string;
+  role: JudgeRole;
+  roleDescription: string;
   klasse?: string;
   besetzung?: string;
   start: DateAsString;
@@ -54,6 +67,7 @@ export interface JudgeReportOverviewDTO {
 export interface JudgeReportRatingDTO {
   category: JudgeReportCategory;
   categoryDescription: string;
+  group: string;
   comment?: string;
   rating: JudgeReportCategoryRating;
 }
@@ -61,6 +75,7 @@ export interface JudgeReportRatingDTO {
 export interface JudgeReportScoreDTO {
   reportId: number;
   judgeName: string;
+  judgeRole: string;
   score?: number;
   ratingFixed: boolean;
   done: boolean;
@@ -128,6 +143,15 @@ export interface LoginResponseDTO {
   email: string;
   role: UserRole;
   jwt: string;
+}
+
+export interface ModulDSelectionDTO {
+  vereinProgrammId: number;
+  verein: string;
+  titel1: string;
+  titel2: string;
+  selection: ModulDSelection;
+  start: DateAsString;
 }
 
 export interface NewsletterRecipientDTO {
@@ -231,8 +255,10 @@ export interface VereinDTO {
   info: VereinsinfoDTO;
   registrationConfirmed: boolean;
   programme: VereinProgrammDTO[];
+  anmeldungDetail: VereinsanmeldungDetailDTO;
   phase1Done: boolean;
   phase2Done: boolean;
+  phase4Done: boolean;
   phase2ConfirmedBy?: string;
   phase2ConfirmedAt?: DateAsString;
   timetableEntries: TimetableOverviewEntryDTO[];
@@ -241,6 +267,7 @@ export interface VereinDTO {
   programmUpdated: boolean;
   phase1Status: PhaseStatus;
   phase2Status: PhaseStatus;
+  phase4Status: PhaseStatus;
 }
 
 export interface VereinMessageDTO {
@@ -356,6 +383,32 @@ export interface VereinsanmeldungDTO extends IsValid {
   perkussionsensemble: boolean;
   module: Modul[];
   besetzungen: Besetzung[];
+}
+
+export interface VereinsanmeldungDetailDTO extends IsValid {
+  festfuehrerAmount?: number;
+  festkartenMusikerAmount?: number;
+  festkartenBegleiterAmount?: number;
+  freitagabendAmount?: number;
+  gehbehinderung: boolean;
+  partiturenSent: boolean;
+  partiturenSentAt?: DateAsString;
+  gesamtchor: boolean;
+  adhocOrchester: boolean;
+  adhocOrchesterTeilnehmer: AdhocOrchesterTeilnehmerDTO[];
+  anreisePublicTransport: boolean;
+  anreisePublicTransportType?: string;
+  anreiseOtherwise?: string;
+  verpflegungMeat?: number;
+  verpflegungVegan?: number;
+  verpflegungAllergies?: number;
+  verpflegungNone?: number;
+  verpflegungHelper1?: string;
+  verpflegungHelper2?: string;
+  verpflegungHelper3?: string;
+  verpflegungHelper4?: string;
+  verpflegungHelper5?: string;
+  verpflegungHelper6?: string;
 }
 
 export interface VereinsinfoDTO extends IsValid {
@@ -525,6 +578,7 @@ export interface VereinOverviewDTO {
   phase2Confirmed: boolean;
   phase1: PhaseStatus;
   phase2: PhaseStatus;
+  phase4: PhaseStatus;
   hasComments: boolean;
   hasMessages: boolean;
   programmLastUpdated?: DateAsString;
@@ -543,6 +597,27 @@ export interface IsValid {
 }
 
 export type DateAsString = string;
+
+export enum Modul {
+  A = 'A',
+  B = 'B',
+  C = 'C',
+  D = 'D',
+  E = 'E',
+  F = 'F',
+  G = 'G',
+  H = 'H',
+}
+
+export enum JudgeRole {
+  JUROR_1 = 'JUROR_1',
+  JUROR_2 = 'JUROR_2',
+  JUROR_3 = 'JUROR_3',
+  JUROR_1_OPTISCH = 'JUROR_1_OPTISCH',
+  JUROR_2_MUSIKALISCH = 'JUROR_2_MUSIKALISCH',
+  JUROR_3_MUSIKALISCH = 'JUROR_3_MUSIKALISCH',
+  JUROR_4_OPTISCH = 'JUROR_4_OPTISCH',
+}
 
 export enum JudgeReportStatus {
   NEW = 'NEW',
@@ -626,8 +701,14 @@ export enum PercussionEquipmentType {
 export enum UserRole {
   VEREIN = 'VEREIN',
   ADMIN = 'ADMIN',
+  ADMIN_READ_ONLY = 'ADMIN_READ_ONLY',
   JUDGE = 'JUDGE',
   IMPERSONATE = 'IMPERSONATE',
+}
+
+export enum ModulDSelection {
+  TITEL_1 = 'TITEL_1',
+  TITEL_2 = 'TITEL_2',
 }
 
 export enum Aufgaben {
@@ -652,17 +733,6 @@ export enum Einsatzzeit {
   NACHMITTAG = 'NACHMITTAG',
   ABEND = 'ABEND',
   NACHT = 'NACHT',
-}
-
-export enum Modul {
-  A = 'A',
-  B = 'B',
-  C = 'C',
-  D = 'D',
-  E = 'E',
-  F = 'F',
-  G = 'G',
-  H = 'H',
 }
 
 export enum PhaseStatus {
