@@ -15,8 +15,29 @@
           <MapPinIcon class="w-6 h-6 text-blau" />
           <a :href="entry.location.googleMapsAddress" target="_blank">{{ entry.location.name }}</a>
         </div>
+        <div v-if="entry.programm.length > 0" class="flex gap-1">
+          <MusicalNoteIcon class="w-6 h-6 text-blau shrink-0" />
+          <div v-if="isMarschmusik(entry.modul)">
+            Komposition<br />
+            <div v-for="(titel, index) in entry.programm">
+              {{ titel.titelName }} ({{ titel.composer }}) <span v-if="index < entry.programm.length - 1">oder</span>
+            </div>
+          </div>
+          <div v-else>
+            <span v-if="entry.titel">"{{ entry.titel }}"</span>
+            <span v-else>Programm</span>
+            <ol>
+              <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
+            </ol>
+          </div>
+        </div>
       </div>
+      <hr />
       <p class="max-w-prose whitespace-pre-line" v-if="data.websiteText">{{ data.websiteText }}</p>
+      <div v-if="data.homepage" class="flex gap-1">
+        <GlobeAltIcon class="w-6 h-6 text-blau" />
+        <a :href="data.homepage" target="_blank">Website</a>
+      </div>
       <div v-if="data.facebook" class="flex gap-1">
         <HandThumbUpIcon class="w-6 h-6 text-blau" />
         <a :href="data.facebook" target="_blank">Facebook</a>
@@ -29,8 +50,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { VereinPresentationDTO } from '~/types/rest'
-import { CameraIcon, ClockIcon, HandThumbUpIcon, MapPinIcon } from '@heroicons/vue/24/outline'
+import { Modul, type VereinPresentationDTO } from '~/types/rest'
+import { CameraIcon, ClockIcon, GlobeAltIcon, HandThumbUpIcon, MapPinIcon, MusicalNoteIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const {
@@ -44,4 +65,8 @@ const { data, pending, error } = await useFetch<VereinPresentationDTO>(`${apiBas
 useHead({
   title: data?.value?.name ?? 'Verein',
 })
+
+function isMarschmusik(modul: Modul): boolean {
+  return modul === Modul.D
+}
 </script>
