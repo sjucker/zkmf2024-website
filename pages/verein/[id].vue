@@ -29,6 +29,14 @@
             <ol class="my-0">
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
             </ol>
+            <div v-if="entry.description">
+              <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-2'">
+                {{ entry.description }}
+              </div>
+              <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
+                <PlusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +59,7 @@
 </template>
 <script setup lang="ts">
 import { Modul, type VereinPresentationDTO } from '~/types/rest'
-import { CameraIcon, ClockIcon, GlobeAltIcon, HandThumbUpIcon, MapPinIcon, MusicalNoteIcon } from '@heroicons/vue/24/outline'
+import { CameraIcon, ClockIcon, GlobeAltIcon, HandThumbUpIcon, MapPinIcon, MusicalNoteIcon, PlusCircleIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const {
@@ -68,5 +76,15 @@ useHead({
 
 function isMarschmusik(modul: Modul): boolean {
   return modul === Modul.D
+}
+
+const expanded = ref<Modul[]>([])
+
+function expand(modul: Modul) {
+  expanded.value.push(modul)
+}
+
+function isExpanded(modul: Modul): boolean {
+  return expanded.value.includes(modul)
 }
 </script>
