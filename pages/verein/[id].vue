@@ -7,15 +7,15 @@
       <NuxtImg v-if="data.bildImgId" provider="cloudflare" :src="cloudflareUrl(data.bildImgId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
       <div v-for="entry in data.timetableEntries" :key="entry">
         <h4>{{ entry.competition }}</h4>
-        <div class="flex gap-1">
+        <div class="flex gap-2">
           <ClockIcon class="w-6 h-6 text-blau" />
           {{ entry.dateTime }}
         </div>
-        <div class="flex gap-1">
+        <div class="flex gap-2">
           <MapPinIcon class="w-6 h-6 text-blau" />
           <a :href="entry.location.googleMapsAddress" target="_blank">{{ entry.location.name }}</a>
         </div>
-        <div v-if="entry.programm.length > 0" class="flex gap-1">
+        <div v-if="entry.programm.length > 0" class="flex gap-2">
           <MusicalNoteIcon class="w-6 h-6 text-blau shrink-0" />
           <div v-if="isMarschmusik(entry.modul)">
             Komposition<br />
@@ -26,7 +26,7 @@
           <div v-else>
             <span v-if="entry.titel">"{{ entry.titel }}"</span>
             <span v-else>Programm</span>
-            <ol>
+            <ol class="my-0">
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
             </ol>
           </div>
@@ -34,15 +34,15 @@
       </div>
       <hr />
       <p class="max-w-prose whitespace-pre-line" v-if="data.websiteText">{{ data.websiteText }}</p>
-      <div v-if="data.homepage" class="flex gap-1">
+      <div v-if="data.homepage" class="flex gap-2">
         <GlobeAltIcon class="w-6 h-6 text-blau" />
         <a :href="data.homepage" target="_blank">Website</a>
       </div>
-      <div v-if="data.facebook" class="flex gap-1">
+      <div v-if="data.facebook" class="flex gap-2">
         <HandThumbUpIcon class="w-6 h-6 text-blau" />
         <a :href="data.facebook" target="_blank">Facebook</a>
       </div>
-      <div v-if="data.instagram" class="flex gap-1">
+      <div v-if="data.instagram" class="flex gap-2">
         <CameraIcon class="w-6 h-6 text-blau" />
         <a :href="data.instagram" target="_blank">Instagram</a>
       </div>
