@@ -36,6 +36,9 @@
               <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
                 <PlusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
               </div>
+              <div v-else @click="collapse(entry.modul)">
+                <MinusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+              </div>
             </div>
           </div>
         </div>
@@ -59,7 +62,7 @@
 </template>
 <script setup lang="ts">
 import { Modul, type VereinPresentationDTO } from '~/types/rest'
-import { CameraIcon, ClockIcon, GlobeAltIcon, HandThumbUpIcon, MapPinIcon, MusicalNoteIcon, PlusCircleIcon } from '@heroicons/vue/24/outline'
+import { CameraIcon, ClockIcon, GlobeAltIcon, HandThumbUpIcon, MapPinIcon, MinusCircleIcon, MusicalNoteIcon, PlusCircleIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const {
@@ -82,6 +85,10 @@ const expanded = ref<Modul[]>([])
 
 function expand(modul: Modul) {
   expanded.value.push(modul)
+}
+
+function collapse(modul: Modul) {
+  expanded.value.splice(expanded.value.indexOf(modul), 1)
 }
 
 function isExpanded(modul: Modul): boolean {
