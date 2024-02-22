@@ -57,6 +57,7 @@
     <ul>
       <li><a href="/presse/urdorf-aktuell-november-2023.pdf" target="_blank">Urdorf Aktuell (November 2023)</a></li>
       <li><a href="/presse/das-limmattal-ausgabe-2024.pdf" target="_blank">Das Limmattal (Ausgabe 2024)</a></li>
+      <li><a href="/presse/urdorf-aktuell-februar-2024.pdf" target="_blank">Urdorf Aktuell (Februar 2024)</a></li>
     </ul>
   </div>
 </template>
