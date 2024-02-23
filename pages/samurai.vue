@@ -10,13 +10,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Samurai',
-  meta: [
-    {
-      name: 'description',
-      content: 'Erläuterungen zu dem Stück "Samurai"',
-    },
-  ],
+  description: 'Erläuterungen zu dem Stück "Samurai"',
 })
 </script>

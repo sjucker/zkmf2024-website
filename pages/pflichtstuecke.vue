@@ -240,13 +240,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Pflichtstücke',
-  meta: [
-    {
-      name: 'description',
-      content: 'Pflichtstücke Zürcher Kantonalmusikfest 2024',
-    },
-  ],
+  description: 'Pflichtstücke Zürcher Kantonalmusikfest 2024',
 })
 </script>

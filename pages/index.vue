@@ -44,13 +44,8 @@ definePageMeta({
   layout: 'homepage',
 })
 
-useHead({
+useSeoMeta({
   title: 'Homepage',
-  meta: [
-    {
-      name: 'description',
-      content: 'Ein Feuerwerk der Blasmusik in all ihren Facetten – das ist das Züricher Kantonalmusikfest 2024 in Urdorf und Schlieren!',
-    },
-  ],
+  description: 'Ein Feuerwerk der Blasmusik in all ihren Facetten – das ist das Züricher Kantonalmusikfest 2024 in Urdorf und Schlieren!',
 })
 </script>

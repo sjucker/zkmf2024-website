@@ -107,8 +107,9 @@ const { data, pending, error } = await useFetch<LocationDTO>(`${apiBase}/public/
   server: false,
 })
 
-useHead({
-  title: data?.value?.name ?? 'Lokal',
+useSeoMeta({
+  title: () => data?.value?.name ?? 'Lokal',
+  description: () => `${data?.value?.name}, ${data?.value?.address}`,
 })
 
 const distanceToLocationInMeters = ref<number>(0)

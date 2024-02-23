@@ -63,7 +63,7 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Datenschutzerklärung',
 })
 </script>

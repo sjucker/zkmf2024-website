@@ -16,13 +16,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: "We'll Make It Work",
-  meta: [
-    {
-      name: 'description',
-      content: 'Erläuterungen zu dem Stück "We\'ll Make It Work"',
-    },
-  ],
+  description: 'Erläuterungen zu dem Stück "We\'ll Make It Work"',
 })
 </script>

@@ -62,13 +62,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'News',
-  meta: [
-    {
-      name: 'description',
-      content: 'Bleib am Ball und informiere Dich über die Fortschritte in der Organisation des 31. Zürcher Kantonalmusikfest Urdorf+Schlieren.',
-    },
-  ],
+  description: 'Bleib am Ball und informiere Dich über die Fortschritte in der Organisation des 31. Zürcher Kantonalmusikfest Urdorf+Schlieren.',
 })
 </script>

@@ -17,14 +17,9 @@
 import type { VereinTeilnahmeDTO } from '~/types/rest'
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 
-useHead({
+useSeoMeta({
   title: 'Angemeldete Vereine',
-  meta: [
-    {
-      name: 'description',
-      content: 'Diese Vereine nehmen am 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren teil.',
-    },
-  ],
+  description: 'Diese Vereine nehmen am 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren teil.',
 })
 
 const {

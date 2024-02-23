@@ -6,7 +6,7 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Karte Festareal',
 })
 </script>

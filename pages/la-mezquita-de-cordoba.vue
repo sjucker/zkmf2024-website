@@ -58,13 +58,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'La Mezquita de Cordoba',
-  meta: [
-    {
-      name: 'description',
-      content: 'Erläuterungen zu dem Stück "La Mezquita de Cordoba"',
-    },
-  ],
+  description: 'Erläuterungen zu dem Stück "La Mezquita de Cordoba"',
 })
 </script>

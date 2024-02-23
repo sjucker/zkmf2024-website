@@ -18,7 +18,7 @@ definePageMeta({
   layout: 'empty',
 })
 
-useHead({
+useSeoMeta({
   title: 'Karte Festareal',
 })
 

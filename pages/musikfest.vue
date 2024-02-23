@@ -106,13 +106,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Musikfest',
-  meta: [
-    {
-      name: 'description',
-      content: 'Am Wochenende vom 21.-23. Juni 2024 werden sich im Zürcher Limmattal rund 100 Musikvereine zum gemeinsamen Musizieren treffen.',
-    },
-  ],
+  description: 'Am Wochenende vom 21.-23. Juni 2024 werden sich im Zürcher Limmattal rund 100 Musikvereine zum gemeinsamen Musizieren treffen.',
 })
 </script>

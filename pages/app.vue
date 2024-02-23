@@ -5,13 +5,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'App',
-  meta: [
-    {
-      name: 'description',
-      content: 'Die App für das ZKMF2024 für Android und iOS.',
-    },
-  ],
+  description: 'Die App für das ZKMF2024 für Android und iOS.',
 })
 </script>

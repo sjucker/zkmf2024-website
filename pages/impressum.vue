@@ -27,7 +27,7 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Impressum',
 })
 </script>

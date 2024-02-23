@@ -123,15 +123,10 @@
 import type { SponsoringDTO } from '~/types/rest'
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 
-useHead({
+useSeoMeta({
   title: 'Sponsoren',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Unseren Sponsoren bieten wir eine ideale Plattform, ihre Produkte und Dienstleistungen einem breiten Publikum in einer pulsierenden und aufstrebenden Region zu präsentieren.',
-    },
-  ],
+  description:
+    'Unseren Sponsoren bieten wir eine ideale Plattform, ihre Produkte und Dienstleistungen einem breiten Publikum in einer pulsierenden und aufstrebenden Region zu präsentieren.',
 })
 
 const {

@@ -99,13 +99,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Gastgeber',
-  meta: [
-    {
-      name: 'description',
-      content: 'Das Zürcher Kantonalmusikfest 2024 wird vom Musikverein Harmonie Urdorf (MVU) und Musikverein Harmonie Schlieren (MHS) durchgeführt.',
-    },
-  ],
+  description: 'Das Zürcher Kantonalmusikfest 2024 wird vom Musikverein Harmonie Urdorf (MVU) und Musikverein Harmonie Schlieren (MHS) durchgeführt.',
 })
 </script>

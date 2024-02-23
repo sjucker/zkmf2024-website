@@ -65,14 +65,9 @@ export interface TimetableDayOverviewData {
   availableLocations: Map<number, LocationDTO>
 }
 
-useHead({
+useSeoMeta({
   title: 'Zeitplan',
-  meta: [
-    {
-      name: 'description',
-      content: 'Der Zeitplan für das 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren.',
-    },
-  ],
+  description: 'Der Zeitplan für das 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren.',
 })
 
 const {

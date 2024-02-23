@@ -69,14 +69,9 @@
 <script setup lang="ts">
 import type { RegisterNewsletterRequestDTO } from '~/types/rest'
 
-useHead({
+useSeoMeta({
   title: 'Newsletter',
-  meta: [
-    {
-      name: 'description',
-      content: 'Abonniere den Newsletter um die aktuellsten News zum 31. Zürcher Kantonalmusikfest Urdorf+Schlieren zu bekommen.',
-    },
-  ],
+  description: 'Abonniere den Newsletter um die aktuellsten News zum 31. Zürcher Kantonalmusikfest Urdorf+Schlieren zu bekommen.',
 })
 
 const formData = reactive({

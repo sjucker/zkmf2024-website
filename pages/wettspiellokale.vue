@@ -37,7 +37,7 @@
 import type { LocationDTO } from '~/types/rest'
 import { ExclamationTriangleIcon, MapIcon, MapPinIcon, PhotoIcon } from '@heroicons/vue/24/outline'
 
-useHead({
+useSeoMeta({
   title: 'Wettspiellokale',
 })
 

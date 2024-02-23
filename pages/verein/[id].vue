@@ -73,8 +73,9 @@ const { data, pending, error } = await useFetch<VereinPresentationDTO>(`${apiBas
   server: false,
 })
 
-useHead({
-  title: data?.value?.name ?? 'Verein',
+useSeoMeta({
+  title: () => data?.value?.name ?? 'Verein',
+  description: () => `Wir freuen uns den Verein ${data?.value?.name} am ZKMF2024 begrüssen zu dürfen!`,
 })
 
 function isMarschmusik(modul: Modul): boolean {

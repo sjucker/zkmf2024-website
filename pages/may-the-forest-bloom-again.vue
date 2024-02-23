@@ -16,13 +16,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'May the Forests Bloom Again',
-  meta: [
-    {
-      name: 'description',
-      content: 'Erläuterungen zu dem Stück "May the Forests Bloom Again"',
-    },
-  ],
+  description: 'Erläuterungen zu dem Stück "May the Forests Bloom Again"',
 })
 </script>

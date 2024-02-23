@@ -16,13 +16,8 @@
   </div>
 </template>
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   title: 'Informationen',
-  meta: [
-    {
-      name: 'description',
-      content: 'Hier finden Sie praktische Informationen zum Musikfest - Festführer, Festareal, Anreise, Verpflegung etc.',
-    },
-  ],
+  description: 'Hier finden Sie praktische Informationen zum Musikfest - Festführer, Festareal, Anreise, Verpflegung etc.',
 })
 </script>
