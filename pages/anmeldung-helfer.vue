@@ -213,6 +213,10 @@
               <input type="radio" value="XXL" v-model="formData.groesseShirt" />
               <span class="ml-2">XXL</span>
             </label>
+            <label class="inline-flex items-center">
+              <input type="radio" value="XXXL" v-model="formData.groesseShirt" />
+              <span class="ml-2">XXXL</span>
+            </label>
           </div>
         </div>
 
