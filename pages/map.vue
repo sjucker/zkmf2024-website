@@ -46,7 +46,7 @@ const layers: LayerType[] = [
   },
   {
     type: LocationType.PLATZKONZERT,
-    checked: false,
+    checked: true,
     name: 'Festzelt & Food Meile',
     color: '#ec4f02',
   },
