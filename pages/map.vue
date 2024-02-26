@@ -1,5 +1,5 @@
 <template>
-  <nav id="menu" class="bg-white absolute top-4 left-4 z-10 rounded border-2 border-gray-300 p-2 text-sm">
+  <nav id="menu" class="bg-white absolute top-2.5 left-2.5 z-10 rounded border-2 border-gray-300 p-2 text-sm">
     <div class="flex gap-2" v-for="layer in layers" :key="layer.type">
       <input type="checkbox" @click="toggleLayer(layer.type)" :checked="layer.checked" :id="layer.type" />
       <label :for="layer.type" class="text-white flex-1 p-1" :style="{ backgroundColor: layer.color }">{{ layer.name }}</label>
