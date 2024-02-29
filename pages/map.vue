@@ -45,10 +45,16 @@ const layers: LayerType[] = [
     color: '#fec800',
   },
   {
-    type: LocationType.PLATZKONZERT,
+    type: LocationType.FESTZELT,
     checked: true,
     name: 'Festzelt & Food Meile',
     color: '#ec4f02',
+  },
+  {
+    type: LocationType.INFOSTAND,
+    checked: false,
+    name: 'Empfang, Infostand',
+    color: '#ffb693',
   },
   {
     type: LocationType.PARADEMUSIK,
