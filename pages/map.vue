@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-white absolute top-2.5 left-2.5 z-10 rounded border-2 border-gray-300 p-2 text-sm">
-    <div class="flex gap-2" v-for="layer in layers" :key="layer.type">
+    <div class="flex gap-2 items-center" v-for="layer in layers" :key="layer.type">
       <input type="checkbox" @click="toggleLayer(layer.type)" :checked="layer.checked" :id="layer.type" />
       <label :for="layer.type" class="text-white flex-1 p-1" :style="{ backgroundColor: layer.color }">{{ layer.name }}</label>
     </div>
@@ -8,7 +8,7 @@
 
   <div class="bg-white absolute bottom-2.5 left-2.5 z-10 rounded border-2 border-gray-300 p-2 text-sm">
     <div class="font-bold">Ebenen</div>
-    <div class="flex gap-2" v-for="style in styles" :key="style.layerId">
+    <div class="flex gap-2 items-center" v-for="style in styles" :key="style.layerId">
       <input type="radio" :id="style.layerId" @click="changeStyle(style.layerId)" :checked="style.checked" name="style-selection" />
       <label :for="style.layerId">{{ style.name }}</label>
     </div>
