@@ -122,6 +122,14 @@ const mapRef = ref<mapboxgl.Map>()
 
 mapboxgl.accessToken = mapboxApiKey
 
+function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
+  let html = `<strong>${features[0]?.properties?.name}</strong><br/>${features[0]?.properties?.info}<br/>`
+  if (features[0]?.properties?.type === LocationType.WETTSPIELLOKAL) {
+    html += `<a href="/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Zeitplan</a>`
+  }
+  return html
+}
+
 function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
   map.addSource('locations', {
     type: 'geojson',
@@ -196,7 +204,7 @@ function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
         closeOnMove: true,
       })
         .setLngLat(coordinates)
-        .setHTML(`<strong>${features[0]?.properties?.name}</strong><br/>${features[0]?.properties?.info}`)
+        .setHTML(getHtml(features))
         .addTo(map)
     })
 
@@ -251,7 +259,6 @@ onUnmounted(() => {
 
 function toggleLayer(layer: string) {
   const visibility = mapRef.value?.getLayoutProperty(layer, 'visibility')
-  console.log(visibility)
   if (visibility === 'visible') {
     mapRef.value?.setLayoutProperty(layer, 'visibility', 'none')
     mapRef.value?.setLayoutProperty(`${layer}-names`, 'visibility', 'none')
