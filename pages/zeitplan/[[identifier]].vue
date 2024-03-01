@@ -74,6 +74,8 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
+const route = useRoute()
+
 const storedSearchTerm = useSessionStorage('search-term', '')
 
 const search = ref(storedSearchTerm.value)
@@ -81,7 +83,12 @@ watchEffect(() => {
   storedSearchTerm.value = search.value
 })
 
-const { data, pending, error } = await useFetch(`${apiBase}/public/timetable`, {
+let request = `${apiBase}/public/timetable`
+if (route.params.identifier) {
+  request += `/${route.params.identifier}`
+}
+
+const { data, pending, error } = await useFetch(request, {
   lazy: true,
   server: false,
   transform: (values: TimetableDayOverviewDTO[]) => {
