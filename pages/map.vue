@@ -7,7 +7,7 @@
   </nav>
 
   <div class="bg-white absolute bottom-2.5 left-2.5 z-10 rounded border-2 border-gray-300 p-2 text-sm">
-    <div class="font-bold mt-2">Ebenen</div>
+    <div class="font-bold">Ebenen</div>
     <div class="flex gap-2" v-for="style in styles" :key="style.layerId">
       <input type="radio" :id="style.layerId" @click="changeStyle(style.layerId)" :checked="style.checked" name="style-selection" />
       <label :for="style.layerId">{{ style.name }}</label>
