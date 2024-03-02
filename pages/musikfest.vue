@@ -29,6 +29,9 @@
           <NuxtLink to="/wettspiellokale">Wettspiellokale</NuxtLink>
         </li>
         <li>
+          <NuxtLink to="/parademusikstrecke">Parademusikstrecke</NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="/karte">Übersicht Festareal</NuxtLink>
         </li>
         <li>

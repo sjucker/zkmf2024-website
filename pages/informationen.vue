@@ -10,6 +10,9 @@
         <NuxtLink to="/wettspiellokale">Wettspiellokale</NuxtLink>
       </li>
       <li>
+        <NuxtLink to="/parademusikstrecke">Parademusikstrecke</NuxtLink>
+      </li>
+      <li>
         <NuxtLink to="/zeitplan">Zeitplan</NuxtLink>
       </li>
     </ul>
