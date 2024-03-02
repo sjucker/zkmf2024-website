@@ -7,7 +7,7 @@
       Es ist ein Fehler aufgetreten...
     </div>
     <div v-if="!pending && data">
-      <ul>
+      <ul class="columns-1 md:columns-2">
         <li v-for="judge in data" :key="judge.name">
           {{ judge.name }}
         </li>
