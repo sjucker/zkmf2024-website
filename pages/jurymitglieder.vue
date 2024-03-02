@@ -1,0 +1,35 @@
+<template>
+  <div class="prose">
+    <h2 class="text-blau">Jurymitglieder</h2>
+    <LoadingSpinner :loading="pending"></LoadingSpinner>
+    <div v-if="!pending && error" class="inline-flex gap-2 items-center">
+      <ExclamationTriangleIcon class="h-10 w-10 text-rot" />
+      Es ist ein Fehler aufgetreten...
+    </div>
+    <div v-if="!pending && data">
+      <ul>
+        <li v-for="judge in data" :key="judge.name">
+          {{ judge.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { JudgePresentationDTO } from '~/types/rest'
+import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
+
+useSeoMeta({
+  title: 'Jurymitglieder',
+})
+
+const {
+  public: { apiBase },
+} = useRuntimeConfig()
+
+const { data, pending, error } = await useFetch<JudgePresentationDTO[]>(`${apiBase}/public/judge`, {
+  lazy: true,
+  server: false,
+})
+</script>

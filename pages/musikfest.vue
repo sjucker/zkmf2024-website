@@ -37,6 +37,9 @@
         <li>
           <NuxtLink to="/vereine">Angemeldete Vereine</NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/jurymitglieder">Jurymitglieder</NuxtLink>
+        </li>
       </ul>
       <h4>Festreglemente</h4>
       <ul>
