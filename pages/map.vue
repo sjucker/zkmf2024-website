@@ -137,13 +137,14 @@ function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
   })
 
   for (const layer of layers.toReversed()) {
+    const checked = (<HTMLInputElement>document.getElementById(layer.type))?.checked
     map.addLayer({
       id: layer.type,
       type: 'circle',
       source: 'locations',
       filter: ['==', ['get', 'type'], layer.type],
       layout: {
-        visibility: layer.checked ? 'visible' : 'none',
+        visibility: checked ? 'visible' : 'none',
       },
       paint: {
         'circle-color': layer.color,
@@ -167,7 +168,7 @@ function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
       source: 'locations',
       filter: ['==', ['get', 'type'], layer.type],
       layout: {
-        visibility: layer.checked ? 'visible' : 'none',
+        visibility: checked ? 'visible' : 'none',
         'text-anchor': 'center',
         'text-field': ['get', 'id'],
         'text-size': {
