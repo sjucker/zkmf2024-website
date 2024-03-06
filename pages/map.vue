@@ -136,7 +136,7 @@ function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
     data: `${apiBase}/public/location/geojson`,
   })
 
-  for (const layer of layers.toReversed()) {
+  for (const layer of [...layers].reverse()) {
     const checked = (<HTMLInputElement>document.getElementById(layer.type))?.checked
     map.addLayer({
       id: layer.type,
