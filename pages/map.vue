@@ -69,16 +69,22 @@ const layers: LayerType[] = [
     color: '#26b080',
   },
   {
+    type: LocationType.FESTZELT,
+    checked: true,
+    name: 'Festzelt & Food Meile',
+    color: '#ec4f02',
+  },
+  {
+    type: LocationType.PARADEMUSIK,
+    checked: false,
+    name: 'Parademusik',
+    color: '#004e93',
+  },
+  {
     type: LocationType.EINSPIELLOKAL,
     checked: false,
     name: 'Einspiellokal',
     color: '#3e99d1',
-  },
-  {
-    type: LocationType.JURYFEEDBACK,
-    checked: false,
-    name: 'Jury Gespräch',
-    color: '#9d66a6',
   },
   {
     type: LocationType.INSTRUMENTENDEPOT,
@@ -87,22 +93,16 @@ const layers: LayerType[] = [
     color: '#fec800',
   },
   {
-    type: LocationType.FESTZELT,
-    checked: true,
-    name: 'Festzelt & Food Meile',
-    color: '#ec4f02',
+    type: LocationType.JURYFEEDBACK,
+    checked: false,
+    name: 'Jury Gespräch',
+    color: '#9d66a6',
   },
   {
     type: LocationType.INFOSTAND,
     checked: false,
     name: 'Empfang, Infostand',
     color: '#ffb693',
-  },
-  {
-    type: LocationType.PARADEMUSIK,
-    checked: false,
-    name: 'Parademusik',
-    color: '#004e93',
   },
 ]
 definePageMeta({
