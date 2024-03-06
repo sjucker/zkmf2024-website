@@ -65,7 +65,8 @@
       <OkImage src="/ok/rolf-spitzli.jpg" name="Rolf Spitzli / Infrastruktur"></OkImage>
       <OkImage src="/ok/karin-mari.jpg" name="Karin Mari / Marketing"></OkImage>
       <OkImage src="/ok/urs-kolar.jpg" name="Urs Kolar / Personal"></OkImage>
-      <OkImage src="/ok/blank.jpg" name="Adil Ataman / Verpflegung"></OkImage>
+      <OkImage src="/ok/adil-ataman.jpg" name="Adil Ataman / Verpflegung"></OkImage>
+      <OkImage src="/ok/corinne-conzetti.jpg" name="Corinne Conzetti / Dekoration"></OkImage>
       <OkImage src="/ok/michelle-niedermann.jpg" name="Michelle	Niedermann / Rahmenprogramm"></OkImage>
       <OkImage src="/ok/brigitte-buechi.jpg" name="Brigitte Büchi / ZBV / Sekretariat"></OkImage>
       <OkImage src="/ok/daniel-schuler.jpg" name="Daniel Schuler / ZBV / Kaufmännisches"></OkImage>
