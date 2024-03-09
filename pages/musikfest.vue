@@ -43,20 +43,23 @@
         <li>
           <NuxtLink to="/jurymitglieder">Jurymitglieder</NuxtLink>
         </li>
+        <li>
+          <a href="/info/werbeflyer.pdf">Werbeflyer (PDF)</a>
+        </li>
       </ul>
       <h4>Festreglemente</h4>
       <ul>
         <li>
-          <a href="/reglement/festreglement.pdf">Festreglement für Kantonalmusikfeste</a>
+          <a href="/reglement/festreglement.pdf">Festreglement für Kantonalmusikfeste (PDF)</a>
         </li>
         <li>
-          <a href="/reglement/festreglement-parademusik.pdf">Festreglement für Parademusik</a>
+          <a href="/reglement/festreglement-parademusik.pdf">Festreglement für Parademusik (PDF)</a>
         </li>
         <li>
-          <a href="/reglement/festreglement-perkussionsensembles.pdf">Festreglement für Perkussions-Ensembles</a>
+          <a href="/reglement/festreglement-perkussionsensembles.pdf">Festreglement für Perkussions-Ensembles (PDF)</a>
         </li>
         <li>
-          <a href="/reglement/festreglement-tambouren.pdf">Festreglement für Tambouren</a>
+          <a href="/reglement/festreglement-tambouren.pdf">Festreglement für Tambouren (PDF)</a>
         </li>
       </ul>
       <h4>Anmeldung</h4>
