@@ -91,7 +91,7 @@
       <span>Andrea Roth / Sekretariat</span>
       <span>Corinne Conzetti / Sekretariat</span>
       <span>Sandra Degoumois / Sekretariat</span>
-      <span>Fränzi Band / Sekretariat</span>
+      <span>Fränzi Brand / Sekretariat</span>
       <span>Doris Epprecht / Sponsoring</span>
       <span>Dominik Dubs / Sponsoring</span>
       <span>Markus Otto / Sponsoring</span>
