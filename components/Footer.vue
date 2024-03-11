@@ -38,9 +38,9 @@
       <div class="bg-blau w-full">
         <div class="container mx-auto flex flex-wrap md:flex-nowrap px-5 py-4 justify-between items-center">
           <div class="text-sm text-white">© {{ currentYear }} — 31. Zürcher Kantonalmusikfest, Urdorf + Schlieren. Alle Rechte vorbehalten.</div>
-          <div class="flex justify-end">
-            <a href="https://www.facebook.com/zkmf2024"><img src="/facebook.png" alt="Facebook" /></a>
-            <a href="https://www.instagram.com/zkmf2024/"><img src="/instagram.png" alt="Instagram" /></a>
+          <div class="flex justify-end gap-2">
+            <a href="https://www.facebook.com/zkmf2024" target="_blank"><img src="/facebook.png" alt="Facebook" width="50" height="50" /></a>
+            <a href="https://www.instagram.com/zkmf2024/" target="_blank"><img src="/instagram.png" alt="Instagram" /></a>
           </div>
         </div>
 
