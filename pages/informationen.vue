@@ -21,6 +21,6 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Informationen',
-  description: 'Hier finden Sie praktische Informationen zum Musikfest - Festführer, Festareal, Anreise, Verpflegung etc.',
+  description: 'Hier finden Sie praktische Informationen zum Musikfest - Festprogramm, Festareal, Anreise, Verpflegung etc.',
 })
 </script>
