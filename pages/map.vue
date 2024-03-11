@@ -40,16 +40,6 @@ const styles: StyleType[] = [
     checked: true,
   },
   {
-    name: 'Light',
-    layerId: 'light-v11',
-    checked: false,
-  },
-  {
-    name: 'Dark',
-    layerId: 'dark-v11',
-    checked: false,
-  },
-  {
     name: 'Satellit',
     layerId: 'satellite-streets-v12',
     checked: false,
