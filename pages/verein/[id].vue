@@ -29,7 +29,7 @@
             <ol class="my-0">
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
             </ol>
-            <div v-if="entry.direktionName">Dirigent/in: {{ entry.direktionName }}</div>
+            <div v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
             <div v-if="entry.description" class="prose">
               <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'">
                 {{ entry.description }}
