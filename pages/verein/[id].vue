@@ -4,6 +4,7 @@
     <h2 v-if="!pending && error">🚫Verein nicht gefunden📯</h2>
     <div v-if="!pending && data">
       <h2 class="text-blau">{{ data.name }}</h2>
+      <div class="text-blau font-bold" v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
       <NuxtImg v-if="data.bildImgId" provider="cloudflare" :src="cloudflareUrl(data.bildImgId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
       <div v-for="entry in data.timetableEntries" :key="entry">
         <h4>{{ entry.competition }}</h4>
@@ -29,7 +30,6 @@
             <ol class="my-0">
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
             </ol>
-            <div v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
             <div v-if="entry.description" class="prose">
               <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'">
                 {{ entry.description }}
