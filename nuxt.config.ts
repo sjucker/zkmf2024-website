@@ -76,7 +76,6 @@ export default defineNuxtConfig({
         '/verein/stadtmusik-buelach',
         '/verein/musikverein-harmonie-altstetten',
         '/verein/musikgesellschaft-niederhasli',
-        '/verein/harmonie-volketswil',
         '/verein/kreismusik-limmattal-tambouren',
         '/verein/musikverein-wil-zh',
         '/verein/harmonie-zumikon',
