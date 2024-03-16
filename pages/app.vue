@@ -9,8 +9,8 @@
           Die neusten Informationen, alle Spielzeiten auf einen Blick, eine interaktive Karte, Benachrichtigungen für deine Lieblingsvereine und vieles mehr!
         </p>
         <div class="flex flex-row gap-3 flex-wrap">
-          <NuxtImg src="/app/google-play.png" quality="90" class="m-0 w-[150px] max-w-full opacity-20 cursor-not-allowed"></NuxtImg>
-          <NuxtImg src="/app/app-store.png" quality="90" class="m-0 w-[150px] max-w-full opacity-20 cursor-not-allowed"></NuxtImg>
+          <NuxtImg src="/app/google-play.png" quality="90" class="m-0 w-[170px] max-w-full opacity-20 cursor-not-allowed object-scale-down"></NuxtImg>
+          <NuxtImg src="/app/app-store.png" quality="90" class="m-0 w-[170px] max-w-full opacity-20 cursor-not-allowed object-scale-down"></NuxtImg>
         </div>
       </div>
     </div>
