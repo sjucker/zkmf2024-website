@@ -22,7 +22,7 @@
   </div>
 </template>
 <script setup lang="ts">
-export interface EventData {
+interface EventData {
   time: string
   time2?: string
   event: string
@@ -30,7 +30,7 @@ export interface EventData {
   important: boolean
 }
 
-export interface ProgrammData {
+interface ProgrammData {
   day: string
   events: EventData[]
 }
@@ -233,5 +233,3 @@ useSeoMeta({
   title: 'Festprogramm',
 })
 </script>
-
-<style scoped></style>
