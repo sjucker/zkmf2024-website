@@ -1,8 +1,8 @@
 <template>
   <div class="prose max-w-none container">
     <h2 class="text-rot text-center">Das Festwochenende im Überblick</h2>
-    <div class="relative overflow-x-auto">
-      <table class="table-auto w-full text-sm" v-for="day in programm">
+    <div class="relative overflow-x-auto" v-for="day in programm">
+      <table class="table-auto w-full text-sm">
         <thead>
           <tr>
             <th colspan="3" class="text-center text-lg">{{ day.day }}</th>
@@ -10,7 +10,9 @@
         </thead>
         <tbody>
           <tr v-for="(data, index) in day.events" class="border-b" :class="{ 'bg-gray-100': index % 2 === 0 }">
-            <td class="align-top w-2/12 md:px-6 md:y-3 whitespace-nowrap" :class="{ 'font-bold': data.important }">{{ data.time }}</td>
+            <td class="align-top w-2/12 md:px-6 md:y-3 whitespace-nowrap" :class="{ 'font-bold': data.important }">
+              {{ data.time }}<span v-if="data.time2"><br />{{ data.time2 }}</span>
+            </td>
             <td class="align-top w-6/12 md:px-6 md:y-3 whitespace-break-spaces" :class="{ 'font-bold': data.important }">{{ data.event }}</td>
             <td class="align-top w-4/12 md:px-6 md:y-3" :class="{ 'font-bold': data.important }">{{ data.location }}</td>
           </tr>
@@ -22,6 +24,7 @@
 <script setup lang="ts">
 export interface EventData {
   time: string
+  time2?: string
   event: string
   location: string
   important: boolean
@@ -86,7 +89,7 @@ const programmSaturday: EventData[] = [
   },
   {
     time: '09.00 Uhr',
-    event: 'Jugend und Blasmusik\nmit Instrumentenvorführung und Konzert',
+    event: 'Jugend und Blasmusik\nmit Instrumenten­vorführung und Konzert',
     location: 'Singsaal Moosmatt Urdorf',
     important: false,
   },
@@ -97,7 +100,8 @@ const programmSaturday: EventData[] = [
     important: true,
   },
   {
-    time: '10.50 – 16.00 Uhr',
+    time: '10.50 –',
+    time2: '16.00 Uhr',
     event: 'Unterhaltungskonzerte\nmit Holz, Blech und Schwyzerörgeli',
     location: 'Festzelt Schlieren',
     important: false,
@@ -166,7 +170,8 @@ const programmSunday: EventData[] = [
     important: true,
   },
   {
-    time: '09.00 – 16.00 Uhr',
+    time: '09.00 –',
+    time2: '16.00 Uhr',
     event: 'Unterhaltungskonzerte',
     location: 'Festzelt Schlieren',
     important: false,
@@ -223,6 +228,10 @@ const programm: ProgrammData[] = [
     events: programmSunday,
   },
 ]
+
+useSeoMeta({
+  title: 'Festprogramm',
+})
 </script>
 
 <style scoped></style>
