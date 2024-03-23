@@ -96,7 +96,7 @@ export default defineNuxtConfig({
         '/verein/perkussionsensemble-winterthur',
         '/verein/musikverein-harmonie-bauma',
         '/verein/musikgesellschaft-fehraltorf',
-        '/verein/musikverein-meilen-',
+        '/verein/musikverein-meilen',
         '/verein/musikverein-helvetia-marthalen',
         '/verein/musikverein-gossau-zh',
         '/verein/musikverein-zuerich-hoengg',
