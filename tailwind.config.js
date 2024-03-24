@@ -22,6 +22,9 @@ export default {
         silber: {
           DEFAULT: '#d5d7d9',
         },
+        gruen: {
+          DEFAULT: '#0cc38d',
+        },
       },
     },
   },
