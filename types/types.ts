@@ -4,10 +4,28 @@ export interface MenuItem {
 }
 
 export const MENU_ITEMS: MenuItem[] = [
-  { pageId: 'informationen', title: 'Informationen' },
-  { pageId: 'news', title: 'News' },
-  { pageId: 'musikfest', title: 'Musikfest' },
-  { pageId: 'gastgeber', title: 'Gastgeber' },
-  { pageId: 'helfer', title: 'Helfer' },
-  { pageId: 'sponsoring', title: 'Sponsoring' },
+  {
+    pageId: 'info',
+    title: 'Informationen',
+  },
+  {
+    pageId: 'news',
+    title: 'News',
+  },
+  {
+    pageId: 'musikfest',
+    title: 'Musikfest',
+  },
+  {
+    pageId: 'gastgeber',
+    title: 'Gastgeber',
+  },
+  {
+    pageId: 'helfer',
+    title: 'Helfer',
+  },
+  {
+    pageId: 'sponsoring',
+    title: 'Sponsoring',
+  },
 ]
