@@ -20,8 +20,9 @@
     </p>
     <p>
       <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">Melde Dich noch heute hier an</NuxtLink>
-      . Stelle Deine Fähigkeiten und Kenntnisse in den Dienst eines grossen verbindenden Fests für Jung und Alt und hilf uns dabei, die Blasmusik von ihrer
-      besten Seite zu präsentieren. Das Organisationskomitee freut sich auf die Zusammenarbeit mit Dir!
+      <br />
+      Stelle Deine Fähigkeiten und Kenntnisse in den Dienst eines grossen verbindenden Fests für Jung und Alt und hilf uns dabei, die Blasmusik von ihrer besten
+      Seite zu präsentieren. Das Organisationskomitee freut sich auf die Zusammenarbeit mit Dir!
     </p>
     <p>
       Für Fragen kontaktiere uns bitte unter
