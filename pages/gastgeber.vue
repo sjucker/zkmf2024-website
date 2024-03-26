@@ -77,6 +77,7 @@
       <span>Susanne Meier / Finanzen</span>
       <span>Lore Luginbühl / Finanzen</span>
       <span>Stefan Jucker / Informatik</span>
+      <span>Balazs Sandor Mracsko / Informatik</span>
       <span>Marco Biondi / Infrastruktur</span>
       <span>Oliver Zehnder / Infrastruktur</span>
       <span>Tobias Meienberg / Infrastruktur</span>
