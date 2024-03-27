@@ -56,25 +56,17 @@
         <div v-if="data.percussionEquipmentType">
           <h3>Perkussionsmaterial</h3>
           <ul>
-            <li>4 Pedalmaschinenkesselpauken (23“, 26“, 29“, 32“)</li>
-            <li>1 Drumset komplett</li>
-            <li v-if="fullPercussionEquipment">4 Concert Toms mit Ständer</li>
-            <li>1 grosse Trommel</li>
-            <li>1 Paar Doppelbecken mit Ständer</li>
-            <li>2 Hängebecken</li>
-            <li>1 Tam Tam mit Ständer</li>
-            <li>1 Paar Bongos</li>
-            <li v-if="fullPercussionEquipment">1 Paar Congas</li>
-            <li>1 5er-Satz Templeblocks</li>
-            <li>1 Glockenspiel mit Pedal</li>
-            <li>1 Xylophon (verstellbar flach/gestuft)</li>
-            <li>1 Vibraphon mit Pedal und Motor</li>
-            <li v-if="fullPercussionEquipment">1 A-Marimba</li>
-            <li>1 Satz Röhrenglocken</li>
-            <li>1 Windchimes mit Ständer</li>
-            <li>1 Bell Tree</li>
-            <li>4 Schlägelablagen</li>
-            <li>12 Notenständer</li>
+            <li>
+              <a :href="`/info/perkussion/${data.identifier}.pdf`" target="_blank" class="inline-flex gap-0.5"
+                >Instrumentenliste
+                <DocumentIcon class="h-6 w-6 text-blau" />
+              </a>
+            </li>
+            <li>
+              Kleinpercussionsinstrumente wie Sleight Bells, Tambourin ohne Fell, Finger Cymbals, Tambourin oder Triangel, die nicht auf der Liste aufgeführt
+              sind, sowie sämtliches Schlägelmaterial, müssen von den teilnehmenden Vereinen selbst mitgebracht werden.
+            </li>
+            <li>Fragen zu den Instrumenten beantwortet Ihnen <a href="mailto:emil.bolli@murbach-musik.ch">Emil Bolli</a> gerne persönlich.</li>
           </ul>
         </div>
 
@@ -96,7 +88,7 @@
 </template>
 <script setup lang="ts">
 import { type LocationDTO, PercussionEquipmentType } from '~/types/rest'
-import { MapPinIcon } from '@heroicons/vue/24/outline'
+import { DocumentIcon, MapPinIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const {
