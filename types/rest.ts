@@ -384,7 +384,11 @@ export interface VereinSelectionDTO {
 }
 
 export interface VereinStageSetupDTO {
+  locationIdentifier: string;
   stageSetup: string;
+  dirigentenpodest: boolean;
+  ablagenAmount?: number;
+  comment?: string;
 }
 
 export interface VereinTeilnahmeDTO {
