@@ -98,10 +98,14 @@
               <td class="align-top px-6 py-3">Phase 4</td>
               <td class="align-top px-6 py-3">
                 konkrete Besetzung / Anzahl Personen / Essen / Anreise / Infrastruktur<br />
-                Einsenden der Partituren<br />
-                Aufstellung und benötigtes Material auf der Bühne
+                Einsenden der Partituren
               </td>
               <td class="align-top px-6 py-3">01.04.2024</td>
+            </tr>
+            <tr class="bg-gray-50 border-b">
+              <td class="align-top px-6 py-3">Phase 4.1</td>
+              <td class="align-top px-6 py-3">Aufstellung und benötigtes Material auf der Bühne</td>
+              <td class="align-top px-6 py-3">30.04.2024</td>
             </tr>
             <tr class="bg-white border-b">
               <td class="align-top px-6 py-3">Phase 5</td>
