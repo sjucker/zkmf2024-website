@@ -16,14 +16,14 @@
 </template>
 
 <script setup lang="ts">
-const { initialize, disableAnalytics } = useGtag()
+const { enableAnalytics, disableAnalytics } = useGtag()
 
 const consentCookie = useCookie('zkmf2024-consent-status', {
   maxAge: 34560000,
 })
 consentCookie.value = consentCookie.value ?? ''
 if (consentCookie.value === 'granted') {
-  initialize()
+  enableAnalytics()
 }
 
 const displayConsentBanner = ref(false)
@@ -37,7 +37,7 @@ const needsConsentDecision = computed(() => {
 })
 
 function accept() {
-  initialize()
+  enableAnalytics()
   consentCookie.value = 'granted'
 }
 
