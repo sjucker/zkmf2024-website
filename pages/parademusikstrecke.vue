@@ -16,7 +16,7 @@
       </li>
     </ul>
   </div>
-  <NuxtImg src="/info/karte-marschmusik.jpg" loading="lazy" class="mt-8 w-[600px] max-w-full rounded-lg"></NuxtImg>
+  <NuxtImg provider="cloudflare" :src="cloudflareUrl('2a90a5a8-10d8-48a0-d574-203ea32adb00')" loading="lazy" class="mt-8 w-[600px] max-w-full rounded-lg" />
 </template>
 <script setup lang="ts">
 useSeoMeta({
