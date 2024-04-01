@@ -27,10 +27,13 @@
           <div v-if="entry.vereinIdentifier">
             <NuxtLink :to="vereinUrl(entry.vereinIdentifier)">mehr Infos</NuxtLink>
           </div>
+          <div v-if="!entry.cloudflareId && entry.unterhaltungIdentifier">
+            <NuxtLink :to="unterhaltungBandUrl(entry.unterhaltungIdentifier)">mehr Infos</NuxtLink>
+          </div>
         </div>
 
-        <div class="relative inline-block" v-if="entry.cloudflareId">
-          <NuxtLink :to="`/info/unterhaltung/band/${entry.unterhaltungIdentifier}`" class="no-underline">
+        <div class="relative inline-block" v-if="entry.cloudflareId && entry.unterhaltungIdentifier">
+          <NuxtLink :to="unterhaltungBandUrl(entry.unterhaltungIdentifier)" class="no-underline">
             <NuxtImg
               provider="cloudflare"
               :src="cloudflareUrl(entry.cloudflareId)"
@@ -38,8 +41,8 @@
               class="max-w-full w-[600px] lg:w-[800px] object-scale-down mt-4 mb-0"
             />
           </NuxtLink>
-          <div v-if="entry.unterhaltungIdentifier" class="absolute bottom-0 left-0 bg-gelb p-1 md:p-4 rounded-bl-lg rounded-tr-lg text-sm md:text-lg">
-            <NuxtLink :to="`/info/unterhaltung/band/${entry.unterhaltungIdentifier}`" class="no-underline">mehr Infos</NuxtLink>
+          <div class="absolute bottom-0 left-0 bg-gelb p-1 md:p-4 rounded-bl-lg rounded-tr-lg text-sm md:text-lg">
+            <NuxtLink :to="unterhaltungBandUrl(entry.unterhaltungIdentifier)" class="no-underline">mehr Infos</NuxtLink>
           </div>
         </div>
       </div>
