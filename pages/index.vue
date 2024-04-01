@@ -33,8 +33,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ClockIcon, MapIcon, MusicalNoteIcon } from '@heroicons/vue/24/outline'
-import { HOME_ITEMS, INFO_ITEMS } from '~/types/types'
+import { HOME_ITEMS } from '~/types/types'
 
 definePageMeta({
   layout: 'homepage',

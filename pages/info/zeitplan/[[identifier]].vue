@@ -57,7 +57,6 @@
 <script setup lang="ts">
 import type { LocationDTO, TimetableDayOverviewDTO, TimetableOverviewEntryDTO } from '~/types/rest'
 import { ExclamationTriangleIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-import vereinUrl from '~/utils/vereinUrl'
 
 export interface TimetableDayOverviewData {
   days: string[]
