@@ -32,13 +32,13 @@
           <NuxtLink to="/parademusikstrecke">Parademusikstrecke</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/karte">Übersicht Festareal</NuxtLink>
+          <NuxtLink to="/info/karte">Übersicht Festareal</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/pflichtstuecke">Pflichtstücke</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/vereine">Angemeldete Vereine</NuxtLink>
+          <NuxtLink to="/info/vereine">Teilnehmende Vereine</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/jurymitglieder">Jurymitglieder</NuxtLink>

@@ -1,6 +1,5 @@
 <template>
   <div class="prose max-w-none">
-    <h2 class="text-blau">Zeitplan</h2>
     <LoadingSpinner :loading="pending"></LoadingSpinner>
     <div v-if="!pending && error" class="inline-flex gap-2 items-center">
       <ExclamationTriangleIcon class="h-10 w-10 text-rot" />
@@ -43,7 +42,7 @@
                 <tr v-for="(entry, index) in filterRows(entries(day, location.id))" class="border-b" :class="{ 'bg-gray-50': index % 2 === 0 }">
                   <td>{{ entry.time }}</td>
                   <td>
-                    <NuxtLink :to="`/verein/${entry.vereinIdentifier}`">{{ entry.vereinsname }}</NuxtLink>
+                    <NuxtLink :to="vereinUrl(entry.vereinIdentifier)">{{ entry.vereinsname }}</NuxtLink>
                   </td>
                   <td class="hidden md:table-cell">{{ entry.competition }}</td>
                 </tr>
@@ -58,6 +57,7 @@
 <script setup lang="ts">
 import type { LocationDTO, TimetableDayOverviewDTO, TimetableOverviewEntryDTO } from '~/types/rest'
 import { ExclamationTriangleIcon, MagnifyingGlassIcon, MapPinIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import vereinUrl from '~/utils/vereinUrl'
 
 export interface TimetableDayOverviewData {
   days: string[]
