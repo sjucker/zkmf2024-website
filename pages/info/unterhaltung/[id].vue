@@ -39,6 +39,7 @@
               :src="cloudflareUrl(entry.cloudflareId)"
               loading="lazy"
               class="max-w-full w-[600px] lg:w-[800px] object-scale-down mt-4 mb-0"
+              densities="x1"
             />
           </NuxtLink>
           <div class="absolute bottom-0 left-0 bg-gelb p-1 md:p-4 rounded-bl-lg rounded-tr-lg text-sm md:text-lg">
