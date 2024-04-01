@@ -63,7 +63,7 @@ const {
 } = useRuntimeConfig()
 
 const { data, pending, error } = await useFetch(`${apiBase}/public/unterhaltung`, {
-  // server: false,
+  server: false,
   transform: (values: UnterhaltungTypeDTO[]) => {
     return values.find(dto => dto.type === type)
   },
