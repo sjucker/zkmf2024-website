@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 
   gtag: {
     id: 'NUXT_PUBLIC_GTAG_ID',
-    enabled: true,
+    initialConsent: false,
   },
 
   image: {
