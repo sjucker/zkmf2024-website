@@ -9,7 +9,7 @@
         </div>
       </div>
       <h3 class="text-rot">{{ data.title }}</h3>
-      <NuxtImg provider="cloudflare" :src="cloudflareUrl(data.cloudflareId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8" />
+      <NuxtImg v-if="data.cloudflareId" provider="cloudflare" :src="cloudflareUrl(data.cloudflareId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8" />
       <div class="flex flex-col md:flex-row md:gap-8">
         <div>{{ getDay(data.type) }}</div>
         <div class="whitespace-nowrap">{{ data.start.substring(0, 5) }} Uhr</div>
