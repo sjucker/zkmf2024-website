@@ -6,8 +6,8 @@
       Interaktive Karte
     </NuxtLink>
     <div class="flex flex-col xl:flex-row gap-2">
-      <nuxt-img src="/info/karte-schlieren.jpg" quality="95" class="max-w-full w-[600px] rounded" />
-      <nuxt-img src="/info/karte-urdorf.jpg" quality="95" class="max-w-full w-[600px] rounded" />
+      <NuxtImg provider="cloudflare" :src="cloudflareUrl('e5b163ff-92a9-4d3c-3342-65eb335ca800')" loading="lazy" class="max-w-full w-[600px] rounded" />
+      <NuxtImg provider="cloudflare" :src="cloudflareUrl('17406330-99a0-4e02-b5b8-1a637dd35600')" loading="lazy" class="max-w-full w-[600px] rounded" />
     </div>
     Als PDF <a href="/info/karte.pdf" target="_blank">herunterladen</a>
   </div>
