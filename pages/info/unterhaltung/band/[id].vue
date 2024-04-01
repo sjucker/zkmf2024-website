@@ -3,6 +3,11 @@
     <LoadingSpinner :loading="pending"></LoadingSpinner>
     <h2 v-if="!pending && error">🚫Band nicht gefunden</h2>
     <div v-if="!pending && data">
+      <div v-if="data.type === UnterhaltungEntryType.FREITAG_ABEND">
+        <div class="bg-gruen bg-opacity-35 border-gruen border-2 p-4 text-left md:text-center rounded-xl">
+          Tickets für den Freitagabend können ab <b>Samstag, 06.04.2024</b> gekauft werden.
+        </div>
+      </div>
       <h3 class="text-rot">{{ data.title }}</h3>
       <NuxtImg provider="cloudflare" :src="cloudflareUrl(data.cloudflareId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8" />
       <div class="flex flex-col md:flex-row md:gap-8">

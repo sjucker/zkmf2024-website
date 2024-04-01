@@ -6,6 +6,11 @@
     </div>
     <div v-if="!pending && data" class="prose max-w-none text-center prose-img:mx-auto">
       <h3 class="text-left md:text-center">{{ title }}</h3>
+      <div v-if="data.type === UnterhaltungEntryType.FREITAG_ABEND" class="max-w-full w-[600px] lg:w-[800px] mx-auto">
+        <div class="bg-gruen bg-opacity-35 border-gruen border-2 p-4 text-left md:text-center rounded-xl">
+          Tickets für den Freitagabend können ab <b>Samstag, 06.04.2024</b> gekauft werden.
+        </div>
+      </div>
       <div v-for="entry in data.entries" :key="entry.title">
         <hr class="my-2" />
         <div class="flex flex-col md:flex-row md:gap-4 justify-start md:justify-center">
