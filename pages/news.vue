@@ -1,6 +1,6 @@
 <template>
   <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right prose-a:text-blau">
-    <h2 class="text-blau">News</h2>
+    <h2 class="text-rot">News</h2>
     <nuxt-img src="/frontpage-2.jpg" quality="94" class="max-w-full lg:w-1/2 lg:ml-8 hidden lg:block" alt="News" />
     <p>Bleib am Ball und informiere Dich über die Fortschritte in der Organisation des ZKMF2024.</p>
     <div>

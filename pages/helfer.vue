@@ -1,6 +1,6 @@
 <template>
   <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right prose-a:text-blau">
-    <h2 class="text-blau">Helferinnen und Helfer</h2>
+    <h2 class="text-rot">Helferinnen und Helfer</h2>
     <NuxtImg src="/helfer.jpg" quality="93" class="max-w-full lg:w-1/2 lg:ml-8 hidden lg:block" alt="Wir suchen Helfer" />
     <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">
       <button class="bg-blau text-white py-3 px-8 rounded-2xl">Jetzt anmelden!</button>

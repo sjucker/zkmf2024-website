@@ -1,6 +1,6 @@
 <template>
   <div class="prose md:max-w-none prose-a:text-blau">
-    <h2 class="text-blau">Pflichtstücke Zürcher Kantonalmusikfest 2024</h2>
+    <h2 class="text-rot">Pflichtstücke Zürcher Kantonalmusikfest 2024</h2>
     <p>
       Der Zürcher Blasmusikverband freut sich, euch hier die Pflichtstücke des Zürcher Kantonalmusikfestes 2024 in Urdorf/Schlieren vorstellen zu dürfen. Bitte
       beachtet, dass alle Vereine gemäss Festreglement sowohl im Modul A als auch im Modul B ein Selbstwahlprogramm mit integriertem Pflichtstück vorzutragen

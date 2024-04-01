@@ -1,6 +1,6 @@
 <template>
   <div class="prose prose-img:rounded-lg prose-a:text-blau">
-    <h2 class="text-blau">Parademusikstrecke</h2>
+    <h2 class="text-rot">Parademusikstrecke</h2>
     <ul>
       <li>
         <a href="https://maps.app.goo.gl/bBCjcvBVZFh8zucQ6" target="_blank">Google Streetview</a>

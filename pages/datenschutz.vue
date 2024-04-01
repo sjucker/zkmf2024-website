@@ -1,6 +1,6 @@
 <template>
   <div class="prose prose-a:text-blau">
-    <h2 class="text-blau">Datenschutzerklärung</h2>
+    <h2 class="text-rot">Datenschutzerklärung</h2>
     <p>Verantwortliche Stelle im Sinne des Schweizer Datenschutzgesetzes (DSG) ist:</p>
     <p>
       <strong>Verein "zkmf2024"</strong><br />
