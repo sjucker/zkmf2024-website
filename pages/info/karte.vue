@@ -1,6 +1,6 @@
 <template>
   <div class="prose prose-a:text-blau max-w-none">
-    <h2 class="text-blau">Karte Festareal</h2>
+    <h2 class="text-rot">Das Festareal</h2>
     <NuxtLink to="/map" class="inline-flex gap-1">
       <MapPinIcon class="h-6 w-6 text-blau" />
       Interaktive Karte

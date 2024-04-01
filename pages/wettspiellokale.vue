@@ -25,7 +25,7 @@
         </ul>
       </div>
       <p class="mt-10">
-        <NuxtLink to="/karte" class="inline-flex gap-1">
+        <NuxtLink to="/info/karte" class="inline-flex gap-1">
           Karte Festareal
           <MapIcon class="w-6 h-6 text-blau" />
         </NuxtLink>

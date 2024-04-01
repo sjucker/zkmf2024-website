@@ -29,3 +29,45 @@ export const MENU_ITEMS: MenuItem[] = [
     title: 'Sponsoring',
   },
 ]
+
+export const INFO_ITEMS: MenuItem[] = [
+  {
+    pageId: '/info/festprogramm',
+    title: 'Festprogramm',
+  },
+  {
+    pageId: '/info/unterhaltung',
+    title: 'Unterhaltungsprogramm',
+  },
+  {
+    pageId: '/info/vereine',
+    title: 'Teilnehmende Vereine',
+  },
+  {
+    pageId: '/info/zeitplan',
+    title: 'Wettspiel Spielplan',
+  },
+  {
+    pageId: '/info/karte',
+    title: 'Festareal',
+  },
+]
+
+export const HOME_ITEMS: MenuItem[] = [
+  {
+    pageId: '/info/festprogramm',
+    title: 'Festprogramm',
+  },
+  {
+    pageId: '/info/unterhaltung',
+    title: 'Unterhaltungsprogramm',
+  },
+  {
+    pageId: '/info/vereine',
+    title: 'Teilnehmende Vereine',
+  },
+  {
+    pageId: '/info/zeitplan',
+    title: 'Wettspiel Spielplan',
+  },
+]

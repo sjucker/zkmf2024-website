@@ -5,18 +5,36 @@
       Es ist ein Fehler aufgetreten...
     </div>
     <div v-if="!pending && data" class="prose max-w-none text-center prose-img:mx-auto">
-      <h3>{{ title }}</h3>
+      <h3 class="text-left md:text-center">{{ title }}</h3>
       <div v-for="entry in data.entries" :key="entry.title">
-        <div class="prose-lg">
-          {{ entry.start.substring(0, 5) }} Uhr, {{ entry.title }} | <a :href="entry.location.googleMapsAddress" target="_blank">{{ entry.location.name }}</a>
+        <hr class="my-2" />
+        <div class="flex flex-col md:flex-row md:gap-4 justify-start md:justify-center">
+          <div class="flex gap-4 justify-start md:justify-center">
+            <div class="whitespace-nowrap">{{ entry.start.substring(0, 5) }} Uhr</div>
+            <div class="font-bold">{{ entry.title }}</div>
+          </div>
+          <div class="text-left md:text-center">
+            <a :href="entry.location.googleMapsAddress" target="_blank">{{ entry.location.name }}</a>
+          </div>
         </div>
-        <div v-if="entry.subtitle">{{ entry.subtitle }}</div>
+        <div class="flex flex-row gap-4 justify-start md:justify-center">
+          <div v-if="entry.subtitle">{{ entry.subtitle }}</div>
+          <div v-if="entry.vereinIdentifier">
+            <NuxtLink :to="vereinUrl(entry.vereinIdentifier)">mehr Infos</NuxtLink>
+          </div>
+        </div>
 
         <div class="relative inline-block" v-if="entry.cloudflareId">
-          <NuxtImg provider="cloudflare" :src="cloudflareUrl(entry.cloudflareId)" loading="lazy" class="max-w-full w-[600px] lg:w-[800px] object-scale-down" />
-          <div v-if="entry.unterhaltungIdentifier" class="absolute bottom-12 right-4 bg-gelb p-2">mehr Infos</div>
+          <NuxtImg
+            provider="cloudflare"
+            :src="cloudflareUrl(entry.cloudflareId)"
+            loading="lazy"
+            class="max-w-full w-[600px] lg:w-[800px] object-scale-down mt-4 mb-0"
+          />
+          <div v-if="entry.unterhaltungIdentifier" class="absolute bottom-0 left-0 bg-gelb p-1 md:p-4 rounded-bl-lg rounded-tr-lg text-sm md:text-lg">
+            <NuxtLink :to="`/info/unterhaltung/band/${entry.unterhaltungIdentifier}`" class="no-underline">mehr Infos</NuxtLink>
+          </div>
         </div>
-        <hr />
       </div>
     </div>
   </div>

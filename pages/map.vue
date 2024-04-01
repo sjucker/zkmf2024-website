@@ -115,7 +115,7 @@ mapboxgl.accessToken = mapboxApiKey
 function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
   let html = `<strong>${features[0]?.properties?.name}</strong><br/>${features[0]?.properties?.info}<br/>`
   if (features[0]?.properties?.type === LocationType.WETTSPIELLOKAL) {
-    html += `<a href="/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Zeitplan</a>`
+    html += `<a href="/info/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Spielplan</a>`
   }
   return html
 }
