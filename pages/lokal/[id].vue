@@ -4,7 +4,7 @@
     <h2 v-if="error">🚫Wettspiellokal nicht gefunden📯</h2>
     <div v-if="!pending && !error">
       <template v-if="data">
-        <h2 class="text-blau">{{ data.name }}</h2>
+        <h2 class="text-rot">{{ data.name }}</h2>
         <NuxtImg
           v-if="data.cloudflareId"
           provider="cloudflare"

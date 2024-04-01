@@ -1,6 +1,6 @@
 <template>
   <div class="prose">
-    <h2 class="text-blau">Jurymitglieder</h2>
+    <h2 class="text-rot">Jurymitglieder</h2>
     <LoadingSpinner :loading="pending"></LoadingSpinner>
     <div v-if="!pending && error" class="inline-flex gap-2 items-center">
       <ExclamationTriangleIcon class="h-10 w-10 text-rot" />

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right prose-a:text-blau">
-      <h2 class="text-blau">Gastgeber</h2>
+      <h2 class="text-rot">Gastgeber</h2>
       <h3 class="text-blau">Musikverein Harmonie Urdorf</h3>
       <NuxtImg src="/mvu.jpg" quality="90" class="max-w-full lg:w-1/2 lg:ml-8" />
       <p class="max-w-prose">

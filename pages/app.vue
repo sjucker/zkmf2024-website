@@ -1,6 +1,6 @@
 <template>
   <div class="prose">
-    <h2 class="text-blau">Festprogramm-App</h2>
+    <h2 class="text-rot">Festprogramm-App</h2>
     <div class="flex flex-col-reverse md:flex-row md:gap-8">
       <NuxtImg src="/app/screen1.png" quality="90" class="w-[240px] max-w-full float-left transition-all"></NuxtImg>
       <div>

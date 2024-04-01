@@ -1,6 +1,6 @@
 <template>
   <div class="prose xl:max-w-none prose-a:text-blau">
-    <h2 class="text-blau">Musikfest</h2>
+    <h2 class="text-rot">Musikfest</h2>
 
     <div class="2xl:w-1/2 2xl:float-right">
       <div class="aspect-w-16 aspect-h-9">

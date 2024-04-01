@@ -1,6 +1,6 @@
 <template>
   <div class="prose max-w-none">
-    <h2 class="text-blau">Newsletter</h2>
+    <h2 class="text-rot">Newsletter</h2>
     <div v-if="!sent">
       <p class="max-w-prose">
         Willst du die aktuellsten News zum
