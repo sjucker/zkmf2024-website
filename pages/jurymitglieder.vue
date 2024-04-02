@@ -8,7 +8,7 @@
     </div>
   </div>
   <div v-if="!pending && data" class="flex flex-wrap flex-col md:flex-row container">
-    <JudgeImage :src="judge.cloudflareId" :name="judge.name" v-for="judge in data" :key="judge.name"></JudgeImage>
+    <JudgeImage :src="judge.cloudflareId" :name="judge.name" :modul="judge.modul" v-for="judge in data" :key="judge.name"></JudgeImage>
   </div>
 </template>
 
