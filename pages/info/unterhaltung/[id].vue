@@ -111,7 +111,7 @@ function getFullTitle(type: UnterhaltungEntryType): string {
     case UnterhaltungEntryType.SAMSTAG_ABEND:
       return 'Samstag, 22. Juni 2024 – Abendprogramm (freier Eintritt)'
     case UnterhaltungEntryType.SONNTAG:
-      return 'Sonntag, 22. Juni 2024 (freier Eintritt)'
+      return 'Sonntag, 23. Juni 2024 (freier Eintritt)'
   }
 }
 </script>
