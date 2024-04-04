@@ -79,8 +79,6 @@
       <span>Stefan Jucker / Informatik</span>
       <span>Balazs Sandor Mracsko / Informatik</span>
       <span>Marco Biondi / Infrastruktur</span>
-      <span>Oliver Zehnder / Infrastruktur</span>
-      <span>Tobias Meienberg / Infrastruktur</span>
       <span>Sonja Bernet / Marketing</span>
       <span>Stefan Rüegg / Social Media</span>
       <span>Yannick Höhn / Marketing</span>
@@ -96,7 +94,9 @@
       <span>Doris Epprecht / Sponsoring</span>
       <span>Dominik Dubs / Sponsoring</span>
       <span>Markus Otto / Sponsoring</span>
-      <span>Jürg Abplanalp / Verpflegung</span>
+      <span>Barbara Sutter / Dekoration</span>
+      <span>Claudia Bachthaler / Verpflegung</span>
+      <span>Mauro Cerutti / Verpflegung</span>
     </div>
   </div>
 </template>
