@@ -17,7 +17,7 @@
           <a :href="data.location.googleMapsAddress" target="_blank">{{ data.location.name }}</a>
         </div>
       </div>
-      <p>{{ data.text }}</p>
+      <p class="whitespace-pre-line">{{ data.text }}</p>
     </div>
   </div>
 </template>
