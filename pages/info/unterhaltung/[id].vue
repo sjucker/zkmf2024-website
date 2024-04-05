@@ -8,7 +8,14 @@
       <h3 class="text-left md:text-center">{{ title }}</h3>
       <div v-if="data.type === UnterhaltungEntryType.FREITAG_ABEND" class="max-w-full w-[600px] lg:w-[800px] mx-auto">
         <div class="bg-gruen bg-opacity-35 border-gruen border-2 p-4 text-left md:text-center rounded-xl">
-          Tickets für den Freitagabend können ab <b>Samstag, 06.04.2024</b> gekauft werden.
+          Tickets für den Freitagabend können
+          <NuxtLink
+            to="https://eventfrog.ch/de/p/volksfeste/sonstige-feste/zkmf-2024-konzert-swiss-band-und-stubete-gaeng-7096412565719216215.html"
+            :external="true"
+            target="_blank"
+            >hier gekauft</NuxtLink
+          >
+          werden.
         </div>
       </div>
       <div v-for="entry in data.entries" :key="entry.title">
