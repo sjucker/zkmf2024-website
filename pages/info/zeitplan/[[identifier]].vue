@@ -69,6 +69,10 @@ useSeoMeta({
   description: 'Der Zeitplan für das 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren.',
 })
 
+definePageMeta({
+  alias: '/zeitplan',
+})
+
 const {
   public: { apiBase },
 } = useRuntimeConfig()

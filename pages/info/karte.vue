@@ -18,4 +18,8 @@ import { MapPinIcon } from '@heroicons/vue/24/outline'
 useSeoMeta({
   title: 'Karte Festareal',
 })
+
+definePageMeta({
+  alias: '/karte',
+})
 </script>

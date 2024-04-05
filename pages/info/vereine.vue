@@ -38,6 +38,10 @@ useSeoMeta({
   description: 'Diese Vereine nehmen am 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren teil.',
 })
 
+definePageMeta({
+  alias: '/vereine',
+})
+
 const {
   public: { apiBase },
 } = useRuntimeConfig()
