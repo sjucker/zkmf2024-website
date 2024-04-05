@@ -25,6 +25,9 @@ export default {
         gruen: {
           DEFAULT: '#0cc38d',
         },
+        violett: {
+          DEFAULT: '#aa6dd3',
+        },
       },
     },
   },
