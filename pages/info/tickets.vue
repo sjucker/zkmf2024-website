@@ -21,7 +21,8 @@
       <b>
         Für Personen, die über eine gültige Festkarte (Teilnehmer oder Begleitperson) verfügen, ist der Eintritt frei. Mit der Festkarte muss jedoch im
         Vorverkauf mittels eines Codes ein Gratis-Ticket gelöst werden</b
-      >. Nur so kann sichergestellt werden, dass die feuerpolizeilich erlaubte Anzahl Personen im Festzelt eingehalten wird.
+      >. Nur so kann sichergestellt werden, dass die feuerpolizeilich erlaubte Anzahl Personen im Festzelt eingehalten wird.<br />Den Code bekommst Du von
+      Deinem Vereinspräsidenten bzw. Deiner Vereinspräsidentin. Die Festkarte allein berechtigt nicht zum Eintritt.
     </p>
   </div>
 </template>
