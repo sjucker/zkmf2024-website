@@ -2,9 +2,14 @@
   <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right prose-a:text-blau">
     <h2 class="text-rot">Helferinnen und Helfer</h2>
     <NuxtImg src="/helfer.jpg" quality="93" class="max-w-full lg:w-1/2 lg:ml-8 hidden lg:block" alt="Wir suchen Helfer" />
-    <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">
-      <button class="bg-blau text-white py-3 px-8 rounded-2xl">Jetzt anmelden!</button>
-    </NuxtLink>
+    <div class="flex flex-col sm:flex-row gap-2 items-center">
+      <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024" class="w-full sm:w-fit">
+        <button class="bg-blau text-white py-3 px-8 rounded-2xl w-full">Jetzt anmelden!</button>
+      </NuxtLink>
+      <a href="/info/leitfaden-helferportal.pdf" target="_blank" class="w-full sm:w-fit">
+        <button class="bg-gruen text-white py-3 px-8 rounded-2xl w-full">Fragen? Lies unseren Leitfaden.</button>
+      </a>
+    </div>
     <p>
       Das Zürcher Kantonalmusikfest 2024 lebt dank dem Einsatz von rund 500 freiwilligen Helferinnen und Helfern. Werde Teil dieses tollen Grossanlasses und
       unterstütze das Organisationskomitee tatkräftig bei der Vorbereitung und Durchführung eines erinnerungsträchtigen Musikevents!
