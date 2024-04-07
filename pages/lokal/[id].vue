@@ -23,6 +23,7 @@
             </a>
           </li>
           <li>Kapazität Bühne: {{ data.capacity }}</li>
+          <li v-if="data.identifier === 'embrisaal-urdorf'">Masse Bühne: 10.8m x 4.6m</li>
           <li>Module: {{ data.modules }}</li>
           <li v-if="data.einspiellokal">
             <div class="flex-col sm:flex-row inline-flex sm:gap-1">
