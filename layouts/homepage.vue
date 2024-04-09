@@ -39,15 +39,15 @@
         <div
           class="absolute left-0 lg:left-1/2 top-2/3 lg:top-1/4 xl:top-1/2 w-fit md:w-full lg:w-1/2 h-1/4 px-5 xl:px-0 flex flex-row justify-between lg:justify-end"
         >
-          <a href="https://www.zkb.ch/sponsoring" target="_blank">
+          <a :href="ZKB" target="_blank">
             <img src="/logos/zkb.png" alt="ZKB" class="h-full object-contain" />
           </a>
 
-          <a href="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/fachstelle-kultur.html" target="_blank">
+          <a :href="ZH" target="_blank">
             <img src="/logos/fachstellekultur.png" alt="Kanton Zürich - Fachstelle Kultur" class="h-full object-contain" />
           </a>
 
-          <a href="https://www.zhbv.ch/" target="_blank">
+          <a :href="ZHBV" target="_blank">
             <img src="/logos/zbv.png" alt="ZBV" class="h-full object-contain" />
           </a>
         </div>
@@ -74,6 +74,7 @@
 <script setup lang="ts">
 import { MENU_ITEMS } from '~/types/types'
 import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { ZHBV, ZH, ZKB } from '~/types/constants'
 
 const mobileMenuVisible = ref(false)
 const navigationLinks = MENU_ITEMS

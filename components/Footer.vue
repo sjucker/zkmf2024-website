@@ -45,15 +45,15 @@
         </div>
 
         <div class="md:hidden flex flex-col gap-8 px-5 pb-4">
-          <a href="https://www.zkb.ch/sponsoring" target="_blank">
+          <a :href="ZKB" target="_blank">
             <img src="/logos/zkb-footer.png" alt="ZKB" class="h-20 object-scale-down" />
           </a>
 
-          <a href="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/fachstelle-kultur.html" target="_blank">
+          <a :href="ZH" target="_blank">
             <img src="/logos/fachstellekultur-footer.png" alt="Kanton Zürich - Fachstelle Kultur" class="h-20 object-scale-down" />
           </a>
 
-          <a href="https://www.zhbv.ch/" target="_blank">
+          <a :href="ZHBV" target="_blank">
             <img src="/logos/zbv-footer.png" alt="ZBV" class="h-20 object-scale-down" />
           </a>
         </div>
@@ -63,6 +63,7 @@
 </template>
 <script setup lang="ts">
 import { MENU_ITEMS } from '~/types/types'
+import { ZH, ZHBV, ZKB } from '~/types/constants'
 
 const currentYear = new Date().getFullYear()
 const navigationLinks = MENU_ITEMS
