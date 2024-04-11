@@ -46,6 +46,8 @@
         <li>
           <a href="/info/werbeflyer.pdf">Werbeflyer (PDF)</a>
         </li>
+        <li><a href="/info/logo.pdf" download>Download Logo (PDF)</a><br /><span class="text-sm">Kann frei verwendet werden.</span></li>
+        <li><a href="/info/logo.jpg" download>Download Logo (JPG)</a><br /><span class="text-sm">Kann frei verwendet werden.</span></li>
       </ul>
       <h4>Festreglemente</h4>
       <ul>
