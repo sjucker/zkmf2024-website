@@ -1,8 +1,9 @@
 <template>
-  <div class="prose">
+  <div class="prose max-w-none">
     <h2 class="text-rot">Festprogramm-App</h2>
     <div class="flex flex-col-reverse md:flex-row md:gap-8">
-      <NuxtImg src="/app/screen1.png" quality="90" class="w-[240px] max-w-full float-left transition-all"></NuxtImg>
+      <NuxtImg src="/app/screen1.png" quality="90" class="w-[240px] max-w-full float-left transition-all" densities="x1"></NuxtImg>
+      <NuxtImg src="/app/screen3.png" quality="90" class="w-[240px] max-w-full float-left transition-all" densities="x1"></NuxtImg>
       <div>
         <h3 class="text-rot">Die ZKMF2024-App kommt Ende Mai!</h3>
         <p>
