@@ -71,6 +71,16 @@
           </ul>
         </div>
 
+        <div v-if="soundEquipment">
+          <h3>Soundmaterial</h3>
+          <ul>
+            <li>Guitar Amp: Vox Combo Cambridge 50</li>
+            <li>Bass Amp: Blackstar Combo Unity 120</li>
+            <li>Keyboard Amp: QSC K10 mit Direct-in</li>
+            <li>Gesang Amp: QSC K10 mit SM58 Kabelmoc und Stativ</li>
+          </ul>
+        </div>
+
         <div v-if="data.kuulaId" class="clear-both">
           <h2>360°-Ansicht</h2>
           <iframe
@@ -142,5 +152,9 @@ const distanceToLocation = computed(() => {
 
 const fullPercussionEquipment = computed(() => {
   return data.value?.percussionEquipmentType === PercussionEquipmentType.FULL
+})
+
+const soundEquipment = computed(() => {
+  return data.value?.identifier === 'salmensaal-schlieren' || data.value?.identifier === 'turnhalle-weihermatt-urdorf'
 })
 </script>
