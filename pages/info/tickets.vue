@@ -2,11 +2,7 @@
   <div class="prose prose-img:rounded-lg prose-a:text-blau">
     <h2 class="text-rot">Tickets</h2>
     <p class="pb-8">
-      <NuxtLink
-        :external="true"
-        target="_blank"
-        to="https://eventfrog.ch/de/p/volksfeste/sonstige-feste/zkmf-2024-konzert-swiss-band-und-stubete-gaeng-7096412565719216215.html"
-      >
+      <NuxtLink :external="true" target="_blank" :to="TICKET_PORTAL">
         <button class="bg-gruen text-white py-3 px-8 rounded-3xl">Zum Ticketportal</button>
       </NuxtLink>
     </p>
@@ -28,6 +24,8 @@
 </template>
 
 <script setup lang="ts">
+import { TICKET_PORTAL } from '~/types/constants'
+
 useSeoMeta({
   title: 'Tickets',
 })

@@ -5,7 +5,9 @@
     <div v-if="!pending && data">
       <div v-if="data.type === UnterhaltungEntryType.FREITAG_ABEND">
         <div class="bg-gruen bg-opacity-35 border-gruen border-2 p-4 text-left md:text-center rounded-xl">
-          Tickets für den Freitagabend können ab <b>Samstag, 06.04.2024</b> gekauft werden.
+          Tickets für den Freitagabend können
+          <NuxtLink :to="TICKET_PORTAL" :external="true" target="_blank">hier gekauft</NuxtLink>
+          werden.
         </div>
       </div>
       <h3 class="text-rot">{{ data.title }}</h3>
@@ -23,6 +25,7 @@
 </template>
 <script setup lang="ts">
 import { UnterhaltungEntryType, type UnterhaltungsEntryDTO } from '~/types/rest'
+import { TICKET_PORTAL } from '~/types/constants'
 
 const route = useRoute()
 const {
