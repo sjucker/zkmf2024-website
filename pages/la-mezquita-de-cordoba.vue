@@ -44,7 +44,7 @@
       <span class="font-bold">Egyptian Tamburine</span>: Riqq (<a href="https://de.wikipedia.org/wiki/Riqq" target="_blank">Wikipedia</a>)<br />
       Spieltechnik:
       <a href="https://youtu.be/dBK8c_8rdQg" target="_blank">YouTube</a><br />
-      kann auch auf einem westlichen Tamburin aber mit arabischer Spieltechnik gespielt werden.
+      kann auch auf einem westlichen Tamburin, z.B. mit arabischer Spieltechnik gespielt werden.
     </p>
     <p>
       <span class="font-bold">Jingle Stick/Jingle Bells</span>: Schlittenglocken (<a href="https://de.wikipedia.org/wiki/Glockenstab" target="_blank"
