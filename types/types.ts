@@ -51,6 +51,10 @@ export const INFO_ITEMS: MenuItem[] = [
     pageId: '/info/karte',
     title: 'Festareal',
   },
+  {
+    pageId: '/info/gut-zu-wissen',
+    title: 'Gut zu wissen',
+  },
 ]
 
 export const HOME_ITEMS: MenuItem[] = [
