@@ -71,7 +71,10 @@
       Ticket für die Busfahrten mit dem Shuttle und muss auf Verlangen vorgewiesen werden.
     </p>
     <h4>Shuttle-Verbindung</h4>
-    <p>Sämtliche Fahrten sind im Online-Fahrplan des ZVV abgebildet.</p>
+    <p>
+      Die Bus-Linie 302 wird am 22. und 23. Juni 2024 auf der Strecke Schlieren – Urdorf – Schlieren durch eine Fahrplanverdichtung verstärkt und verlängert.<br />
+      Sämtliche Fahrten sind im Online-Fahrplan des ZVV abgebildet.
+    </p>
     <hr class="my-10" />
     <h3 class="text-blau">Sicherheit / Notfall</h3>
     <b>Notrufnummern</b>:
