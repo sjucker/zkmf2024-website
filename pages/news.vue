@@ -11,6 +11,9 @@
     <h3 class="text-blau">Newsletter</h3>
     <ul>
       <li>
+        <a href="/newsletter/16-april2024.pdf" target="_blank">Nr. 16 – April 2024</a>
+      </li>
+      <li>
         <a href="/newsletter/15-februar2024.pdf" target="_blank">Nr. 15 – Februar 2024</a>
       </li>
       <li>
