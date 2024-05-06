@@ -43,11 +43,11 @@
         <li>
           <NuxtLink to="/jurymitglieder">Jurymitglieder</NuxtLink>
         </li>
-        <li>
-          <a href="/info/werbeflyer.pdf">Werbeflyer (PDF)</a>
-        </li>
-        <li><a href="/info/logo.pdf" download>Download Logo (PDF)</a><br /><span class="text-sm">Kann frei verwendet werden.</span></li>
-        <li><a href="/info/logo.jpg" download>Download Logo (JPG)</a><br /><span class="text-sm">Kann frei verwendet werden.</span></li>
+        <li><a href="/info/infoflyer.pdf" target="_blank">Infoflyer</a> (PDF, 1 MB)</li>
+        <li><a href="/info/festprogramm.pdf" target="_blank">Festprogramm</a> (PDF, 46 MB)</li>
+        <li><a href="/info/werbeflyer.pdf">Werbeflyer</a> (PDF)</li>
+        <li><a href="/info/logo.pdf" download>Download Logo</a> (PDF)<br /><span class="text-sm">Kann frei verwendet werden.</span></li>
+        <li><a href="/info/logo.jpg" download>Download Logo</a> (JPG)<br /><span class="text-sm">Kann frei verwendet werden.</span></li>
       </ul>
       <h4>Festreglemente</h4>
       <ul>

@@ -1,7 +1,11 @@
 <template>
   <div class="prose prose-a:text-blau max-w-3xl">
     <h2 class="text-rot">Gut zu wissen</h2>
-
+    <ul>
+      <li><a href="/info/infoflyer.pdf" target="_blank">Infoflyer</a> (PDF, 1 MB)</li>
+      <li><a href="/info/festprogramm.pdf" target="_blank">Festprogramm</a> (PDF, 46 MB)</li>
+    </ul>
+    <hr class="my-10" />
     <h3 class="text-blau">Bancomat</h3>
     <ul>
       <li><b>Urdorf</b>: ZKB mobiler Bancomat, neben Schulhaus Feld 1, <a href="https://maps.app.goo.gl/2EH2iJPR5iYxyzxe7" target="_blank">Im Embri 49</a></li>
