@@ -31,7 +31,7 @@
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
             </ol>
             <div v-if="entry.description" class="prose">
-              <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'">
+              <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'" class="whitespace-pre-line">
                 {{ entry.description }}
               </div>
               <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
