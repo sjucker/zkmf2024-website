@@ -92,7 +92,7 @@
     <b>Sicherheitsposten</b>:
     <ul>
       <li>Urdorf: Schulhaus Feld 1, Lehrerzimmer, <a href="https://maps.app.goo.gl/zMdBL8j2252KatFBA" target="_blank">Im Embri 49</a></li>
-      <li>Schlieren: Alter Jugendraum, <a href="https://maps.app.goo.gl/gvbEtg6Xr7DSokuW6" target="_blank">Leuengasse 4</a> (beim Kirchplatz)</li>
+      <li>Schlieren: Alter Jugendraum, Kirchplatz</li>
     </ul>
     <b>Sanitätsposten (Samariterverein Altstetten-Albisrieden)</b>:
     <ul>
@@ -100,7 +100,7 @@
         Urdorf: Kerzenziehraum unterhalb Turnhalle Bahnhofstrasse (beim Festzelt),
         <a href="https://maps.app.goo.gl/CgexeVkqC7FwEq4A7" target="_blank">Im Moos 37</a>
       </li>
-      <li>Schlieren: Alter Jugendraum, <a href="https://maps.app.goo.gl/gvbEtg6Xr7DSokuW6" target="_blank">Leuengasse 4</a> (beim Kirchplatz)</li>
+      <li>Schlieren: Alter Jugendraum, Kirchplatz</li>
     </ul>
     <b>Apotheken</b>:<br />
     <b>Urdorf</b>:
