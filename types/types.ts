@@ -21,8 +21,8 @@ export const MENU_ITEMS: MenuItem[] = [
     title: 'Gastgeber',
   },
   {
-    pageId: 'helfer',
-    title: 'Helfer',
+    pageId: 'helfen',
+    title: 'Helfen',
   },
   {
     pageId: 'sponsoring',

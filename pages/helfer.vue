@@ -42,7 +42,7 @@
 </template>
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Helfer',
+  title: 'Helfen',
   description: 'Das Zürcher Kantonalmusikfest 2024 lebt dank dem Einsatz von rund 500 freiwilligen Helferinnen und Helfern.',
 })
 
