@@ -45,4 +45,8 @@ useSeoMeta({
   title: 'Helfer',
   description: 'Das Zürcher Kantonalmusikfest 2024 lebt dank dem Einsatz von rund 500 freiwilligen Helferinnen und Helfern.',
 })
+
+definePageMeta({
+  alias: '/helfen',
+})
 </script>
