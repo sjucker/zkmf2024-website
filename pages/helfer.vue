@@ -7,7 +7,7 @@
         <button class="bg-blau text-white py-3 px-8 rounded-2xl w-full">Jetzt anmelden!</button>
       </NuxtLink>
       <a href="/info/leitfaden-helferportal.pdf" target="_blank" class="w-full sm:w-fit">
-        <button class="bg-gruen text-white py-3 px-8 rounded-2xl w-full">Fragen? Lies unseren Leitfaden.</button>
+        <button class="bg-gruen text-white py-3 px-8 rounded-2xl w-full">Leitfaden zum Helfer-Portal</button>
       </a>
     </div>
     <p>
