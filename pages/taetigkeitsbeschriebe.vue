@@ -53,13 +53,13 @@
       <li><a href="/helfer/Tätigkeitsbeschrieb - Infrastruktur Entsorgung Festgelände_v1.0.pdf" target="_blank">Entsorgung Festgelände</a></li>
     </ul>
     <hr class="my-10" />
-    <h3>Sekretariat</h3>
+    <h3>Bereich Sekretariat</h3>
     <ul>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Sekretariat Betrieb Infopoint_v1.0.pdf" target="_blank">Betrieb Infopoint</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Sekretariat Ticketkontrolle_v1.0.pdf" target="_blank">Ticketkontrolle</a></li>
     </ul>
     <hr class="my-10" />
-    <h3>Personal</h3>
+    <h3>Bereich Personal</h3>
     <ul>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Personal Helferbüro_v1.0.pdf" target="_blank">Mitarbeit Helferbüro</a></li>
     </ul>
