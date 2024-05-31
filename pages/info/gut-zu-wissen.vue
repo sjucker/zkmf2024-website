@@ -76,9 +76,22 @@
     </p>
     <h4>Shuttle-Verbindung</h4>
     <p>
-      Die Bus-Linie 302 wird am 22. und 23. Juni 2024 auf der Strecke Schlieren – Urdorf – Schlieren durch eine Fahrplanverdichtung verstärkt und verlängert.<br />
-      Sämtliche Fahrten sind im Online-Fahrplan des ZVV abgebildet.
+      <b>Urdorf -> Schlieren -> Urdorf</b><br />
+      Die Verbindung zwischen Urdorf Heinrich-Stutz-Strasse (Parkplätze Bergermoos) und Schlieren wird zu folgenden Zeiten mit einer
+      <b>Fahrplanverdichtung</b> gewährleistet: Samstag, 22. Juni 2024, und Sonntag, 23. Juni 2024, von 07.30 Uhr bis 18.00 Uhr, zwischen Schlieren, Brunngasse
+      und Urdorf, HeinrichStutz-Strasse.<br />
+      <b>Route</b>: Schlieren Brunngasse – Nassacker – Rainweg – Neumattstrasse (Embri) – Urdorf Spitzacker – Heinrich-Stutz-Strasse und zurück
     </p>
+    <p>
+      Ab 18.00 Uhr sind die Parkplätze Bergermoos vom Festgelände Urdorf Spitzacker aus mit der ordentlichen Buslinie 314 zu erreichen.<br />
+      <b>Route</b>: Urdorf Spitzacker – Oberurdorf – Urdorf Heinrich-Stutz-Strasse und zurück
+    </p>
+    <p><b>Nacht-Erschliessung Parkplätze Heinrich-Stutz-Strasse (Bergermoos)</b>:<br />Spitzacker -> Heinrich-Stutz-Strasse -> Spitzacker</p>
+    <p>
+      <b>Sonntag, 23. Juni 2O24</b>: Ein Pendelbus verkehrt von Samstag, 23.57 Uhr, bis Sonntag, 03.42 Uhr, ab Urdorf Spitzacker bis Urdorf
+      Heinrich-Stutz-Strasse.
+    </p>
+    <p>Sämtliche Fahrten sind im <a href="https://www.zvv.ch/" target="_blank">Online-Fahrplan des ZVV</a> abgebildet.</p>
     <hr class="my-10" />
     <h3 class="text-blau">Sicherheit / Notfall</h3>
     <b>Notrufnummern</b>:
