@@ -23,7 +23,7 @@
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel JurysekretärIn_v1.0.pdf" target="_blank">Jurysekretär / Jurysekretärin</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel JurybetreuerIn mobil_v1.0.pdf" target="_blank">Jurybetreuung mobil</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Wettspiellokal LokalchefIn_v1.0.pdf" target="_blank">Chef / Chefin Wettspiellokal</a></li>
-      <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Moderation_v1.0.pdf" target="_blank">Moderation</a></li>
+      <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Moderation_v1.1.pdf" target="_blank">Moderation</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Wettspiellokal Einlasskontrolle_v1.0.pdf" target="_blank">Einlasskontrolle Wettspiellokal</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Wettspiel Roadie_v1.0.pdf" target="_blank">Roadie Wettspiel</a></li>
       <li><a href="/helfer/Tätigkeitsbeschrieb - Wettspiel Marschmusik-HelferIn_v1.0.pdf" target="_blank">Marschmusik Helfer / Helferin</a></li>
