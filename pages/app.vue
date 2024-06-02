@@ -5,7 +5,7 @@
       <NuxtImg src="/app/screen1.png" quality="90" class="w-[240px] max-w-full float-left transition-all" densities="x1"></NuxtImg>
       <NuxtImg src="/app/screen3.png" quality="90" class="w-[240px] max-w-full float-left transition-all" densities="x1"></NuxtImg>
       <div>
-        <h3 class="text-rot">Die ZKMF2024-App kommt Ende Mai!</h3>
+        <h3 class="text-rot">Die ZKMF2024-App kommt Anfang Juni!</h3>
         <p>
           Die neusten Informationen, alle Spielzeiten auf einen Blick, eine interaktive Karte, Benachrichtigungen für deine Lieblingsvereine und vieles mehr!
         </p>
