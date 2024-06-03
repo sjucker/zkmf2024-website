@@ -28,7 +28,7 @@
             <span v-if="entry.titel">"{{ entry.titel }}"</span>
             <span v-else>Programm</span>
             <ol class="my-0">
-              <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }} ({{ titel.composer }})</li>
+              <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }}<span v-if="titel.pflichtStueck">*</span> ({{ titel.composer }})</li>
             </ol>
             <div v-if="entry.description" class="prose">
               <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'" class="whitespace-pre-line">
