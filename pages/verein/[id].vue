@@ -28,18 +28,33 @@
             <span v-if="entry.titel">"{{ entry.titel }}"</span>
             <span v-else>Programm</span>
             <ol class="my-0">
-              <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }}<span v-if="titel.pflichtStueck">*</span> ({{ titel.composer }})</li>
+              <li v-for="titel in entry.programm" :key="titel.id">
+                <div class="flex flex-row gap-2">
+                  <div>{{ titel.titelName }}<span v-if="titel.pflichtStueck">*</span> ({{ titel.composer }})</div>
+                  <div v-if="titel.infoModeration">
+                    <div v-if="!isExpandedTitel(titel.id!)" @click="expandTitel(titel.id!)">
+                      <PlusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+                    </div>
+                    <div v-else @click="collapseTitel(titel.id!)">
+                      <MinusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-sm whitespace-pre-line mb-6" v-if="isExpandedTitel(titel.id!)">{{ titel.infoModeration }}</div>
+              </li>
             </ol>
             <p class="text-xs">* Pflichtstück</p>
             <div v-if="entry.description" class="prose">
+              <div class="float-left pr-2">
+                <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
+                  <PlusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+                </div>
+                <div v-else @click="collapse(entry.modul)">
+                  <MinusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
+                </div>
+              </div>
               <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'" class="whitespace-pre-line">
                 {{ entry.description }}
-              </div>
-              <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
-                <PlusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
-              </div>
-              <div v-else @click="collapse(entry.modul)">
-                <MinusCircleIcon class="w-6 h-6 text-blau cursor-pointer" />
               </div>
             </div>
           </div>
@@ -85,6 +100,7 @@ function isMarschmusik(modul: Modul): boolean {
 }
 
 const expanded = ref<Modul[]>([])
+const expandedTitel = ref<number[]>([])
 
 function expand(modul: Modul) {
   expanded.value.push(modul)
@@ -96,5 +112,17 @@ function collapse(modul: Modul) {
 
 function isExpanded(modul: Modul): boolean {
   return expanded.value.includes(modul)
+}
+
+function expandTitel(titelId: number) {
+  expandedTitel.value.push(titelId)
+}
+
+function collapseTitel(titelId: number) {
+  expandedTitel.value.splice(expandedTitel.value.indexOf(titelId), 1)
+}
+
+function isExpandedTitel(titelId: number): boolean {
+  return expandedTitel.value.includes(titelId)
 }
 </script>
