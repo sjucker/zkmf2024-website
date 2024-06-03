@@ -30,6 +30,7 @@
             <ol class="my-0">
               <li v-for="titel in entry.programm" :key="titel.id">{{ titel.titelName }}<span v-if="titel.pflichtStueck">*</span> ({{ titel.composer }})</li>
             </ol>
+            <p class="text-xs">* Pflichtstück</p>
             <div v-if="entry.description" class="prose">
               <div :class="isExpanded(entry.modul) ? 'line-clamp-none' : 'line-clamp-4 lg:line-clamp-3 xl:line-clamp-2'" class="whitespace-pre-line">
                 {{ entry.description }}
