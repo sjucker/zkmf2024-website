@@ -8,6 +8,12 @@
       </NuxtLink>
     </div>
 
+    <div class="max-w-none grid grid-cols-1 pb-4">
+      <NuxtLink class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-silber text-center text-blau" to="/app">
+        ZKMF2024-App für iOS oder Android herunterladen
+      </NuxtLink>
+    </div>
+
     <div class="max-w-none gap-4 grid md:grid-cols-2">
       <NuxtLink
         v-for="(link, index) in links"
