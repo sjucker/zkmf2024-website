@@ -6,7 +6,7 @@
       <h2 class="text-rot">{{ data.name }}</h2>
       <div class="text-blau font-bold" v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
       <NuxtImg v-if="data.bildImgId" provider="cloudflare" :src="cloudflareUrl(data.bildImgId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
-      <div v-for="entry in data.timetableEntries" :key="entry">
+      <div v-for="entry in data.timetableEntries" :key="entry.modul">
         <h4>{{ entry.competition }}</h4>
         <div class="flex gap-2">
           <ClockIcon class="w-6 h-6 text-blau" />
@@ -43,7 +43,7 @@
                 <div class="text-sm whitespace-pre-line mb-6" v-if="isExpandedTitel(titel.id!)">{{ titel.infoModeration }}</div>
               </li>
             </ol>
-            <p class="text-xs">* Pflichtstück</p>
+            <p class="text-xs" v-if="hasPflichtstueck(entry.modul)">* Pflichtstück</p>
             <div v-if="entry.description" class="prose">
               <div class="float-left pr-2">
                 <div v-if="!isExpanded(entry.modul)" @click="expand(entry.modul)">
@@ -97,6 +97,10 @@ useSeoMeta({
 
 function isMarschmusik(modul: Modul): boolean {
   return modul === Modul.D
+}
+
+function hasPflichtstueck(modul: Modul): boolean {
+  return modul === Modul.A || modul === Modul.B
 }
 
 const expanded = ref<Modul[]>([])
