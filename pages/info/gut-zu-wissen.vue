@@ -14,7 +14,7 @@
     <hr class="my-10" />
     <h3 class="text-blau">Helferbüros</h3>
     <ul>
-      <li><b>Urdorf</b>: Schulhaus Feld 1, <a href="https://maps.app.goo.gl/2EH2iJPR5iYxyzxe7" target="_blank">Im Embri 49</a></li>
+      <li><b>Urdorf</b>: Schulhaus Feld 1, <a href="https://maps.app.goo.gl/Jnr1LVooRcgsSg1M8" target="_blank">Im Embri 49</a></li>
       <li><b>Schlieren</b>: Familienzentrum, <a href="https://maps.app.goo.gl/D6akpGYAnvndUPzC8" target="_blank">Badenerstrasse 17</a></li>
     </ul>
     <hr class="my-10" />
