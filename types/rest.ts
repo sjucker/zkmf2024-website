@@ -15,6 +15,12 @@ export interface AppPageDTO {
   cloudflareId?: string;
 }
 
+export interface ConfirmScoreDTO {
+  vereinProgrammId: number;
+  category?: JudgeReportModulCategory;
+  score: number;
+}
+
 export interface CoordinatesDTO {
   latitude: number;
   longitude: number;
@@ -24,6 +30,8 @@ export interface CurrentTimetablePreviewDTO {
   current?: TimetablePreviewDTO;
   next?: TimetablePreviewDTO;
   sponsoren: SponsorDTO[];
+  currentTime: DateAsString;
+  emergencyMessage?: EmergencyMessageDTO;
 }
 
 export interface DoppelEinsatzDTO {
@@ -31,8 +39,16 @@ export interface DoppelEinsatzDTO {
   mitspielerName: string;
 }
 
+export interface EmergencyMessageDTO {
+  id?: number;
+  header: string;
+  message: string;
+  active: boolean;
+}
+
 export interface FestprogrammDayDTO {
   day: string;
+  inPast: boolean;
   entries: FestprogrammEntryDTO[];
 }
 
@@ -130,19 +146,23 @@ export interface JudgeReportScoreDTO {
 
 export interface JudgeReportSummaryDTO {
   programmId: number;
+  date: DateAsString;
+  location: LocationDTO;
   modul: Modul;
   modulDescription: string;
   klasse?: Klasse;
   klasseDescription?: string;
   besetzung?: Besetzung;
   besetzungDescription?: string;
+  category?: JudgeReportModulCategory;
+  categoryDescription?: string;
   verein: string;
   overallScore?: number;
+  penalty?: number;
+  bonus?: number;
   scores: JudgeReportScoreDTO[];
   done: boolean;
   scoresConfirmed: boolean;
-  scoresConfirmedBy?: string;
-  scoresConfirmedAt?: DateAsString;
 }
 
 export interface JudgeReportTitleDTO {
@@ -235,6 +255,44 @@ export interface NichtmitgliederDTO {
   instrument?: string;
 }
 
+export interface RankingBonusDTO {
+  vereinProgrammId: number;
+  bonus: number;
+}
+
+export interface RankingDTO {
+  modul: string;
+  score: number;
+}
+
+export interface RankingListDTO {
+  id: number;
+  modul: Modul;
+  modulDescription: string;
+  klasse?: Klasse;
+  klasseDescription?: string;
+  besetzung?: Besetzung;
+  besetzungDescription?: string;
+  category?: JudgeReportModulCategory;
+  categoryDescription?: string;
+  location: LocationDTO;
+  description: string;
+  status: RankingStatus;
+  entries: RankingListEntryDTO[];
+  final: boolean;
+}
+
+export interface RankingListEntryDTO {
+  rank: number;
+  vereinsName: string;
+  score: number;
+}
+
+export interface RankingPenaltyDTO {
+  vereinProgrammId: number;
+  minutesOverrun: number;
+}
+
 export interface RegisterHelperRequestDTO {
   email: string;
   name: string;
@@ -288,6 +346,7 @@ export interface SponsoringDTO {
 
 export interface TimetableDayOverviewDTO {
   day: string;
+  inPast: boolean;
   entries: TimetableOverviewEntryDTO[];
 }
 
@@ -304,6 +363,7 @@ export interface TimetableOverviewEntryDTO {
   start: DateAsString;
   end: DateAsString;
   time: string;
+  inPast: boolean;
 }
 
 export interface TimetablePreviewDTO {
@@ -311,6 +371,7 @@ export interface TimetablePreviewDTO {
   header2?: string;
   header3?: string;
   location: LocationDTO;
+  date: DateAsString;
   startTime: DateAsString;
   endTime: DateAsString;
   minutesUntilStart: number;
@@ -331,6 +392,7 @@ export interface TitelDTO extends IsValid {
 
 export interface UnterhaltungTypeDTO {
   type: UnterhaltungEntryType;
+  inPast: boolean;
   entries: UnterhaltungsEntryDTO[];
 }
 
@@ -338,7 +400,7 @@ export interface UnterhaltungsEntryDTO {
   type: UnterhaltungEntryType;
   date: DateAsString;
   start: DateAsString;
-  end?: DateAsString;
+  end: DateAsString;
   title: string;
   subtitle?: string;
   text?: string;
@@ -346,6 +408,17 @@ export interface UnterhaltungsEntryDTO {
   cloudflareId?: string;
   vereinIdentifier?: string;
   unterhaltungIdentifier?: string;
+  inPast: boolean;
+}
+
+export interface UpcomingVereinDTO {
+  timetableEntryId: number;
+  vereinIdentifier: string;
+  vereinName: string;
+  location: string;
+  startTime: DateAsString;
+  minutesUntilStart: number;
+  id?: string;
 }
 
 export interface VereinDTO {
@@ -365,6 +438,7 @@ export interface VereinDTO {
   phase2ConfirmedBy?: string;
   phase2ConfirmedAt?: DateAsString;
   phase4ConfirmedAt?: DateAsString;
+  stageSetupConfirmedAt?: DateAsString;
   timetableEntries: TimetableOverviewEntryDTO[];
   messages: VereinMessageDTO[];
   errata: VereinErrataDTO[];
@@ -382,6 +456,22 @@ export interface VereinMessageDTO {
   createdAt: DateAsString;
   createdBy: string;
   ownMessage: boolean;
+}
+
+export interface VereinPlayingDTO {
+  timetableEntryId: number;
+  vereinProgrammId: number;
+  vereinsname: string;
+  modul: Modul;
+  startTime: DateAsString;
+  endTime: DateAsString;
+  minDurationInSeconds?: number;
+  maxDurationInSeconds?: number;
+  started: boolean;
+  ended: boolean;
+  jury: string;
+  minutesOverrun?: number;
+  bonus?: number;
 }
 
 export interface VereinPresentationDTO {
@@ -615,6 +705,19 @@ export interface MessageSendDTO {
   route: string;
 }
 
+export interface MessageSendTokenDTO {
+  token: string;
+  title: string;
+  body: string;
+  route: string;
+}
+
+export interface RankingSummaryDTO {
+  vereinsName: string;
+  competition: string;
+  rankings: RankingDTO[];
+}
+
 export interface TimetableEntryCreateDTO {
   vereinProgrammId: number;
   modul: Modul;
@@ -744,6 +847,12 @@ export interface IsValid {
 
 export type DateAsString = string;
 
+export enum JudgeReportModulCategory {
+  MODUL_G_KAT_A = 'MODUL_G_KAT_A',
+  MODUL_G_KAT_B = 'MODUL_G_KAT_B',
+  MODUL_G_KAT_C = 'MODUL_G_KAT_C',
+}
+
 export enum Modul {
   A = 'A',
   B = 'B',
@@ -763,12 +872,6 @@ export enum JudgeRole {
   JUROR_2_MUSIKALISCH = 'JUROR_2_MUSIKALISCH',
   JUROR_3_MUSIKALISCH = 'JUROR_3_MUSIKALISCH',
   JUROR_4_OPTISCH = 'JUROR_4_OPTISCH',
-}
-
-export enum JudgeReportModulCategory {
-  MODUL_G_KAT_A = 'MODUL_G_KAT_A',
-  MODUL_G_KAT_B = 'MODUL_G_KAT_B',
-  MODUL_G_KAT_C = 'MODUL_G_KAT_C',
 }
 
 export enum JudgeReportStatus {
@@ -851,6 +954,25 @@ export enum JudgeReportCategoryRating {
   VERY_POSITIVE = 'VERY_POSITIVE',
 }
 
+export enum Klasse {
+  HOECHSTKLASSE = 'HOECHSTKLASSE',
+  KLASSE_1 = 'KLASSE_1',
+  KLASSE_2 = 'KLASSE_2',
+  KLASSE_3 = 'KLASSE_3',
+  KLASSE_4 = 'KLASSE_4',
+  OBERSTUFE = 'OBERSTUFE',
+  MITTELSTUFE = 'MITTELSTUFE',
+  UNTERSTUFE = 'UNTERSTUFE',
+}
+
+export enum Besetzung {
+  HARMONIE = 'HARMONIE',
+  BRASS_BAND = 'BRASS_BAND',
+  FANFARE = 'FANFARE',
+  TAMBOUREN = 'TAMBOUREN',
+  PERKUSSIONSENSEMBLE = 'PERKUSSIONSENSEMBLE',
+}
+
 export enum LocationType {
   PARADEMUSIK = 'PARADEMUSIK',
   EINSPIELLOKAL = 'EINSPIELLOKAL',
@@ -872,12 +994,19 @@ export enum UserRole {
   ADMIN = 'ADMIN',
   ADMIN_READ_ONLY = 'ADMIN_READ_ONLY',
   JUDGE = 'JUDGE',
+  JUDGE_HELPER = 'JUDGE_HELPER',
   IMPERSONATE = 'IMPERSONATE',
 }
 
 export enum ModulDSelection {
   TITEL_1 = 'TITEL_1',
   TITEL_2 = 'TITEL_2',
+}
+
+export enum RankingStatus {
+  PENDING = 'PENDING',
+  PROVISIONAL = 'PROVISIONAL',
+  FINAL = 'FINAL',
 }
 
 export enum Aufgaben {
@@ -904,6 +1033,14 @@ export enum Einsatzzeit {
   NACHT = 'NACHT',
 }
 
+export enum TimetableEntryType {
+  EINSPIEL = 'EINSPIEL',
+  WETTSPIEL = 'WETTSPIEL',
+  BESPRECHUNG = 'BESPRECHUNG',
+  PLATZKONZERT = 'PLATZKONZERT',
+  MARSCHMUSIK = 'MARSCHMUSIK',
+}
+
 export enum UnterhaltungEntryType {
   FREITAG_ABEND = 'FREITAG_ABEND',
   SAMSTAG_TAG = 'SAMSTAG_TAG',
@@ -924,34 +1061,7 @@ export enum TambourenGrundlage {
   DOUBLE = 'DOUBLE',
 }
 
-export enum Klasse {
-  HOECHSTKLASSE = 'HOECHSTKLASSE',
-  KLASSE_1 = 'KLASSE_1',
-  KLASSE_2 = 'KLASSE_2',
-  KLASSE_3 = 'KLASSE_3',
-  KLASSE_4 = 'KLASSE_4',
-  OBERSTUFE = 'OBERSTUFE',
-  MITTELSTUFE = 'MITTELSTUFE',
-  UNTERSTUFE = 'UNTERSTUFE',
-}
-
-export enum Besetzung {
-  HARMONIE = 'HARMONIE',
-  BRASS_BAND = 'BRASS_BAND',
-  FANFARE = 'FANFARE',
-  TAMBOUREN = 'TAMBOUREN',
-  PERKUSSIONSENSEMBLE = 'PERKUSSIONSENSEMBLE',
-}
-
 export enum MessageType {
   EMERGENCY = 'EMERGENCY',
   GENERAL = 'GENERAL',
-}
-
-export enum TimetableEntryType {
-  EINSPIEL = 'EINSPIEL',
-  WETTSPIEL = 'WETTSPIEL',
-  BESPRECHUNG = 'BESPRECHUNG',
-  PLATZKONZERT = 'PLATZKONZERT',
-  MARSCHMUSIK = 'MARSCHMUSIK',
 }

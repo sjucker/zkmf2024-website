@@ -13,7 +13,7 @@
           werden.
         </div>
       </div>
-      <div v-for="entry in data.entries" :key="entry.title">
+      <div v-for="entry in relevantEntries" :key="entry.title">
         <hr class="my-2" />
         <div class="flex flex-col md:flex-row md:gap-4 justify-start md:justify-center">
           <div class="flex gap-4 justify-start md:justify-center">
@@ -71,6 +71,19 @@ const { data, pending, error } = await useFetch(`${apiBase}/public/unterhaltung`
   transform: (values: UnterhaltungTypeDTO[]) => {
     return values.find(dto => dto.type === type)
   },
+})
+
+const relevantEntries = computed(() => {
+  if (data.value) {
+    if (data.value.inPast) {
+      // if whole day in the past, display all entries again
+      return data.value.entries
+    } else {
+      return data.value.entries.filter(e => !e.inPast)
+    }
+  } else {
+    return []
+  }
 })
 
 useSeoMeta({

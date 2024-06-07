@@ -7,7 +7,7 @@
       Es ist ein Fehler aufgetreten...
     </div>
     <div v-if="!pending && data">
-      <div class="relative overflow-x-auto" v-for="day in data">
+      <div class="relative overflow-x-auto" v-for="day in relevantDays">
         <table class="table-auto w-full text-sm">
           <thead>
             <tr>
@@ -39,6 +39,19 @@ const {
 const { data, pending, error } = await useFetch<FestprogrammDayDTO[]>(`${apiBase}/public/festprogramm`, {
   lazy: true,
   server: false,
+})
+
+const relevantDays = computed(() => {
+  if (data.value) {
+    if (data.value.some(d => !d.inPast)) {
+      return data.value.filter(d => !d.inPast)
+    } else {
+      // if all in past display all again
+      return data.value
+    }
+  } else {
+    return []
+  }
 })
 
 useSeoMeta({
