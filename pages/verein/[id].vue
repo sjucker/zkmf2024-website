@@ -24,6 +24,12 @@
               {{ titel.titelName }} ({{ titel.composer }}) <span v-if="index < entry.programm.length - 1">oder</span>
             </div>
           </div>
+          <div v-if="isTambouren(entry.modul)">
+            Kompositionen<br />
+            <div v-for="titel in entry.programm">
+              <div>{{ titel.titelName }} ({{ titel.composer }})</div>
+            </div>
+          </div>
           <div v-else>
             <span v-if="entry.titel">"{{ entry.titel }}"</span>
             <span v-else>Programm</span>
@@ -97,6 +103,10 @@ useSeoMeta({
 
 function isMarschmusik(modul: Modul): boolean {
   return modul === Modul.D
+}
+
+function isTambouren(modul: Modul): boolean {
+  return modul === Modul.G
 }
 
 function hasPflichtstueck(modul: Modul): boolean {
