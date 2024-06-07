@@ -25,7 +25,9 @@
             </div>
           </div>
           <div v-if="isTambouren(entry.modul)">
-            Kompositionen<br />
+            <span v-if="entry.programm.length > 1">Kompositionen</span>
+            <span v-else>Komposition</span>
+            <br />
             <div v-for="titel in entry.programm">
               <div>{{ titel.titelName }} ({{ titel.composer }})</div>
             </div>
