@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type RankingListDTO } from '~/types/rest'
+import { type RankingListDTO, RankingStatus } from '~/types/rest'
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 
 useSeoMeta({
@@ -29,6 +29,7 @@ const { data, pending, error } = await useFetch<RankingListDTO[]>(`${apiBase}/pu
       <ul>
         <li v-for="ranking in data" :key="ranking.id">
           <NuxtLink :to="`/rangliste/${ranking.id}`">{{ ranking.description }}</NuxtLink>
+          <div v-if="ranking.status === RankingStatus.INTERMEDIATE" class="text-sm">Zwischenrangliste</div>
         </li>
       </ul>
     </div>

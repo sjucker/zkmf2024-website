@@ -31,7 +31,7 @@ function formatScore(score: number): string {
     </div>
     <div v-if="!pending && data">
       <div class="text-rot font-bold text-xl">{{ data.description }}</div>
-      <div v-if="data.status !== RankingStatus.INTERMEDIATE" class="text-sm">Zwischenrangliste</div>
+      <div v-if="data.status === RankingStatus.INTERMEDIATE" class="font-bold text-blau">Zwischenrangliste</div>
       <table class="table-auto w-full text-sm">
         <thead>
           <tr>
