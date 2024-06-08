@@ -24,7 +24,7 @@
               {{ titel.titelName }} ({{ titel.composer }}) <span v-if="index < entry.programm.length - 1">oder</span>
             </div>
           </div>
-          <div v-if="isTambouren(entry.modul)">
+          <div v-else-if="isTambouren(entry.modul)">
             <span v-if="entry.programm.length > 1">Kompositionen</span>
             <span v-else>Komposition</span>
             <br />
