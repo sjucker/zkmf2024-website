@@ -4,8 +4,16 @@
     <h2 v-if="!pending && error">🚫Verein nicht gefunden📯</h2>
     <div v-if="!pending && data">
       <h2 class="text-rot">{{ data.name }}</h2>
-      <div class="text-blau font-bold" v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
       <NuxtImg v-if="data.bildImgId" provider="cloudflare" :src="cloudflareUrl(data.bildImgId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
+      <div class="text-blau font-bold" v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
+      <div v-if="data.rankings.length > 0">
+        <h4>Ranglisten</h4>
+        <ul>
+          <li v-for="ranking in data.rankings" :key="ranking.id">
+            <NuxtLink :to="`/rangliste/${ranking.id}`">{{ ranking.modulDescription }}</NuxtLink>
+          </li>
+        </ul>
+      </div>
       <div v-for="entry in data.timetableEntries" :key="entry.modul">
         <h4>{{ entry.competition }}</h4>
         <div class="flex gap-2">
