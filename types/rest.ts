@@ -257,6 +257,7 @@ export interface NichtmitgliederDTO {
 
 export interface RankingBonusDTO {
   vereinProgrammId: number;
+  category: JudgeReportModulCategory;
   bonus: number;
 }
 
@@ -286,10 +287,12 @@ export interface RankingListEntryDTO {
   rank: number;
   vereinsName: string;
   score: number;
+  additionalInfo?: string;
 }
 
 export interface RankingPenaltyDTO {
   vereinProgrammId: number;
+  actualDurationInSeconds: number;
   minutesOverrun: number;
 }
 
@@ -355,6 +358,8 @@ export interface TimetableOverviewEntryDTO {
   vereinIdentifier: string;
   vereinsname: string;
   modul: string;
+  klasse?: string;
+  besetzung?: string;
   competition: string;
   type: TimetableEntryType;
   typeDescription: string;
@@ -463,6 +468,7 @@ export interface VereinPlayingDTO {
   vereinProgrammId: number;
   vereinsname: string;
   modul: Modul;
+  categories: JudgeReportModulCategory[];
   startTime: DateAsString;
   endTime: DateAsString;
   minDurationInSeconds?: number;
@@ -470,8 +476,11 @@ export interface VereinPlayingDTO {
   started: boolean;
   ended: boolean;
   jury: string;
+  actualDurationInSeconds?: number;
   minutesOverrun?: number;
-  bonus?: number;
+  bonusKatA?: number;
+  bonusKatB?: number;
+  bonusKatC?: number;
 }
 
 export interface VereinPresentationDTO {
@@ -932,7 +941,9 @@ export enum JudgeReportCategory {
   SCHLUSSPHASE_ANHALTEN = 'SCHLUSSPHASE_ANHALTEN',
   MUSIKALISCH_GESAMTEINDRUCK4 = 'MUSIKALISCH_GESAMTEINDRUCK4',
   GRUNDLAGE_1 = 'GRUNDLAGE_1',
+  GRUNDLAGE_1_ABZUG = 'GRUNDLAGE_1_ABZUG',
   GRUNDLAGE_2 = 'GRUNDLAGE_2',
+  GRUNDLAGE_2_ABZUG = 'GRUNDLAGE_2_ABZUG',
   TECHNISCHE_AUSFUEHRUNG = 'TECHNISCHE_AUSFUEHRUNG',
   RHYTHMIK = 'RHYTHMIK',
   DYNAMIK = 'DYNAMIK',
