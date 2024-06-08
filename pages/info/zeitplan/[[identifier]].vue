@@ -21,7 +21,7 @@
             <XMarkIcon class="w-5 h-5 text-blau" />
           </div>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center" v-if="hasPastEntries">
           <input id="show-in-past" type="checkbox" v-model="showInPast" class="w-4 h-4" />
           <label for="show-in-past" class="ms-2 text-sm font-medium">Vergangene Einträge anzeigen</label>
         </div>
@@ -94,6 +94,7 @@ watchEffect(() => {
 })
 
 const showInPast = ref(false)
+const hasPastEntries = ref(false)
 
 let request = `${apiBase}/public/timetable`
 if (route.params.identifier) {
@@ -110,6 +111,7 @@ const { data, pending, error } = await useFetch(request, {
     const availableLocations = new Map<number, LocationDTO>()
     const dayInPast = new Map<string, boolean>()
     let allInPast = true
+    let anyInPast = false
     for (let v of values) {
       entriesPerDayAndLocation.set(v.day, new Map<number, TimetableOverviewEntryDTO[]>())
       const perDay = entriesPerDayAndLocation.get(v.day)!
@@ -122,6 +124,7 @@ const { data, pending, error } = await useFetch(request, {
         }
         availableLocations.set(entry.location.id, entry.location)
         allInPast = allInPast && entry.inPast
+        anyInPast = anyInPast || entry.inPast
       }
       dayInPast.set(v.day, v.inPast)
     }
@@ -136,6 +139,7 @@ const { data, pending, error } = await useFetch(request, {
     if (allInPast) {
       showInPast.value = true
     }
+    hasPastEntries.value = anyInPast
 
     return result
   },
