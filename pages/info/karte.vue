@@ -6,8 +6,8 @@
       Interaktive Karte
     </NuxtLink>
     <div class="flex flex-col xl:flex-row gap-2">
-      <NuxtImg provider="cloudflare" :src="cloudflareUrl('c9e73d88-7fea-4ec5-a274-4e10bd321200')" loading="lazy" class="max-w-full w-[600px] rounded" />
-      <NuxtImg provider="cloudflare" :src="cloudflareUrl('9d44df48-2e32-4d20-472c-add81871ea00')" loading="lazy" class="max-w-full w-[600px] rounded" />
+      <NuxtImg provider="cloudflare" :src="cloudflareUrl('68b2d0d5-20a5-4148-fa7c-2f04feced200')" loading="lazy" class="max-w-full w-[600px] rounded" />
+      <NuxtImg provider="cloudflare" :src="cloudflareUrl('b3a8bf80-1479-4847-6c93-e06e3430d700')" loading="lazy" class="max-w-full w-[600px] rounded" />
     </div>
     Als PDF <a href="/info/karte.pdf" target="_blank">herunterladen</a>
   </div>
