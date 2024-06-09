@@ -17,6 +17,11 @@
           <button class="bg-violett text-white py-3 px-8 rounded-2xl w-full">Tätigkeitsbeschriebe</button>
         </NuxtLink>
       </div>
+
+      <div class="text-center border-2 border-blau rounded-2xl py-3 px-8">
+        <span class="font-bold text-blau">Kontaktiere das Helferbüro für die letzten Einsätze.</span><br />
+        <a href="tel:0794849845">079 484 98 45</a> / <a href="tel:0794816252">079 481 62 52</a>, <a href="mailto:personal@zkmf2024.ch">personal@zkmf2024.ch</a>
+      </div>
     </div>
     <p>
       Das Zürcher Kantonalmusikfest 2024 lebt dank dem Einsatz von rund 500 freiwilligen Helferinnen und Helfern. Werde Teil dieses tollen Grossanlasses und
