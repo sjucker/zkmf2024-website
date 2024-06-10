@@ -61,6 +61,7 @@
     </ul>
     <h3 class="text-blau">Presse</h3>
     <ul>
+      <li><a href="/presse/migros-magazin-24-2024.pdf" target="_blank">Migros Magazin</a></li>
       <li><a href="/presse/limmattaler-zeitung-juni-2024.pdf" target="_blank">Limmattaler Zeitung (1. Juni 2024)</a></li>
       <li><a href="/presse/unisono-mai-2024.pdf" target="_blank">Unisono (Mai 2024)</a></li>
       <li><a href="/presse/kuko-flyer-juni-2024.pdf" target="_blank">Kultur in Urdorf (Juni 2024)</a></li>
