@@ -24,33 +24,21 @@
       </div>
     </div>
     <p>
-      Das Zürcher Kantonalmusikfest 2024 lebt dank dem Einsatz von rund 500 freiwilligen Helferinnen und Helfern. Werde Teil dieses tollen Grossanlasses und
-      unterstütze das Organisationskomitee tatkräftig bei der Vorbereitung und Durchführung eines erinnerungsträchtigen Musikevents!
+      Am Festwochenende vom 21. Juni bis 23. Juni 2024 stehen rund <b>550 Helferinnen und Helfer</b> im Einsatz. Nur dank dieses grossen Engagements in
+      insgesamt 830 Schichten in der Festwirtschaft, beim musikalischen Wettbewerb in den diversen Lokalen, beim Unterhaltungsprogramm und bei vielen weiteren
+      Tätigkeiten kann das Fest überhaupt durchgeführt werden.
+    </p>
+    <p class="text-lg">
+      <b>Vielen herzlichen Dank allen Helferinnen und Helfern</b>, die als Privatperson oder im Namen von über 80 Vereinen aus Urdorf, Schlieren und dem ganzen
+      Kanton Zürich, ihren Beitrag zugunsten dieses Grossanlasses leisten. <b>Ihr seid super!</b>
     </p>
     <p>
-      Für das Festwochenende vom <b>21. Juni bis 23. Juni 2024</b> suchen wir Einzelhelfer und Vereine, die uns in der Festwirtschaft (Küche, Service, Buffet,
-      Bar, etc.), beim musikalischen Wettbewerb in den Wettspiellokalen, an der Parademusikstrecke und auch bei der Einlasskontrolle zu den Instrumentendepots
-      sowie mit weiteren Tätigkeiten unterstützen. Jeder Beitrag ist willkommen!
-    </p>
-    <p>
-      Pro geleistete Stunde überweisen wir 5 Franken an Dich oder in Eure Vereinskasse. Jede Helferin und jeder Helfer erhält pro Schicht einen
-      Verpflegungsgutschein.
-    </p>
-    <p>
-      <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">Melde Dich noch heute hier an</NuxtLink>
-      <br />
-      Stelle Deine Fähigkeiten und Kenntnisse in den Dienst eines grossen verbindenden Fests für Jung und Alt und hilf uns dabei, die Blasmusik von ihrer besten
-      Seite zu präsentieren. Das Organisationskomitee freut sich auf die Zusammenarbeit mit Dir!
-    </p>
-    <p>
-      Für Fragen kontaktiere uns bitte unter
+      Nach wie vor sind wir auf der Suche nach Freiwilligen für die letzten freien Einsätze. Melde Dich direkt bei uns (079 484 98 45 / 079 481 62 52,
+      <a href="mailto:personal@zkmf2024.ch">personal@zkmf2024.ch</a>) oder trage dich im
+      <a href="https://portal.helfereinsatz.ch/zkmf2024/" target="_blank">Helferportal</a> ein. Pro geleistete Stunde überweisen wir 5 Franken an Dich oder in
+      Eure Vereinskasse. Jede Helferin und jeder Helfer erhält pro Schicht einen Verpflegungsgutschein. Für Fragen kontaktiere uns bitte unter
       <a href="mailto:personal@zkmf2024.ch">personal@zkmf2024.ch</a>.
     </p>
-
-    <h3 class="text-blau">Flyer</h3>
-    Lade hier unseren
-    <a href="/helfer/helfersuche-flyer.pdf" target="_blank">Flyer Helfersuche</a>
-    herunter.
   </div>
 </template>
 <script setup lang="ts">
