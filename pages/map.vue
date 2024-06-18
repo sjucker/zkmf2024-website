@@ -79,7 +79,7 @@ const layers: LayerType[] = [
   {
     type: LocationType.INSTRUMENTENDEPOT,
     checked: false,
-    name: 'Instrumentendepot',
+    name: 'Instr. Depot/Reparatur',
     color: '#fec800',
   },
   {
@@ -91,7 +91,7 @@ const layers: LayerType[] = [
   {
     type: LocationType.INFOSTAND,
     checked: false,
-    name: 'Empfang, Infostand',
+    name: 'Infostand, Helferbüro',
     color: '#ffb693',
   },
 ]
