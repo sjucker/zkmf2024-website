@@ -27,11 +27,12 @@ export interface CoordinatesDTO {
 }
 
 export interface CurrentTimetablePreviewDTO {
-  current?: TimetablePreviewDTO;
+  current?: TimetableCurrentDTO;
   next?: TimetablePreviewDTO;
   sponsoren: SponsorDTO[];
   currentTime: DateAsString;
   emergencyMessage?: EmergencyMessageDTO;
+  screen?: ScreenDTO;
 }
 
 export interface DoppelEinsatzDTO {
@@ -104,6 +105,27 @@ export interface JudgeReportDTO {
   status: JudgeReportStatus;
   titles: JudgeReportTitleDTO[];
   overallRatings: JudgeReportRatingDTO[];
+}
+
+export interface JudgeReportFeedbackDTO {
+  verein: string;
+  modul: Modul;
+  modulDescription: string;
+  category?: JudgeReportModulCategory;
+  score?: number;
+  scoreRange: string;
+  penalty?: number;
+  bonus?: number;
+  judge1: JudgeReportViewDTO;
+  judge2: JudgeReportViewDTO;
+  judge3: JudgeReportViewDTO;
+  judge4?: JudgeReportViewDTO;
+}
+
+export interface JudgeReportFeedbackSelectionDTO {
+  modul: Modul;
+  modulDescription: string;
+  category?: JudgeReportModulCategory;
 }
 
 export interface JudgeReportOverviewDTO {
@@ -181,6 +203,8 @@ export interface JudgeReportViewDTO {
   categoryDescription?: string;
   verein: string;
   score?: number;
+  penalty?: number;
+  bonus?: number;
   status: JudgeReportStatus;
   titles: JudgeReportTitleDTO[];
   overallRatings: JudgeReportRatingDTO[];
@@ -266,8 +290,9 @@ export interface RankingBonusDTO {
 }
 
 export interface RankingDTO {
-  modul: string;
-  score: number;
+  modul: Modul;
+  modulDescription: string;
+  score?: number;
 }
 
 export interface RankingListDTO {
@@ -338,6 +363,13 @@ export interface ResetPasswordRequestDTO {
   newPassword: string;
 }
 
+export interface ScreenDTO {
+  locationIdentifier?: string;
+  header?: string;
+  message?: string;
+  cloudflareId?: string;
+}
+
 export interface SponsorDTO {
   name: string;
   cloudflareId?: string;
@@ -351,6 +383,14 @@ export interface SponsoringDTO {
   sponsor: SponsorDTO[];
   musikfan: SponsorDTO[];
   goenner: SponsorDTO[];
+}
+
+export interface TimetableCurrentDTO {
+  vereinsname: string;
+  direktion: string;
+  competition: string;
+  programmTitel: string;
+  titles: string[];
 }
 
 export interface TimetableDayOverviewDTO {
@@ -457,6 +497,7 @@ export interface VereinDTO {
   instrumentenDepot?: LocationDTO;
   instrumentenDepotParademusik?: LocationDTO;
   programmUpdated: boolean;
+  availableFeedbacks: JudgeReportFeedbackSelectionDTO[];
   phase1Status: PhaseStatus;
   phase2Status: PhaseStatus;
   phase4Status: PhaseStatus;
@@ -795,20 +836,6 @@ export interface UserDTO {
   email: string;
   role: UserRole;
   lastLogin?: DateAsString;
-}
-
-export interface VereinAssignmentDTO {
-  id: number;
-  name: string;
-  programme: VereinAssignmentProgrammDTO[];
-}
-
-export interface VereinAssignmentProgrammDTO {
-  id: number;
-  modul: Modul;
-  modulDescription: string;
-  klasse?: string;
-  besetzung?: string;
 }
 
 export interface VereinCommentCreateDTO {
