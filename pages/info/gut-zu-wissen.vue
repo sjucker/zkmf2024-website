@@ -12,6 +12,12 @@
       <li><b>Schlieren</b>: ZKB, <a href="https://maps.app.goo.gl/CE1gCaKnmRr4zL4W8" target="_blank">Zürcherstrasse 4</a></li>
     </ul>
     <hr class="my-10" />
+    <h3 class="text-blau">Bezahlung</h3>
+    <p>
+      In den Festzelten werden Zahlungen mit <b>Bargeld</b> oder <b>Twint</b> akzeptiert. <b>Keine Karten</b>! An den Food-Ständen entscheiden die
+      Standbetreiber über die akzeptierten Zahlungsmittel.
+    </p>
+    <hr class="my-10" />
     <h3 class="text-blau">Helferbüros</h3>
     <ul>
       <li><b>Urdorf</b>: Schulhaus Feld 1, <a href="https://maps.app.goo.gl/Jnr1LVooRcgsSg1M8" target="_blank">Im Embri 49</a></li>
@@ -40,6 +46,15 @@
       </li>
       <li><b>Schlieren</b>: Musikhaus Kubli, <a href="https://maps.app.goo.gl/811fMmafLY3Gx6fp6" target="_blank">Kirchgasse 6</a></li>
     </ul>
+    <p>
+      Die Instrumentendepots in Schlieren sind von 07.30–17.00 Uhr geöffnet.<br />
+      Bei der Verschiebung nach Urdorf bitte die Instrumentenkoffer mitnehmen und wie folgt deponieren:
+    </p>
+    <ul>
+      <li>Schlieren (1D) -> Urdorf (3D) (Turnhalle Embri, Im Embri 49)</li>
+      <li>Schlieren (2D) -> Urdorf (5D) (Turnhalle Bahnhofstrasse, Bahnhofstrasse 50)</li>
+    </ul>
+    <p>Die Depots sind bewacht. Für allfällige Schäden wird seitens der Organisatoren keine Haftung übernommen.</p>
     <hr class="my-10" />
     <h3 class="text-blau">Parkplätze</h3>
     <p>
@@ -145,6 +160,12 @@
         Fundbüro: Sicherheitsposten Urdorf, Schulhaus Feld 1, Lehrerzimmer, <a href="https://maps.app.goo.gl/2EH2iJPR5iYxyzxe7" target="_blank">Im Embri 49</a>,
         Urdorf
       </li>
+    </ul>
+    <hr class="my-10" />
+    <h3 class="text-blau">Rangverkündigung</h3>
+    <ul>
+      <li>Samstag, 22.06.2024, 17.30 Uhr, Zentrumshalle Urdorf</li>
+      <li>Sonntag, 23.06.2024, 18.00 Uhr, Festzelt Urdorf (mit Fahnenübergabe)</li>
     </ul>
     <hr class="my-10" />
     <h3 class="text-blau">Toiletten</h3>
