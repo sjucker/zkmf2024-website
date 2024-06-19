@@ -47,6 +47,7 @@
       <li>Schlieren (1D) -> Urdorf (3D) (Turnhalle Embri, Im Embri 49)</li>
       <li>Schlieren (2D) -> Urdorf (5D) (Turnhalle Bahnhofstrasse, Bahnhofstrasse 50)</li>
     </ul>
+    <p>Die Instrumentendepots in Urdorf sind am Samstag, 22.06. von 07.30–02.00 Uhr und am Sonntag, 23.06. ab 07.30 Uhr geöffnet.</p>
     <p>Die Depots sind bewacht. Für allfällige Schäden wird seitens der Organisatoren keine Haftung übernommen.</p>
     <hr class="my-10" />
     <h3 class="text-blau">Instrumentenreparatur</h3>
