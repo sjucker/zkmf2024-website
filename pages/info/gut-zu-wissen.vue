@@ -58,6 +58,9 @@
       <li><b>Schlieren</b>: Musikhaus Kubli, <a href="https://maps.app.goo.gl/811fMmafLY3Gx6fp6" target="_blank">Kirchgasse 6</a></li>
     </ul>
     <hr class="my-10" />
+    <h3 class="text-blau">Notenständer</h3>
+    <p>In allen Einspiel- und Wettspiel Lokalen sind genügen Notenständer vorhaben und müssen nicht mitgebracht werden.</p>
+    <hr class="my-10" />
     <h3 class="text-blau">Parkplätze</h3>
     <p>
       <b>
