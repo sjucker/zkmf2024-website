@@ -38,14 +38,7 @@
       </li>
     </ul>
     <hr class="my-10" />
-    <h3 class="text-blau">Instrumentenreparatur</h3>
-    <ul>
-      <li>
-        <b>Urdorf</b>: Musikhaus Bucher, beim Foyer der Zentrumshalle,
-        <a href="https://maps.app.goo.gl/9HtPD5pPM1nMW2SB9" target="_blank">Birmensdorferstrasse 77</a>
-      </li>
-      <li><b>Schlieren</b>: Musikhaus Kubli, <a href="https://maps.app.goo.gl/811fMmafLY3Gx6fp6" target="_blank">Kirchgasse 6</a></li>
-    </ul>
+    <h3 class="text-blau">Instrumentendepots</h3>
     <p>
       Die Instrumentendepots in Schlieren sind von 07.30–17.00 Uhr geöffnet.<br />
       Bei der Verschiebung nach Urdorf bitte die Instrumentenkoffer mitnehmen und wie folgt deponieren:
@@ -55,6 +48,15 @@
       <li>Schlieren (2D) -> Urdorf (5D) (Turnhalle Bahnhofstrasse, Bahnhofstrasse 50)</li>
     </ul>
     <p>Die Depots sind bewacht. Für allfällige Schäden wird seitens der Organisatoren keine Haftung übernommen.</p>
+    <hr class="my-10" />
+    <h3 class="text-blau">Instrumentenreparatur</h3>
+    <ul>
+      <li>
+        <b>Urdorf</b>: Musikhaus Bucher, beim Foyer der Zentrumshalle,
+        <a href="https://maps.app.goo.gl/9HtPD5pPM1nMW2SB9" target="_blank">Birmensdorferstrasse 77</a>
+      </li>
+      <li><b>Schlieren</b>: Musikhaus Kubli, <a href="https://maps.app.goo.gl/811fMmafLY3Gx6fp6" target="_blank">Kirchgasse 6</a></li>
+    </ul>
     <hr class="my-10" />
     <h3 class="text-blau">Parkplätze</h3>
     <p>
