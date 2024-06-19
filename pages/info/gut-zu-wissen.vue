@@ -59,7 +59,7 @@
     </ul>
     <hr class="my-10" />
     <h3 class="text-blau">Notenständer</h3>
-    <p>In allen Einspiel- und Wettspiel Lokalen sind genügen Notenständer vorhaben und müssen nicht mitgebracht werden.</p>
+    <p>Notenständer sind in allen Einspiel- und Wettspiellokalen ausreichend vorhanden und müssen nicht mitgebracht werden.</p>
     <hr class="my-10" />
     <h3 class="text-blau">Parkplätze</h3>
     <p>
