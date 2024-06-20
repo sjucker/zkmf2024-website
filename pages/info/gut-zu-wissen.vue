@@ -137,7 +137,7 @@
         Urdorf: Kerzenziehraum unterhalb Turnhalle Bahnhofstrasse (beim Festzelt),
         <a href="https://maps.app.goo.gl/CgexeVkqC7FwEq4A7" target="_blank">Im Moos 37</a>
       </li>
-      <li>Schlieren: Alter Jugendraum, Kirchplatz</li>
+      <li>Schlieren: Altes Schulhaus, <a href="https://maps.app.goo.gl/nmav1t3wPEUxGodb8" target="_blank">Freiestrasse 10</a>, EG</li>
     </ul>
     <b>Apotheken</b>:<br />
     <b>Urdorf</b>:
