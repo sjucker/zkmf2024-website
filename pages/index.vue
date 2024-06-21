@@ -3,12 +3,6 @@
     <h2 class="text-rot">31. Zürcher Kantonalmusikfest - Urdorf+Schlieren</h2>
 
     <div class="max-w-none grid grid-cols-1 pb-4">
-      <NuxtLink class="rounded-xl px-10 py-3 w-full text-white no-underline font-bold prose-lg bg-violett text-center" to="/info/tickets">
-        Tickets für Freitagabend<br />mit Stubete Gäng
-      </NuxtLink>
-    </div>
-
-    <div class="max-w-none grid grid-cols-1 pb-4">
       <NuxtLink class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-silber text-center text-blau" to="/app">
         ZKMF2024-App für iOS oder Android herunterladen
       </NuxtLink>
