@@ -15,6 +15,6 @@ useSeoMeta({
       <li>2x <a href="/info/75C645.pdf" target="_blank">75C645</a>, netto je <b>CHF 999.-</b></li>
       <li>8x <a href="/info/65P635.pdf" target="_blank">65P635</a>, netto je <b>CHF 549.-</b></li>
     </ul>
-    <p>Interesse? Dann melde dich <a href="mailto:info@zkmf2024.ch">hier</a>!</p>
+    <p>Interesse? Dann melde dich <a href="mailto:info@zkmf2024.ch">hier</a></p>
   </div>
 </template>
