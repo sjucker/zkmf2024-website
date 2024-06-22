@@ -113,9 +113,9 @@ const mapRef = ref<mapboxgl.Map>()
 mapboxgl.accessToken = mapboxApiKey
 
 function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
-  let html = `<strong>${features[0]?.properties?.name}</strong><br/>${features[0]?.properties?.info}<br/>`
+  let html = `<strong>${features[0]?.properties?.name}</strong><br/>${features[0]?.properties?.info}`
   if (features[0]?.properties?.type === LocationType.WETTSPIELLOKAL) {
-    html += `<a href="/info/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Spielplan</a>`
+    html += `<br/><a href="/info/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Spielplan</a>`
   }
   if (features[0]?.properties?.coordinates) {
     html += `<br/><a href="${features[0]?.properties?.coordinates}" class="underline text-blau">Google Maps</a>`
