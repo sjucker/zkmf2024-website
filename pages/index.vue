@@ -2,6 +2,10 @@
   <div class="prose prose-img:rounded-lg lg:max-w-none lg:prose-img:float-right">
     <h2 class="text-rot">31. Zürcher Kantonalmusikfest - Urdorf+Schlieren</h2>
 
+    <div class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-violett text-center text-white mb-2">
+      <NuxtLink to="/ranglisten">Ranglisten</NuxtLink>
+    </div>
+
     <div class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-rot text-center text-white mb-2">Parademusik für Samstag ist abgesagt!</div>
 
     <div class="max-w-none grid grid-cols-1 pb-4">
