@@ -117,6 +117,9 @@ function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
   if (features[0]?.properties?.type === LocationType.WETTSPIELLOKAL) {
     html += `<a href="/info/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Spielplan</a>`
   }
+  if (features[0]?.properties?.coordinates) {
+    html += `<br/><a href="${features[0]?.properties?.coordinates}" class="underline text-blau">Google Maps</a>`
+  }
   return html
 }
 
