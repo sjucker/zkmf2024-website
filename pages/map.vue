@@ -118,7 +118,7 @@ function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
     html += `<br/><a href="/info/zeitplan/${features[0]?.properties?.identifier}" class="underline text-blau">Spielplan</a>`
   }
   if (features[0]?.properties?.coordinates) {
-    html += `<br/><a href="${features[0]?.properties?.coordinates}" class="underline text-blau">Google Maps</a>`
+    html += `<br/><a href="${features[0]?.properties?.coordinates}" target="_blank" class="underline text-blau">Google Maps</a>`
   }
   return html
 }
