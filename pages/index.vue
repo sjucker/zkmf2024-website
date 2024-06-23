@@ -6,8 +6,6 @@
       <NuxtLink class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-violett text-center text-white" to="/ranglisten"> Ranglisten </NuxtLink>
     </div>
 
-    <div class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-rot text-center text-white mb-2">Parademusik für Samstag ist abgesagt!</div>
-
     <div class="max-w-none grid grid-cols-1 pb-4">
       <NuxtLink class="rounded-xl px-10 py-3 w-full no-underline font-bold prose-lg bg-silber text-center text-blau" to="/app">
         ZKMF2024-App für iOS oder Android herunterladen
