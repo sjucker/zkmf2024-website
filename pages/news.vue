@@ -61,6 +61,7 @@
     </ul>
     <h3 class="text-blau">Presse</h3>
     <ul>
+      <li><a href="/presse/limmattaler-zeitung-2024-06-24.pdf" target="_blank">Limmattaler Zeitung (24. Juni 2024)</a></li>
       <li><a href="/presse/limmattaler-zeitung-2024-06-22.pdf" target="_blank">Limmattaler Zeitung (22. Juni 2024)</a></li>
       <li><a href="/presse/tagesanzeiger-2024-06-20.pdf" target="_blank">Tages-Anzeiger (20. Juni 2024)</a></li>
       <li><a href="/presse/migros-magazin-24-2024.pdf" target="_blank">Migros Magazin</a></li>
