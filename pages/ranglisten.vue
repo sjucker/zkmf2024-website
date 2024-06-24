@@ -18,7 +18,7 @@ const { data, pending, error } = await useFetch<RankingListDTO[]>(`${apiBase}/pu
 </script>
 
 <template>
-  <div class="prose">
+  <div class="prose max-w-none">
     <h2 class="text-rot">Ranglisten</h2>
     <LoadingSpinner :loading="pending"></LoadingSpinner>
     <div v-if="!pending && error" class="inline-flex gap-2 items-center">
