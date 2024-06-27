@@ -63,6 +63,10 @@
     <ul>
       <li><a href="/presse/medienmitteilung-2024-06-23.pdf" target="_blank">Medienmitteilung (23.06.2024)</a></li>
       <li><a href="/presse/limmattaler-zeitung-2024-06-25.pdf" target="_blank">Limmattaler Zeitung (25. Juni 2024)</a></li>
+      <li><a href="https://hoengger.ch/triumph-fuer-die-hoenggermusik/" target="_blank">Höngger Zeitung (25. Juni 2024)</a></li>
+      <li>
+        <a href="https://punkt4.info/nachrichten/detail/news/zuercher-kantonalmusikfest-meldet-rekordbeteiligung/" target="_blank">punkt4 (24. Juni 2024)</a>
+      </li>
       <li><a href="/presse/limmattaler-zeitung-2024-06-24.pdf" target="_blank">Limmattaler Zeitung (24. Juni 2024)</a></li>
       <li><a href="/presse/limmattaler-zeitung-2024-06-22.pdf" target="_blank">Limmattaler Zeitung (22. Juni 2024)</a></li>
       <li><a href="/presse/tagesanzeiger-2024-06-20.pdf" target="_blank">Tages-Anzeiger (20. Juni 2024)</a></li>
