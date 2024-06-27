@@ -26,19 +26,21 @@
 
     <h3 class="text-blau">Herzlich willkommen</h3>
     <NuxtImg src="/homepage.jpg" quality="90" class="max-w-full lg:w-1/2 lg:ml-8 hidden lg:block" />
-
-    <p class="max-w-prose">Ein Feuerwerk der Blasmusik in all ihren Facetten – das ist das Zürcher Kantonalmusikfest 2024 in Urdorf und Schlieren!</p>
     <p class="max-w-prose">
-      Vom 21. – 23. Juni treffen sich Musikbegeisterte im Rahmen eines attraktiven Programms zum gemeinsamen Festerlebnis mit einzigartigen Highlights,
-      vielfältigen Begegnungen und gegenseitigem Austausch. Jugendmusikvereine messen sich mit den Erwachsenenvereinen; Unbeschwertheit und jugendliche Energie
-      treffen auf gestandene, erfahrene Musizierende.
+      Das 31. Kantonalmusikfest schreibt Geschichte: Vom 21.-23 Juni 2024 durften wir in Urdorf und Schlieren einen denkwürdigen Event organisieren. Rund 80
+      Formationen mit über 3‘000 Musizierenden haben mitgemacht. Tausende Besucherinnen und Besucher freuten sich an den gehaltvollen und qualitativ
+      hochstehenden Wettbewerbsbeiträgen.
     </p>
     <p class="max-w-prose">
-      Dank des modularen Aufbaus des Festreglements haben alle Vereine die Möglichkeit zur aktiven Teilnahme. Neu präsentieren die Teilnehmenden ein
-      Pflichtstück in der Unterhaltungs- wie auch in der Konzertmusik, eingebettet in ein selbst gestaltetes Programm. Eine hochkarätige Jury verspricht eine
-      Leistungsbeurteilung mit Mehrwert.
+      Das meist regnerische Wetter konnte der guten Stimmung nichts anhaben; überall waren fröhliche Gesichter zu sehen und die Begeisterung im Festzelt kannte
+      angesichts des fetzigen Unterhaltungsprogramms fast keine Grenzen. Das freundschaftliche Zusammensein unter Musikbegeisterten und die starke Gemeinschaft
+      waren stets zu spüren.
     </p>
-    <p class="max-w-prose">Das Organisationskomitee freut sich auf eine grosse Teilnahme bei ausgelassener Feststimmung und heisst alle herzlich willkommen!</p>
+    <p class="max-w-prose">
+      Das OK ist glücklich über den friedlichen und gelungenen Verlauf des Fests. Kleinere Herausforderungen konnten Dank des enormen Einsatzes aller Helfenden
+      und OK-Mitglieder rasch bewältigt werden. Es hat uns Freude gemacht, das ZKMF2024 für Euch zu organisieren! Herzlichen Dank an alle, die zum Gelingen
+      beigetragen haben!
+    </p>
     <span class="clear-both"></span>
   </div>
 </template>
