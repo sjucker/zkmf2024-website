@@ -14,9 +14,9 @@ useSeoMeta({
     </p>
     <ul>
       <li>2x 98“ <a href="/info/98P745.pdf" target="_blank">TCL 98P745</a> Nettopreis exkl. 1'691.85</li>
-      <li>2x 85“ <a href="/info/85P745.pdf" target="_blank">TCL P745</a> Nettopreis exkl. 1'263.65</li>
-      <li>2x 75“ <a href="/info/75C645.pdf" target="_blank">TCL C645</a> Nettopreis exkl. 855.15</li>
-      <li>8x 65“ <a href="/info/65P635.pdf" target="_blank">TCL P635</a> Nettopreis exkl. 479.85</li>
+      <li>2x 85“ <a href="/info/85P745.pdf" target="_blank">TCL 85P745</a> Nettopreis exkl. 1'263.65</li>
+      <li>2x 75“ <a href="/info/75C645.pdf" target="_blank">TCL 75C645</a> Nettopreis exkl. 855.15</li>
+      <li>8x 65“ <a href="/info/65P635.pdf" target="_blank">TCL 65P635</a> Nettopreis exkl. 479.85</li>
     </ul>
     <p>
       Die Screens können nach Absprache bei der SmartEfficient AG, Birmensdorferstrasse 21, 8142 Uitikon Waldegg abgeholt werden.<br />
