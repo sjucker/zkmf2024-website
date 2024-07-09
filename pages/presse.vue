@@ -9,6 +9,10 @@ useSeoMeta({
     <ul>
       <li><a href="/presse/natalie-rickli.pdf" target="_blank">Ansprache Regierungspräsidentin Natalie Rickli (23. Juni 2024)</a></li>
       <li><a href="/presse/medienmitteilung-2024-06-23.pdf" target="_blank">Medienmitteilung (23. Juni 2024)</a></li>
+      <li><a href="/presse/zuerichsee-2024-06-28.jpg" target="_blank">Zürichsee-Zeitung (28. Juni 2024)</a></li>
+      <li><a href="/presse/zuerichsee-2024-06-27.jpg" target="_blank">Zürichsee-Zeitung (27. Juni 2024)</a></li>
+      <li><a href="/presse/kurier-2024-06-27.jpg" target="_blank">Kurier (27. Juni 2024)</a></li>
+      <li><a href="/presse/limmattaler-zeitung-2024-06-26.pdf" target="_blank">Limmattaler Zeitung - Leserbeitrag (26. Juni 2024)</a></li>
       <li><a href="/presse/limmattaler-zeitung-2024-06-25.pdf" target="_blank">Limmattaler Zeitung (25. Juni 2024)</a></li>
       <li><a href="https://hoengger.ch/triumph-fuer-die-hoenggermusik/" target="_blank">Höngger Zeitung (25. Juni 2024)</a></li>
       <li>
