@@ -59,19 +59,19 @@ export const INFO_ITEMS: MenuItem[] = [
 
 export const HOME_ITEMS: MenuItem[] = [
   {
-    pageId: '/info/festprogramm',
-    title: 'Festprogramm',
+    pageId: '/ranglisten',
+    title: 'Ranglisten',
   },
   {
-    pageId: '/info/unterhaltung',
-    title: 'Unterhaltungsprogramm',
+    pageId: '/bilder',
+    title: 'Bilder',
+  },
+  {
+    pageId: '/presse',
+    title: 'Presse',
   },
   {
     pageId: '/info/vereine',
     title: 'Teilnehmende Vereine',
-  },
-  {
-    pageId: '/info/zeitplan',
-    title: 'Wettspiel Spielplan',
   },
 ]
