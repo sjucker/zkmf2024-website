@@ -13,8 +13,7 @@ useSeoMeta({
       Zur Verfügung stehen:
     </p>
     <ul>
-      <li>2x 98“ <a href="/info/98P745.pdf" target="_blank">TCL 98P745</a> Nettopreis <b>exkl. 1'899.-</b></li>
-      <li>2x 85“ <a href="/info/85P745.pdf" target="_blank">TCL 85P745</a> Nettopreis <b>exkl. 1'399.-</b></li>
+      <li>1x 85“ <a href="/info/85P745.pdf" target="_blank">TCL 85P745</a> Nettopreis <b>exkl. 1'399.-</b></li>
       <li>2x 65“ <a href="/info/65P635.pdf" target="_blank">TCL 65P635</a> Nettopreis <b>exkl. 529.-</b></li>
     </ul>
     <p>
