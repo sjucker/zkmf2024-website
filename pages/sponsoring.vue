@@ -134,8 +134,5 @@ const {
 } = useRuntimeConfig()
 const search = ref('')
 
-const { data, pending, error } = await useFetch<SponsoringDTO>(`${apiBase}/public/sponsoring`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<SponsoringDTO>(`/api/sponsoring`)
 </script>
