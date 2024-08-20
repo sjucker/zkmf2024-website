@@ -36,10 +36,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<FestprogrammDayDTO[]>(`${apiBase}/public/festprogramm`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<FestprogrammDayDTO[]>(`/api/festprogramm`)
 
 const relevantDays = computed(() => {
   if (data.value) {
