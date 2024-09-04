@@ -20,11 +20,7 @@ useSeoMeta({
   title: 'Jurymitglieder',
 })
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
-const { data, pending, error } = await useFetch<JudgePresentationDTO[]>(`${apiBase}/public/judge`, {
+const { data, pending, error } = await useFetch<JudgePresentationDTO[]>(`/api/judge`, {
   lazy: true,
   server: false,
 })

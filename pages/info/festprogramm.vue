@@ -32,10 +32,6 @@
 import type { FestprogrammDayDTO } from '~/types/rest'
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
 const { data, pending, error } = await useFetch<FestprogrammDayDTO[]>(`/api/festprogramm`)
 
 const relevantDays = computed(() => {
