@@ -104,7 +104,7 @@ useSeoMeta({
 })
 
 const {
-  public: { apiBase, mapboxApiKey },
+  public: { mapboxApiKey },
 } = useRuntimeConfig()
 
 const mapContainer = ref()
@@ -126,7 +126,7 @@ function getHtml(features: mapboxgl.MapboxGeoJSONFeature[]) {
 function addAdditionalSourceAndLayer(map: mapboxgl.Map) {
   map.addSource('locations', {
     type: 'geojson',
-    data: `${apiBase}/public/location/geojson`,
+    data: `/api/geojson`,
   })
 
   for (const layer of [...layers].reverse()) {
