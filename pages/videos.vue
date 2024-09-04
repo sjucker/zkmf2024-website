@@ -1,6 +1,19 @@
 <template>
   <div class="prose prose-a:text-blau">
-    <h2 class="text-rot">Videos bald verfügbar...</h2>
+    <h2 class="text-rot">Freitag</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe src="https://www.youtube.com/embed/MWGMAOJFWok"></iframe>
+    </div>
+    <hr />
+    <h2 class="text-rot">Samstag</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe src="https://www.youtube.com/embed/v1LAyJgnD60"></iframe>
+    </div>
+    <hr />
+    <h2 class="text-rot">Sonntag</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe src="https://www.youtube.com/embed/04EDcqyt1zY"></iframe>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
