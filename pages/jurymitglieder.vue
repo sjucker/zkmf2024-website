@@ -20,8 +20,5 @@ useSeoMeta({
   title: 'Jurymitglieder',
 })
 
-const { data, pending, error } = await useFetch<JudgePresentationDTO[]>(`/api/judge`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<JudgePresentationDTO[]>(`/api/judge`)
 </script>
