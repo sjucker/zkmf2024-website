@@ -41,12 +41,5 @@ useSeoMeta({
   title: 'Wettspiellokale',
 })
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
-const { data, pending, error } = await useFetch<LocationDTO[]>(`${apiBase}/public/location/wettspiel`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<LocationDTO[]>(`/api/wettspiel`)
 </script>
