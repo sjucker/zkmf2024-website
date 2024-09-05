@@ -62,12 +62,7 @@ const route = useRoute()
 const type = getType(route.params.id)
 const title = getFullTitle(type)
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
-const { data, pending, error } = await useFetch(`${apiBase}/public/unterhaltung`, {
-  server: false,
+const { data, pending, error } = await useFetch(`/api/unterhaltung`, {
   transform: (values: UnterhaltungTypeDTO[]) => {
     return values.find(dto => dto.type === type)
   },
