@@ -11,10 +11,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<RankingListDTO[]>(`${apiBase}/public/ranking`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<RankingListDTO[]>(`/api/rankings`)
 </script>
 
 <template>

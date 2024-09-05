@@ -12,10 +12,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<RankingListDTO>(`${apiBase}/public/ranking/${route.params.id}`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<RankingListDTO>(`/api/ranking/${route.params.id}`)
 
 function formatScore(score: number): string {
   return score.toFixed(2)
