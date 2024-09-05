@@ -28,11 +28,8 @@ import { UnterhaltungEntryType, type UnterhaltungsEntryDTO } from '~/types/rest'
 import { TICKET_PORTAL } from '~/types/constants'
 
 const route = useRoute()
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<UnterhaltungsEntryDTO>(`${apiBase}/public/unterhaltung/band/${route.params.id}`, {
+const { data, pending, error } = await useFetch<UnterhaltungsEntryDTO>(`/api/unterhaltung/${route.params.id}`, {
   server: false,
 })
 
