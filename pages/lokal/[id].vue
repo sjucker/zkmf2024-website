@@ -102,9 +102,6 @@ import { type LocationDTO, PercussionEquipmentType } from '~/types/rest'
 import { DocumentIcon, MapPinIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
 
 const { data, pending, error } = await useFetch<LocationDTO>(`/api/location/${route.params.id}`)
 

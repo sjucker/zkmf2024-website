@@ -129,9 +129,6 @@ useSeoMeta({
     'Unseren Sponsoren bieten wir eine ideale Plattform, ihre Produkte und Dienstleistungen einem breiten Publikum in einer pulsierenden und aufstrebenden Region zu präsentieren.',
 })
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
 const search = ref('')
 
 const { data, pending, error } = await useFetch<SponsoringDTO>(`/api/sponsoring`)

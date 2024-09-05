@@ -7,10 +7,6 @@ useSeoMeta({
   description: 'Alle Ranglisten des 31. Zürcher Kantonalmusikfest - Urdorf+Schlieren.',
 })
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
 const { data, pending, error } = await useFetch<RankingListDTO[]>(`/api/rankings`)
 </script>
 

@@ -8,10 +8,6 @@ useSeoMeta({
 
 const route = useRoute()
 
-const {
-  public: { apiBase },
-} = useRuntimeConfig()
-
 const { data, pending, error } = await useFetch<RankingListDTO>(`/api/ranking/${route.params.id}`)
 
 function formatScore(score: number): string {
