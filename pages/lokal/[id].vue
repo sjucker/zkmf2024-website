@@ -106,9 +106,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<LocationDTO>(`${apiBase}/public/location/${route.params.id}`, {
-  server: false,
-})
+const { data, pending, error } = await useFetch<LocationDTO>(`/api/location/${route.params.id}`)
 
 useSeoMeta({
   title: () => data?.value?.name ?? 'Lokal',
