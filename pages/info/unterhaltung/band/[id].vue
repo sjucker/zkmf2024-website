@@ -29,9 +29,7 @@ import { TICKET_PORTAL } from '~/types/constants'
 
 const route = useRoute()
 
-const { data, pending, error } = await useFetch<UnterhaltungsEntryDTO>(`/api/unterhaltung/${route.params.id}`, {
-  server: false,
-})
+const { data, pending, error } = await useFetch<UnterhaltungsEntryDTO>(`/api/unterhaltung/${route.params.id}`)
 
 function getDay(type: UnterhaltungEntryType): string {
   switch (type) {
