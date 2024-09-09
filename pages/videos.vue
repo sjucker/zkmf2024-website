@@ -3,7 +3,7 @@
     <h2 class="text-rot">Videos</h2>
     <h3 class="text-blau">Freitag</h3>
     <div class="aspect-w-16 aspect-h-9">
-      <iframe src="https://www.youtube.com/embed/MWGMAOJFWok"></iframe>
+      <iframe src="https://www.youtube.com/embed/KIILq2l9i4Q"></iframe>
     </div>
     <hr />
     <h3 class="text-blau">Samstag</h3>
