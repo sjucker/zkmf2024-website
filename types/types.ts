@@ -63,15 +63,15 @@ export const HOME_ITEMS: MenuItem[] = [
     title: 'Ranglisten',
   },
   {
-    pageId: '/bilder',
-    title: 'Bilder',
-  },
-  {
     pageId: '/presse',
     title: 'Presse',
   },
   {
-    pageId: '/info/vereine',
-    title: 'Teilnehmende Vereine',
+    pageId: '/bilder',
+    title: 'Bilder',
+  },
+  {
+    pageId: '/videos',
+    title: 'Videos',
   },
 ]
