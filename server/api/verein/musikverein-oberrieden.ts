@@ -1,0 +1,52 @@
+export default defineEventHandler(() => {
+  return {
+    id: 85,
+    name: 'Musikverein Oberrieden',
+    direktionName: 'Matteo Genini',
+    logoImgId: null,
+    bildImgId: 'ab32d40d-897e-4f70-b958-a3fa7a018a00',
+    homepage: 'https://musikverein-oberrieden.ch',
+    facebook: null,
+    instagram: null,
+    websiteText:
+      'Die Musikanten des Musikvereins Oberrieden verstehen sich als «Unterhaltungsmusikanten», die durch gemeinsames Musizieren sowohl sich als auch die Bevölkerung von Oberrieden und Umgebung mit einem breiten musikalischen Spektrum unterhalten wollen.\n\nBereits seit dem Jahr 1937 ist die Blasmusik ein fester Bestandteil der Oberriedner Dorfkultur. Früher noch unter den Namen «Jugendmusik» und «Harmonie» bekannt, schlossen sich die beiden Vereine Anfang 2011 zum «Musikvereins Oberrieden» (MVO)» zusammen.\n\nDie Abendunterhaltung im Frühling und das Adventskonzert im Dezember zählen zu den wichtigsten musikalischen Anlässen im Jahresprogramm. Ein Highlight ist die Teilnahme am Zürcher Sechseläuten. Seit 1968 gebührt dem MVO die Ehre, als Zunftspiel die Zunft Wollishofen am Sechseläuten begleiten zu dürfen.',
+    timetableEntries: [
+      {
+        modul: 'C',
+        competition: 'Platzkonzerte',
+        location: {
+          id: 21,
+          identifier: 'festzelt-schlieren',
+          name: 'Festzelt Schlieren',
+          address: 'Badenerstrasse 12, 8952 Schlieren',
+          latitude: 47.397439543225,
+          longitude: 8.446011061969,
+          googleMapsAddress: 'https://www.google.ch/maps/place/Badenerstrasse+12%2C+8952+Schlieren',
+          googleMapsCoordinates: 'https://www.google.com/maps?q=47.397439543225,8.446011061969',
+          type: 'FESTZELT',
+          capacity: null,
+          modules: null,
+          sortOrder: 9,
+          mapId: 'FS',
+          cloudflareId: null,
+          kuulaId: null,
+          einspiellokal: null,
+          instrumentendepotId: 8,
+          instrumentendepotParademusikId: 7,
+          instrumentendepot: null,
+          juryfeedback: null,
+          percussionEquipmentType: 'STANDARD',
+          coordinates: {
+            latitude: 47.397439543225,
+            longitude: 8.446011061969,
+          },
+        },
+        dateTime: 'Sa., 22.06.2024, 13:30 - 14:10',
+        titel: null,
+        description: 'Bedarf Perkussion: Schlagzeug (Set), Glockenspiel, Xylophon, Timpani, Suspended Cymbal',
+        programm: [],
+      },
+    ],
+    rankings: [],
+  }
+})

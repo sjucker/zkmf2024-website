@@ -46,14 +46,11 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<VereinTeilnahmeDTO[]>(`${apiBase}/public/verein/overview`, {
-  lazy: true,
-  server: false,
-})
+const { data, pending, error } = await useFetch<VereinTeilnahmeDTO[]>(`/api/vereine`)
 
 const search = ref('')
 
-const filteredEntries = ref<VereinTeilnahmeDTO[]>()
+const filteredEntries = ref<VereinTeilnahmeDTO[]>(data)
 watch([data, search], () => {
   if (data) {
     if (search.value && search.value.length > 0) {

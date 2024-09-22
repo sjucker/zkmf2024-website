@@ -1,0 +1,52 @@
+export default defineEventHandler(() => {
+  return {
+    id: 77,
+    name: 'Musikverein Buchs ZH',
+    direktionName: 'Julia Bildstein',
+    logoImgId: '1258bfc5-fd8c-4f23-9a85-186648899c00',
+    bildImgId: '6dc06fdc-9842-4256-8e78-11e7b7058700',
+    homepage: 'https://mvbuchs.ch',
+    facebook: null,
+    instagram: null,
+    websiteText:
+      'Wir sind ein kleiner, aber motivierter Verein aus dem Zürcher Furttal mit zurzeit 27 Mitgliedern und spielen in der 3. Stärkeklasse.\nWir haben ein breites Konzertrepertoire, mit welchem wir immer wieder unser Publikum überraschen und begeistern können.\nUnser Verein ist offen für Jung bis Alt, von Klein bis Gross - also alle, die Freude haben in einem tollen Verein zu musizieren und auch das Gesellschaftliche zu pflegen.',
+    timetableEntries: [
+      {
+        modul: 'C',
+        competition: 'Platzkonzerte',
+        location: {
+          id: 21,
+          identifier: 'festzelt-schlieren',
+          name: 'Festzelt Schlieren',
+          address: 'Badenerstrasse 12, 8952 Schlieren',
+          latitude: 47.397439543225,
+          longitude: 8.446011061969,
+          googleMapsAddress: 'https://www.google.ch/maps/place/Badenerstrasse+12%2C+8952+Schlieren',
+          googleMapsCoordinates: 'https://www.google.com/maps?q=47.397439543225,8.446011061969',
+          type: 'FESTZELT',
+          capacity: null,
+          modules: null,
+          sortOrder: 9,
+          mapId: 'FS',
+          cloudflareId: null,
+          kuulaId: null,
+          einspiellokal: null,
+          instrumentendepotId: 8,
+          instrumentendepotParademusikId: 7,
+          instrumentendepot: null,
+          juryfeedback: null,
+          percussionEquipmentType: 'STANDARD',
+          coordinates: {
+            latitude: 47.397439543225,
+            longitude: 8.446011061969,
+          },
+        },
+        dateTime: 'So., 23.06.2024, 15:20 - 16:00',
+        titel: null,
+        description: null,
+        programm: [],
+      },
+    ],
+    rankings: [],
+  }
+})

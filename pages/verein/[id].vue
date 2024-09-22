@@ -102,9 +102,7 @@ const {
   public: { apiBase },
 } = useRuntimeConfig()
 
-const { data, pending, error } = await useFetch<VereinPresentationDTO>(`${apiBase}/public/verein/${route.params.id}`, {
-  server: false,
-})
+const { data, pending, error } = await useFetch<VereinPresentationDTO>(`/api/verein/${route.params.id}`)
 
 useSeoMeta({
   title: () => data?.value?.name ?? 'Verein',

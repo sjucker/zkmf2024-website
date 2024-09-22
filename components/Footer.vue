@@ -21,17 +21,17 @@
               </li>
             </ul>
           </div>
-          <div class="pt-6 lg:pt-0 lg:pl-36">
-            <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">
-              <FilledButton text="Anmeldung HelferInnen" class="block mt-3 w-full lg:w-72"></FilledButton>
-            </NuxtLink>
-            <NuxtLink to="/newsletter">
-              <FilledButton text="Newsletter abonnieren" class="block mt-3 w-full lg:w-72"></FilledButton>
-            </NuxtLink>
-            <a href="https://vereine.zkmf2024.ch/" target="_blank">
-              <FilledButton text="Vereinsportal" class="block mt-3 w-full lg:w-72"></FilledButton>
-            </a>
-          </div>
+          <!--          <div class="pt-6 lg:pt-0 lg:pl-36">-->
+          <!--            <NuxtLink to="https://portal.helfereinsatz.ch/zkmf2024">-->
+          <!--              <FilledButton text="Anmeldung HelferInnen" class="block mt-3 w-full lg:w-72"></FilledButton>-->
+          <!--            </NuxtLink>-->
+          <!--            <NuxtLink to="/newsletter">-->
+          <!--              <FilledButton text="Newsletter abonnieren" class="block mt-3 w-full lg:w-72"></FilledButton>-->
+          <!--            </NuxtLink>-->
+          <!--            <a href="https://vereine.zkmf2024.ch/" target="_blank">-->
+          <!--              <FilledButton text="Vereinsportal" class="block mt-3 w-full lg:w-72"></FilledButton>-->
+          <!--            </a>-->
+          <!--          </div>-->
         </div>
       </div>
 

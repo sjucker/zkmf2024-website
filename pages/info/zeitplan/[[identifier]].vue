@@ -96,14 +96,12 @@ watchEffect(() => {
 const showInPast = ref(false)
 const hasPastEntries = ref(false)
 
-let request = `${apiBase}/public/timetable`
+let request = `/api/timetable`
 if (route.params.identifier) {
   request += `/${route.params.identifier}`
 }
 
 const { data, pending, error } = await useFetch(request, {
-  lazy: true,
-  server: false,
   transform: (values: TimetableDayOverviewDTO[]) => {
     const days = values.map(v => v.day)
 
