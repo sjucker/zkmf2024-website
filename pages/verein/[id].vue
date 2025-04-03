@@ -4,7 +4,7 @@
     <h2 v-if="!pending && error">🚫Verein nicht gefunden📯</h2>
     <div v-if="!pending && data">
       <h2 class="text-rot">{{ data.name }}</h2>
-      <NuxtImg v-if="data.bildImgId" provider="cloudflare" :src="cloudflareUrl(data.bildImgId)" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
+      <NuxtImg v-if="data.bildImgId" :src="'/image/' + data.bildImgId + '.jpg'" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
       <div class="text-blau font-bold" v-if="data.direktionName">Dirigent/in: {{ data.direktionName }}</div>
       <div v-if="data.rankings.length > 0">
         <h4>Ranglisten</h4>
