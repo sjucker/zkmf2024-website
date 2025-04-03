@@ -20,7 +20,7 @@
             target="_blank"
             class="rounded-2xl border border-silber p-2 flex justify-center"
           >
-            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+            <NuxtImg :src="'/sponsors/' + sponsor.cloudflareId + '.jpg'" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
       </div>
@@ -35,7 +35,7 @@
             target="_blank"
             class="rounded-2xl border border-silber p-2 flex justify-center"
           >
-            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+            <NuxtImg :src="'/sponsors/' + sponsor.cloudflareId + '.jpg'" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
       </div>
@@ -50,7 +50,7 @@
             target="_blank"
             class="rounded-2xl border border-silber p-2 flex justify-center"
           >
-            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+            <NuxtImg :src="'/sponsors/' + sponsor.cloudflareId + '.jpg'" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
       </div>
@@ -65,7 +65,7 @@
             target="_blank"
             class="rounded-2xl border border-silber p-2 flex justify-center"
           >
-            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+            <NuxtImg :src="'/sponsors/' + sponsor.cloudflareId + '.jpg'" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
       </div>
@@ -80,7 +80,7 @@
             target="_blank"
             class="rounded-2xl border border-silber p-2 flex justify-center"
           >
-            <NuxtImg provider="cloudflare" :src="cloudflareUrl(sponsor.cloudflareId)" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
+            <NuxtImg :src="'/sponsors/' + sponsor.cloudflareId + '.jpg'" loading="lazy" :alt="sponsor.name" :title="sponsor.name" />
           </a>
         </div>
       </div>
