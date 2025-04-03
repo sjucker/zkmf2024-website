@@ -37,8 +37,7 @@
         <div class="relative inline-block" v-if="entry.cloudflareId && entry.unterhaltungIdentifier">
           <NuxtLink :to="unterhaltungBandUrl(entry.unterhaltungIdentifier)" class="no-underline">
             <NuxtImg
-              provider="cloudflare"
-              :src="cloudflareUrl(entry.cloudflareId)"
+              :src="'/unterhaltung/' + entry.cloudflareId + '.jpg'"
               loading="lazy"
               class="max-w-full w-[600px] lg:w-[800px] object-scale-down mt-4 mb-0"
               densities="x1"
