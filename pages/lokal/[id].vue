@@ -5,13 +5,7 @@
     <div v-if="!pending && !error">
       <template v-if="data">
         <h2 class="text-rot">{{ data.name }}</h2>
-        <NuxtImg
-          v-if="data.cloudflareId"
-          provider="cloudflare"
-          :src="cloudflareUrl(data.cloudflareId)"
-          loading="lazy"
-          class="max-w-full lg:w-1/2 lg:ml-8"
-        ></NuxtImg>
+        <NuxtImg v-if="data.cloudflareId" :src="'/location/' + data.cloudflareId + '.jpg'" loading="lazy" class="max-w-full lg:w-1/2 lg:ml-8"></NuxtImg>
         <ul>
           <li v-if="distanceToLocation">
             {{ distanceToLocation }}
